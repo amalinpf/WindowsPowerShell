@@ -1,0 +1,109 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Saturday, March 11, 2023 11:19:54 AM
+   Source : C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\
+     Dest : C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\
+
+    Files : *.*
+	    
+  Options : *.* /FP /TEE /S /DCOPY:DA /COPY:DAT /MT:8 /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\$RECYCLE.BIN\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Access\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Admin\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Artwork\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\BrowserConfig\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Certificates\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Custom Office Templates\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\FeedbackHub\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\From Desktop\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\GPO Backups\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\HR\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Hyper-V\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Images\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Misc\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\My Data Sources\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\My Shapes\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\MyUlsViewer\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Notepad++Sync\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\OneNote Notebooks\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Outlook Files\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\paint.net User Files\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Personal\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Programming_Scripts\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Registry\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Screen Captures\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Security\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Servers\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\sharepoint\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Sound recordings\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SQL Server\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SQL Server Management Studio\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Testing\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Visual Studio 2017\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\WindowsPowerShell\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\WIP\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Z Old Stuff Archive\
+	*EXTRA Dir        -1	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Zoom\
+	  *EXTRA File 		     214	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Art Malin_2022-4-13-15-42-44_1.csv
+	  *EXTRA File 		     890	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Art Malin_2022-4-29-15-47-37_1.csv
+	  *EXTRA File 		    1004	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Backup to H.cmd - Shortcut.lnk
+	  *EXTRA File 		     553	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\ChatLog Meet Now 2022_04_14 09_22.rtf
+	  *EXTRA File 		     410	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\ChatLog Meet Now 2022_08_24 12_32.rtf
+	  *EXTRA File 		    2244	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Default - Copy-AMALINREMOTE-PC.rdp
+	  *EXTRA File 		    2330	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Default - Copy.rdp
+	  *EXTRA File 		    2314	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Default-AMALIN-PC.rdp
+	  *EXTRA File 		    2406	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Default-AMALINREMOTE-PC-2.rdp
+	  *EXTRA File 		    2366	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Default-AMALINREMOTE-PC-3.rdp
+	  *EXTRA File 		    2322	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Default-AMALINREMOTE-PC.rdp
+	  *EXTRA File 		    2364	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Default.rdp
+	  *EXTRA File 		    7651	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Default.ResmonCfg
+	  *EXTRA File 		     418	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\desktop.ini
+	  *EXTRA File 		    2402	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\DevAsBPSadmin.rdp
+	  *EXTRA File 		    9964	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\FortiClientSettings.conf
+	  *EXTRA File 		    2209	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Frequent Links.lnk
+	  *EXTRA File 		    5703	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Lorem Ipsum.txt
+	  *EXTRA File 		    3380	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\my-ublock-backup_2020-12-01_12.39.07.txt
+	  *EXTRA File 		    5894	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\NPHistory_AMALIN-PC.txt
+	  *EXTRA File 		    6800	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\NPHistory_amalin-surface.txt
+	  *EXTRA File 		    7058	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\NPHistory_AMALINREMOTE-PC.txt
+	  *EXTRA File 		   33444	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Phone List.docx
+	  *EXTRA File 		    3859	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Phone List.docx - Shortcut.lnk
+	  *EXTRA File 		    6705	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\RegExURL.txt
+	  *EXTRA File 		      27	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SharePoint_logo_folders.txt
+	  *EXTRA File 		    2033	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Where are my files-AMALINREMOTE-PC.lnk
+	  *EXTRA File 		    2011	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Where are my files.lnk
+	    New File  		    2853	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\HelloWorld\node_modules\throat\index.js100%  
+	    New File  		     564	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\HelloWorld\node_modules\tmpl\lib\tmpl.js100%  
+	    New File  		     839	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\HelloWorld\node_modules\cacache\lib\util\tmp.js100%  
+	    New File  		     115	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\HelloWorld\node_modules\@typescript-eslint\scope-manager\dist\definition\Definition.js100%  
+	    New File  		     108	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\HelloWorld\node_modules\@uifabric\utilities\lib\test\index.d.ts100%  
+	    New File  		    3841	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\HelloWorld\node_modules\tiny-lr\node_modules\raw-body\README.md100%  
+	    New File  		     209	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\HelloWorld\node_modules\office-ui-fabric-react\lib\components\DocumentCard\DocumentCardActions.styles.d.ts100%  
+	    New File  		     167	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\HelloWorld\node_modules\office-ui-fabric-react\lib-amd\components\ColorPicker\ColorPicker.d.ts100%  
+	    New File  		   27863	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\HelloWorld\node_modules\@rushstack\localization-utilities\node_modules\commander\typings\index.d.ts100%  
+	    New File  		     879	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\HelloWorld\node_modules\@microsoft\gulp-core-build-webpack\node_modules\cacache\lib\util\tmp.js100%  
+	    New File  		     879	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\HelloWorld\node_modules\@microsoft\sp-build-core-tasks\node_modules\cacache\lib\util\tmp.js100%  
+	    New File  		     879	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\HelloWorld\node_modules\@microsoft\sp-build-web\node_modules\cacache\lib\util\tmp.js100%  
+	    New File  		     879	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\HelloWorld\node_modules\@microsoft\sp-css-loader\node_modules\cacache\lib\util\tmp.js100%  
+	    New File  		     879	C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\SPFx\HelloWorld\node_modules\@microsoft\spfx-heft-plugins\node_modules\cacache\lib\util\tmp.js100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :      8885      8885      8885         0         0        38
+   Files :     56512        14     56512         0         0        28
+   Bytes :  497.95 m    39.9 k  497.98 m         0         0   116.1 k
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :             1365133 Bytes/sec.
+   Speed :              78.113 MegaBytes/min.
+   Ended : Saturday, March 11, 2023 11:19:55 AM
+

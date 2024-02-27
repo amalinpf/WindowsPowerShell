@@ -1,0 +1,99 @@
+# see C:\Users\amalin\Documents\WindowsPowerShell\Snippets  ... ...
+
+# Keep apostrophes, etc. as they are:
+$code = 
+{
+invoke-command -computername sharepoint-svr #[, sharepoint-dev,localhost]  
+{ 
+Remote Command Here
+}
+}
+New-IseSnippet `
+    -Text $code.ToString() `
+    -CaretOffset $code.ToString().Length `
+    -Force `
+    -Title ‘am - Execute Remotely’ `
+    -Description ‘Run a command [block] on one or multiple computers’ `
+	-Author ‘Art Malin’
+
+
+
+# Keep apostrophes, etc. as they are:
+$code = 
+{
+<#
+Enter-PSSession -ComputerName sharepoint-svr
+Add-PsSnapin Microsoft.SharePoint.PowerShell -ErrorAction SilentlyContinue
+.
+.
+Exit-PSSession
+
+SQL Server:
+Install-Module dbatools 
+
+Working with Modules
+**************
+If the module folders are in the folders that are listed in $env:psmodulepath, you don't even have to load them (supposedly, I haven't found it to be consistent).
+C:\Users\<user>\Documents\WindowsPowerShell\Modules
+C:\Program Files\WindowsPowerShell\Modules
+C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+
+If not, you can replace the Add-PSSnapin line with
+Get-Module -Name *sharepoint* -ListAvailable | Import-Module
+
+=============
+Find-Module -Name "*sharepoint*"
+Install-Module to add new ones from PowerShell Gallery
+Or find and install: Find-Module -Name "MSO*" | Install-Module
+Get-Module          Uses it for that session     (use -ListAvailable for all installed)
+Import-Module       That session?
+Update-Module
+Remove-Module   Duh
+
+
+Misc commands
+===============
+Set-ExecutionPolicy -ExecutionPolicy unrestricted
+Enable-PSRemoting
+enter-pssession -computername sharepoint-svr
+invoke-command -computername sharepoint-svr[, sharepoint-dev,localhost]  { }
+
+Snippets: C:\Users\<user>\Documents\WindowsPowerShell\Snippets\
+#>
+}
+New-IseSnippet `
+    -Text $code.ToString() `
+    -CaretOffset $code.ToString().Length `
+    -Force `
+    -Title ‘Connect Remotely and Module etc Commands’ `
+    -Description ‘Connecting to another computer and Module command notes’ `
+	-Author ‘Art Malin’
+
+********************************
+# Keep apostrophes, etc. as they are:
+$code = 
+{
+# Keep apostrophes, etc. as they are:
+$code = 
+{ 
+#PutYourCodeHere
+}
+New-IseSnippet `
+    -Text $code.ToString() `
+    -CaretOffset $code.ToString().Length `
+    -Force `
+    -Title ‘am - SnippetTitle’ `
+    -Description ‘SnippetDescription’ `
+	-Author ‘Art Malin’
+<#
+Replace the #PutYourCodeHere by your Powershell commands, set the snippet Title, description and run it.
+Stored in C:\Users\amalin\Documents\WindowsPowerShell\Snippets
+#>
+}
+New-IseSnippet `
+    -Text $code.ToString() `
+    -CaretOffset $code.ToString().Length `
+    -Force `
+    -Title ‘am - Add Snippet’ `
+    -Description ‘Code to add new snippet’ `
+	-Author ‘Art Malin’

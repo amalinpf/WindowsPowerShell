@@ -1,0 +1,29 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+    <Snippets  xmlns='http://schemas.microsoft.com/PowerShell/Snippets'>
+        <Snippet Version='1.0.0'>
+            <Header>
+                <Title>AM-CopyOneDriveToH</Title>
+                <Description>Keeps my Snippets in sync for Workstations and servers</Description>
+                <Author></Author>
+                <SnippetTypes>
+                    <SnippetType>Expansion</SnippetType>
+                </SnippetTypes>
+            </Header>
+
+            <Code>
+                <Script Language='PowerShell' CaretOffset='258'>
+                    <![CDATA[ 
+$OneDrive = "\\amalin-pc\c$\Users\amalin\OneDrive - City of Post Falls\Documents\WindowsPowerShell\Snippets"
+$H = "\\triumph\homes$\amalin\Documents\WindowsPowerShell\Snippets"
+
+robocopy `"$H`" `"$OneDrive`" /XO
+robocopy `"$OneDrive`" `"$H`" /XO
+
+
+]]>
+                </Script>
+            </Code>
+
+    </Snippet>
+</Snippets>
+

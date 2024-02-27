@@ -1,0 +1,37 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20210115095813
+Username: POSTFALLSCITY\amalin
+RunAs User: POSTFALLSCITY\amalin
+Configuration Name: 
+Machine: AMALIN-PC (Microsoft Windows NT 10.0.19042.0)
+Host Application: C:\WINDOWS\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Process ID: 15148
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\amalin\Documents\POWERSHELL\Output\CopySvrToDev.txt
+PS>TerminatingError(Start-DbaMigration): "A parameter cannot be found that matches parameter name 'ExtendedEvents'."
+Start-DbaMigration : A parameter cannot be found that matches parameter name 'ExtendedEvents'.
+At line:31 char:20
++ Start-DbaMigration @startDbaMigrationSplat -Force | Select-Object * | ...
++                    ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Start-DbaMigration], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Start-DbaMigration
+Start-DbaMigration : A parameter cannot be found that matches parameter name 'ExtendedEvents'.
+At line:31 char:20
++ Start-DbaMigration @startDbaMigrationSplat -Force | Select-Object * | ...
++                    ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Start-DbaMigration], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Start-DbaMigration
+
+**********************
+Windows PowerShell transcript end
+End time: 20210115095821
+**********************

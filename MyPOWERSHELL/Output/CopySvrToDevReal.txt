@@ -1,0 +1,239 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20210115101959
+Username: POSTFALLSCITY\amalin
+RunAs User: POSTFALLSCITY\amalin
+Configuration Name: 
+Machine: AMALIN-PC (Microsoft Windows NT 10.0.19042.0)
+Host Application: C:\WINDOWS\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Process ID: 15148
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\amalin\Documents\POWERSHELL\Output\CopySvrToDevReal.txt
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:44:34][Update-SqlPermission] Failed to add POSTFALLSCITY\IT_Employees to sysadmin server role on SHAREPOINT-DEV. | Cannot alter the server role 'sysadmin', because it does not exist or you do not have permission.
+WARNING: [10:44:38][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to sysadmin server role on SHAREPOINT-DEV. | Cannot alter the server role 'sysadmin', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:44:46][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to SharePoint_Config on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:44:47][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in SharePoint_Config on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:44:47][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in SharePoint_Config on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:44:47][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to SharePoint_AdminContent_9721239d-4822-49a8-8a6a-9dff44eba469 on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:44:48][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in SharePoint_AdminContent_9721239d-4822-49a8-8a6a-9dff44eba469 on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:44:48][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in SharePoint_AdminContent_9721239d-4822-49a8-8a6a-9dff44eba469 on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:44:49][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to WSS_Content on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:44:49][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to PSDataAccess database role in WSS_Content on SHAREPOINT-DEV. | Cannot alter the role 'PSDataAccess', because it does not exist or you do not have permission.
+WARNING: [10:44:50][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to PSReportingSchemaAdmin database role in WSS_Content on SHAREPOINT-DEV. | Cannot alter the role 'PSReportingSchemaAdmin', because it does not exist or you do not have permission.
+WARNING: [10:44:50][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in WSS_Content on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:44:50][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in WSS_Content on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:44:51][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to WordAutomationServices_a6dec46cbeb2490ea3626096e0aaad33 on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:44:52][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in WordAutomationServices_a6dec46cbeb2490ea3626096e0aaad33 on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:44:53][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in WordAutomationServices_a6dec46cbeb2490ea3626096e0aaad33 on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:44:53][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to TranslationService_1dd861f2a57640ddb5c5551a0abf6f9c on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:44:55][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in TranslationService_1dd861f2a57640ddb5c5551a0abf6f9c on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:44:55][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in TranslationService_1dd861f2a57640ddb5c5551a0abf6f9c on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:44:56][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to WSS_UsageApplication on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:44:58][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in WSS_UsageApplication on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:44:58][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in WSS_UsageApplication on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:44:59][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to Bdc_Service_DB_234ede2b550c479086da1fddb2a8d705 on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:45:00][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in Bdc_Service_DB_234ede2b550c479086da1fddb2a8d705 on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:45:00][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in Bdc_Service_DB_234ede2b550c479086da1fddb2a8d705 on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:01][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to StateService_e4d9814616df4fec887f6fd4da8ee3e2 on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:45:01][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in StateService_e4d9814616df4fec887f6fd4da8ee3e2 on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:45:02][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in StateService_e4d9814616df4fec887f6fd4da8ee3e2 on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:03][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to WSS_Content_ab701c0a919646928a5d05e5d5c0652a on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:45:04][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to PSDataAccess database role in WSS_Content_ab701c0a919646928a5d05e5d5c0652a on SHAREPOINT-DEV. | Cannot alter the role 'PSDataAccess', because it does not exist or you do not have permission.
+WARNING: [10:45:04][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to PSReportingSchemaAdmin database role in WSS_Content_ab701c0a919646928a5d05e5d5c0652a on SHAREPOINT-DEV. | Cannot alter the role 'PSReportingSchemaAdmin', because it does not exist or you do not have permission.
+WARNING: [10:45:05][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in WSS_Content_ab701c0a919646928a5d05e5d5c0652a on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:45:05][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in WSS_Content_ab701c0a919646928a5d05e5d5c0652a on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:05][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to User Profile Service Application_ProfileDB_5d1ea116e44147e0aba00dcaa6288f5f on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:45:06][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in User Profile Service Application_ProfileDB_5d1ea116e44147e0aba00dcaa6288f5f on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:45:06][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in User Profile Service Application_ProfileDB_5d1ea116e44147e0aba00dcaa6288f5f on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:08][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to User Profile Service Application_SocialDB_20dc2e6998ab4c9894d80741ada7e54b on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:45:09][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in User Profile Service Application_SocialDB_20dc2e6998ab4c9894d80741ada7e54b on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:45:09][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in User Profile Service Application_SocialDB_20dc2e6998ab4c9894d80741ada7e54b on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:12][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to SubscriptionSettingsDatabase_97306b95b1f04f8687ba9e6e498102cc on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:45:13][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in SubscriptionSettingsDatabase_97306b95b1f04f8687ba9e6e498102cc on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:45:13][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in SubscriptionSettingsDatabase_97306b95b1f04f8687ba9e6e498102cc on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:13][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to Subscription on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:45:14][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in Subscription on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:45:14][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in Subscription on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:15][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to Secure_Store_Service_DB_bbbf4530-7ed0-4178-9499-94cda1a827e3 on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:45:15][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in Secure_Store_Service_DB_bbbf4530-7ed0-4178-9499-94cda1a827e3 on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:45:16][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in Secure_Store_Service_DB_bbbf4530-7ed0-4178-9499-94cda1a827e3 on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:16][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to WSS_Content_63aaf266324f47069788fd9b565b7a79 on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:45:17][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to PSDataAccess database role in WSS_Content_63aaf266324f47069788fd9b565b7a79 on SHAREPOINT-DEV. | Cannot alter the role 'PSDataAccess', because it does not exist or you do not have permission.
+WARNING: [10:45:17][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to PSReportingSchemaAdmin database role in WSS_Content_63aaf266324f47069788fd9b565b7a79 on SHAREPOINT-DEV. | Cannot alter the role 'PSReportingSchemaAdmin', because it does not exist or you do not have permission.
+WARNING: [10:45:17][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in WSS_Content_63aaf266324f47069788fd9b565b7a79 on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:45:18][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in WSS_Content_63aaf266324f47069788fd9b565b7a79 on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:21][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk (login: POSTFALLSCITY\michaelk) to AppMng_Service_DB_201716daae2c4e828350ddfe5fa87ea3 on SHAREPOINT-DEV. | User does not have permission to perform this action.
+WARNING: [10:45:22][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SharePoint_Shell_Access database role in AppMng_Service_DB_201716daae2c4e828350ddfe5fa87ea3 on SHAREPOINT-DEV. | Cannot alter the role 'SharePoint_Shell_Access', because it does not exist or you do not have permission.
+WARNING: [10:45:22][Update-SqlPermission] Failed to add POSTFALLSCITY\michaelk to SPDataAccess database role in AppMng_Service_DB_201716daae2c4e828350ddfe5fa87ea3 on SHAREPOINT-DEV. | Cannot alter the role 'SPDataAccess', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "The following exception occurred while trying to enumerate the collection: "An exception occurred while executing a Transact-SQL statement or batch."."
+PS H:\> TerminatingError(): "System error."
+>> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+>> TerminatingError(): "System error."
+WARNING: [10:45:28][Update-SqlPermission] Failed to add POSTFALLSCITY\sp_sql to dbcreator server role on SHAREPOINT-DEV. | Cannot alter the server role 'dbcreator', because it does not exist or you do not have permission.
+WARNING: [10:45:29][Update-SqlPermission] Failed to add POSTFALLSCITY\sp_sql to sysadmin server role on SHAREPOINT-DEV. | Cannot alter the server role 'sysadmin', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "The following exception occurred while trying to enumerate the collection: "An exception occurred while executing a Transact-SQL statement or batch."."
+PS H:\> TerminatingError(): "System error."
+>> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "The following exception occurred while trying to enumerate the collection: "An exception occurred while executing a Transact-SQL statement or batch."."
+PS H:\> TerminatingError(): "System error."
+>> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "Windows NT user or group 'postfallscity\toddr' not found. Check the name again."
+PS H:\> TerminatingError(): "Windows NT user or group 'postfallscity\toddr' not found. Check the name again."
+>> TerminatingError(): "Windows NT user or group 'postfallscity\toddr' not found. Check the name again."
+PS H:\> TerminatingError(): "System error."
+>> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update AppMng_Service_DB_201716daae2c4e828350ddfe5fa87ea3 owner to sa. | Cannot find the database 'AppMng_Service_DB_201716daae2c4e828350ddfe5fa87ea3', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update Bdc_Service_DB_234ede2b550c479086da1fddb2a8d705 owner to sa. | Cannot find the database 'Bdc_Service_DB_234ede2b550c479086da1fddb2a8d705', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update Managed Metadata Service_9869edce1ea143438232aeab6dc4e803 owner to sa. | Cannot find the principal 'sa', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update NintexFormsDB owner to POSTFALLSCITY\sp_farm. | Cannot find the principal 'POSTFALLSCITY\sp_farm', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update NintexWorkflowDB owner to POSTFALLSCITY\sp_farm. | The server principal "POSTFALLSCITY\amalin" is not able to access the database "NintexWorkflowDB" under the current security context.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update Search_Service_Application_1_AnalyticsReportingStoreDB_12d2063a0154443ab78b99c2c422bf61 owner to POSTFALLSCITY\sp_farm. | Cannot find the principal 'POSTFALLSCITY\sp_farm', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update Search_Service_Application_1_AnalyticsReportingStoreDB_f992d36d74cb4402a71990e83a265e24 owner to POSTFALLSCITY\sp_farm. | The server principal "POSTFALLSCITY\amalin" is not able to access the database "Search_Service_Application_1_AnalyticsReportingStoreDB_f992d36d74cb4402a71990e83a265e24" under the current security context.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update Search_Service_Application_1_CrawlStoreDB_35bbab78c14c44e890c18852916b4001 owner to POSTFALLSCITY\sp_farm. | The server principal "POSTFALLSCITY\amalin" is not able to access the database "Search_Service_Application_1_CrawlStoreDB_35bbab78c14c44e890c18852916b4001" under the current security context.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update Search_Service_Application_1_CrawlStoreDB_544f3cec38d249c69be21eaaef52fb8d owner to POSTFALLSCITY\sp_farm. | Cannot find the principal 'POSTFALLSCITY\sp_farm', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update Search_Service_Application_1_DB_ec43a3bafec2482790774a4af91589fc owner to POSTFALLSCITY\sp_farm. | Cannot find the principal 'POSTFALLSCITY\sp_farm', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update Search_Service_Application_1_DB_ee40e1e9b3cb4144bcee48a24121d626 owner to POSTFALLSCITY\sp_farm. | The server principal "POSTFALLSCITY\amalin" is not able to access the database "Search_Service_Application_1_DB_ee40e1e9b3cb4144bcee48a24121d626" under the current security context.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update Search_Service_Application_1_LinksStoreDB_711c6934654343ecbac24b2773aa6b5a owner to POSTFALLSCITY\sp_farm. | The server principal "POSTFALLSCITY\amalin" is not able to access the database "Search_Service_Application_1_LinksStoreDB_711c6934654343ecbac24b2773aa6b5a" under the current security context.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update Search_Service_Application_1_LinksStoreDB_bce93ca17159444ca57df03df5d7acda owner to POSTFALLSCITY\sp_farm. | Cannot find the principal 'POSTFALLSCITY\sp_farm', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update Secure_Store_Service_DB_235e889af2e347b6952d7fd26b8184c7 owner to POSTFALLSCITY\sp_farm. | The server principal "POSTFALLSCITY\amalin" is not able to access the database "Secure_Store_Service_DB_235e889af2e347b6952d7fd26b8184c7" under the current security context.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update Secure_Store_Service_DB_bbbf4530-7ed0-4178-9499-94cda1a827e3 owner to POSTFALLSCITY\sp_farm. | Cannot find the database 'Secure_Store_Service_DB_bbbf4530-7ed0-4178-9499-94cda1a827e3', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:34][Update-SqlDbOwner] Failed to update StateService_e4d9814616df4fec887f6fd4da8ee3e2 owner to POSTFALLSCITY\sp_farm. | Cannot find the database 'StateService_e4d9814616df4fec887f6fd4da8ee3e2', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:35][Update-SqlDbOwner] Failed to update TranslationService_1dd861f2a57640ddb5c5551a0abf6f9c owner to POSTFALLSCITY\sp_farm. | Cannot find the database 'TranslationService_1dd861f2a57640ddb5c5551a0abf6f9c', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:35][Update-SqlDbOwner] Failed to update User Profile Service Application_ProfileDB_5d1ea116e44147e0aba00dcaa6288f5f owner to POSTFALLSCITY\sp_farm. | Cannot find the database 'User Profile Service Application_ProfileDB_5d1ea116e44147e0aba00dcaa6288f5f', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:35][Update-SqlDbOwner] Failed to update User Profile Service Application_SocialDB_20dc2e6998ab4c9894d80741ada7e54b owner to POSTFALLSCITY\sp_farm. | Cannot find the database 'User Profile Service Application_SocialDB_20dc2e6998ab4c9894d80741ada7e54b', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:35][Update-SqlDbOwner] Failed to update User Profile Service Application_SyncDB_7eeb7ae007f44d1981106b8242371a2a owner to POSTFALLSCITY\sp_farm. | Cannot find the principal 'POSTFALLSCITY\sp_farm', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:35][Update-SqlDbOwner] Failed to update WordAutomationServices_a6dec46cbeb2490ea3626096e0aaad33 owner to POSTFALLSCITY\sp_farm. | Cannot find the database 'WordAutomationServices_a6dec46cbeb2490ea3626096e0aaad33', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:35][Update-SqlDbOwner] Failed to update WSS_Content owner to POSTFALLSCITY\sp_farm. | Cannot find the database 'WSS_Content', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:35][Update-SqlDbOwner] Failed to update WSS_Content_63aaf266324f47069788fd9b565b7a79 owner to POSTFALLSCITY\sp_farm. | Cannot find the database 'WSS_Content_63aaf266324f47069788fd9b565b7a79', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:35][Update-SqlDbOwner] Failed to update WSS_Content_ab701c0a919646928a5d05e5d5c0652a owner to POSTFALLSCITY\sp_farm. | Cannot find the database 'WSS_Content_ab701c0a919646928a5d05e5d5c0652a', because it does not exist or you do not have permission.
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:35][Update-SqlDbOwner] Failed to update WSS_UsageApplication owner to POSTFALLSCITY\sp_farm. | Cannot find the database 'WSS_UsageApplication', because it does not exist or you do not have permission.
+WARNING: [10:45:35][Copy-DbaLinkedServer] Not a sysadmin on sharepoint-dev
+PS H:\> TerminatingError(): "System error."
+WARNING: [10:45:43][Copy-DbaSysDbUserObject] Not a sysadmin on sharepoint-dev
+PS H:\> TerminatingError(): "System error."
+**********************
+Windows PowerShell transcript end
+End time: 20210115104543
+**********************

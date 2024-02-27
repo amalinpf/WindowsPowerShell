@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.SharePointOnline.CSOM</id>
+    <version>16.1.23408.12000</version>
+    <authors>Microsoft</authors>
+    <owners>Microsoft,OfficeDeveloperPlatformTeam</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://go.microsoft.com/fwlink/?LinkId=280198</licenseUrl>
+    <projectUrl>https://go.microsoft.com/fwlink/?LinkId=531344</projectUrl>
+    <iconUrl>http://cdn.redmondpie.com/wp-content/uploads/2012/07/MS-Office-2013-logo.png</iconUrl>
+    <description>This package contains SharePoint and Project Client Object Model libraries</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Microsoft Office API SharePoint Client Object Model CSOM Portable Windows8 WindowsPhone8 Windows Project</tags>
+  </metadata>
+</package>

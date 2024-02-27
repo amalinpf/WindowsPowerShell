@@ -1,0 +1,2845 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-SPContentDeploymentJob</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>SPContentDeploymentJob</command:noun>
+      <maml:description>
+        <maml:para>Returns a content deployment job or a collection of content deployment jobs.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-SPContentDeploymentJob cmdlet reads the specified content deployment job. If the Identity parameter is not specified, this cmdlet returns the collection of content deployment jobs on the farm.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-SPContentDeploymentJob</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the content deployment job to get.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment job (for example, DeployJob1); or an instance of a valid SPContentDeploymentJob object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPContentDeploymentJobPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPContentDeploymentJobPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>Path</maml:name>
+          <maml:Description>
+            <maml:para>Specifies that content deployment jobs for only the specified content deployment path are returned.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment job (for example; DeployPath1); or an instance of a valid SPContentDeploymentPath object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPContentDeploymentPathPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPContentDeploymentPathPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>Identity</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the content deployment job to get.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment job (for example, DeployJob1); or an instance of a valid SPContentDeploymentJob object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPContentDeploymentJobPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPContentDeploymentJobPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>Path</maml:name>
+        <maml:Description>
+          <maml:para>Specifies that content deployment jobs for only the specified content deployment path are returned.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment job (for example; DeployPath1); or an instance of a valid SPContentDeploymentPath object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPContentDeploymentPathPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPContentDeploymentPathPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------------- ---------------EXAMPLE-------------- -------------</maml:title>
+        <dev:code>PS C:\&gt;Get-SPContentDeploymentJob -Identity 'Job 1'</dev:code>
+        <dev:remarks>
+          <maml:para>This example returns the content deployment job called Job 1.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-SPContentDeploymentPath</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>SPContentDeploymentPath</command:noun>
+      <maml:description>
+        <maml:para>Returns a content deployment path or a collection of content deployment paths.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-SPContentDeploymentPath cmdlet reads the specified content deployment path. If the Identity parameter is not specified, this cmdlet returns the collection of content deployment paths on the farm.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-SPContentDeploymentPath</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the content deployment path to get.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment path (for example, DeployPath1); or an instance of a valid SPContentDeploymentJob object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPContentDeploymentPathPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPContentDeploymentPathPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>Identity</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the content deployment path to get.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment path (for example, DeployPath1); or an instance of a valid SPContentDeploymentJob object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPContentDeploymentPathPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPContentDeploymentPathPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------------- --------------EXAMPLE-------------- -------------</maml:title>
+        <dev:code>PS C:\&gt;Get-SPContentDeploymentPath -Identity 'Path 1'</dev:code>
+        <dev:remarks>
+          <maml:para>This example returns the content deployment path named Path 1.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-SPSiteSubscriptionEdiscoveryHub</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>SPSiteSubscriptionEdiscoveryHub</command:noun>
+      <maml:description>
+        <maml:para>Displays the eDiscovery hub for a site subscription.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Use the Get-SPSiteSubscriptionEdiscoveryHub cmdlet to display the site collection configured as the eDiscovery hub for the specified site subscription.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-SPSiteSubscriptionEdiscoveryHub</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the URL of the site collections to the eDiscovery hub. Can pipe the result from the Get-SPSiteSubcription cmdlet.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPSiteSubscriptionPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPSiteSubscriptionPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:Description>
+            <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:Description>
+            <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>Identity</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the URL of the site collections to the eDiscovery hub. Can pipe the result from the Get-SPSiteSubcription cmdlet.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPSiteSubscriptionPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPSiteSubscriptionPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:Description>
+          <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:Description>
+          <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------- ------------------EXAMPLE---------------------- -------</maml:title>
+        <dev:code>C:\PS&gt;Get-SPSiteSubscriptionEdiscoveryHub -Identity http://contoso.com</dev:code>
+        <dev:remarks>
+          <maml:para>This example displays the eDiscovery hub for the specified site collection.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-SPSiteSubscriptionEdiscoverySearchScope</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>SPSiteSubscriptionEdiscoverySearchScope</command:noun>
+      <maml:description>
+        <maml:para>Displays the search scope for the eDiscovery hub of the specified site collection.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Use the Get-SPSiteSubscriptionEdiscoverySearchScope cmdlet to retrieve the search scope that has been configured for the eDiscovery hub of the specified site subscription.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-SPSiteSubscriptionEdiscoverySearchScope</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the URL to the group of site collections that contained the search scope.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPSiteSubscriptionPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPSiteSubscriptionPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:Description>
+            <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:Description>
+            <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>Identity</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the URL to the group of site collections that contained the search scope.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPSiteSubscriptionPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPSiteSubscriptionPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:Description>
+          <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:Description>
+          <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------- -------------------EXAMPLE-------------------- --------</maml:title>
+        <dev:code>C:\PS&gt;Get-SPSiteSubscriptionEdiscoverySearchScope - Identity http://contoso.com</dev:code>
+        <dev:remarks>
+          <maml:para>This example displays the search scope for the eDiscovery hub for the specified site collection.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-SPContentDeploymentJob</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>SPContentDeploymentJob</command:noun>
+      <maml:description>
+        <maml:para>Creates a content deployment job.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The New-SPContentDeploymentJob cmdlet adds a new content deployment job to a farm.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-SPContentDeploymentJob</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the name of the new content deployment job.</maml:para>
+            <maml:para>The type must be a valid name of a content deployment job; for example, DeployJob1.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SPContentDeploymentPath</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the deployment path to associate with the new deployment job.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment job (for example; DeployJob1); or an instance of a valid SPContentDeploymentJob object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPContentDeploymentPathPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPContentDeploymentPathPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:Description>
+            <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Description</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the description for the content deployment job. The name can be a maximum of 4096 alphanumeric characters.</maml:para>
+            <maml:para>The type must be a valid string.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>EmailAddresses</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the e-mail addresses of individuals who receive notification e-mails about this ContentDeploymentJob object.</maml:para>
+            <maml:para>The type must be a list of valid e-mail addresses.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>EmailNotifications</maml:name>
+          <maml:Description>
+            <maml:para>Specifies how e-mail notifications are sent about this ContentDeploymentJob object.</maml:para>
+            <maml:para>The type must be one of the following:</maml:para>
+            <maml:para>-Never specifies that e-mail notifications will not be sent when a job succeeds or fails.</maml:para>
+            <maml:para>- SendEmailOnSuccess specifies that e-mail notifications will be sent if a content deployment job succeeds.</maml:para>
+            <maml:para>- SendEmailOnFailure specifies that e-mail notifications will be sent if a content deployment job fails.</maml:para>
+            <maml:para>- SendEmailOnAlways specifies that e-mail notifications will be sent when a job succeeds or fails.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ContentDeploymentNotificationSettings</command:parameterValue>
+          <dev:type>
+            <maml:name>ContentDeploymentNotificationSettings</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>HostingSupportEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Enables special hosting- behavior. The default value is False.</maml:para>
+            <maml:para>Normally, a content deployment job is enabled or disabled by using the SharePoint Central Administration Web site. However, in the case of hosting, the tenant administrator does not have permissions to access the Central Administration page to configure jobs. Therefore, when the HostingSupportEnabled parameter is set to True, the hoster creates the job, so that tenants can enable or disable their deployment jobs from their tenant administration site.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>IncrementalEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Specifies that only incremental changes are deployed to the destination site collection.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Schedule</maml:name>
+          <maml:Description>
+            <maml:para>Sets the schedule for the deployment job.</maml:para>
+            <maml:para>The type must be a valid SPSchedule object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ScheduleEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Specifies to enable the schedule for the deployment job. If the schedule is not enabled the job can be run only manually.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Scope</maml:name>
+          <maml:Description>
+            <maml:para>Sets the scope of the deployment job. SPSites passed in must exist in the current path of the source site collection. The default scope is the entire site collection. Valid values include an SPWeb object or an array of SPWeb objects.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a SharePoint Foundation Web site (for example, MySPSite1); or an instance of a valid SPWeb object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPWebPipeBind[]</command:parameterValue>
+          <dev:type>
+            <maml:name>SPWebPipeBind[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SqlSnapshotSetting</maml:name>
+          <maml:Description>
+            <maml:para>Creates a database snapshot of the source SharePoint Foundation content database to use for the export process.</maml:para>
+            <maml:para>The type must be one of the following values:</maml:para>
+            <maml:para>- None</maml:para>
+            <maml:para>- CreateNew</maml:para>
+            <maml:para></maml:para>
+            <maml:para>The CreateNew value requires thatSQL Server Enterprise Edition be installed.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ContentDeploymentSqlSnapshotSetting</command:parameterValue>
+          <dev:type>
+            <maml:name>ContentDeploymentSqlSnapshotSetting</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:Description>
+            <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the name of the new content deployment job.</maml:para>
+          <maml:para>The type must be a valid name of a content deployment job; for example, DeployJob1.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SPContentDeploymentPath</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the deployment path to associate with the new deployment job.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment job (for example; DeployJob1); or an instance of a valid SPContentDeploymentJob object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPContentDeploymentPathPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPContentDeploymentPathPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:Description>
+          <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Description</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the description for the content deployment job. The name can be a maximum of 4096 alphanumeric characters.</maml:para>
+          <maml:para>The type must be a valid string.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>EmailAddresses</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the e-mail addresses of individuals who receive notification e-mails about this ContentDeploymentJob object.</maml:para>
+          <maml:para>The type must be a list of valid e-mail addresses.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>EmailNotifications</maml:name>
+        <maml:Description>
+          <maml:para>Specifies how e-mail notifications are sent about this ContentDeploymentJob object.</maml:para>
+          <maml:para>The type must be one of the following:</maml:para>
+          <maml:para>-Never specifies that e-mail notifications will not be sent when a job succeeds or fails.</maml:para>
+          <maml:para>- SendEmailOnSuccess specifies that e-mail notifications will be sent if a content deployment job succeeds.</maml:para>
+          <maml:para>- SendEmailOnFailure specifies that e-mail notifications will be sent if a content deployment job fails.</maml:para>
+          <maml:para>- SendEmailOnAlways specifies that e-mail notifications will be sent when a job succeeds or fails.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ContentDeploymentNotificationSettings</command:parameterValue>
+        <dev:type>
+          <maml:name>ContentDeploymentNotificationSettings</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>HostingSupportEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Enables special hosting- behavior. The default value is False.</maml:para>
+          <maml:para>Normally, a content deployment job is enabled or disabled by using the SharePoint Central Administration Web site. However, in the case of hosting, the tenant administrator does not have permissions to access the Central Administration page to configure jobs. Therefore, when the HostingSupportEnabled parameter is set to True, the hoster creates the job, so that tenants can enable or disable their deployment jobs from their tenant administration site.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>IncrementalEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Specifies that only incremental changes are deployed to the destination site collection.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Schedule</maml:name>
+        <maml:Description>
+          <maml:para>Sets the schedule for the deployment job.</maml:para>
+          <maml:para>The type must be a valid SPSchedule object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ScheduleEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Specifies to enable the schedule for the deployment job. If the schedule is not enabled the job can be run only manually.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Scope</maml:name>
+        <maml:Description>
+          <maml:para>Sets the scope of the deployment job. SPSites passed in must exist in the current path of the source site collection. The default scope is the entire site collection. Valid values include an SPWeb object or an array of SPWeb objects.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a SharePoint Foundation Web site (for example, MySPSite1); or an instance of a valid SPWeb object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPWebPipeBind[]</command:parameterValue>
+        <dev:type>
+          <maml:name>SPWebPipeBind[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SqlSnapshotSetting</maml:name>
+        <maml:Description>
+          <maml:para>Creates a database snapshot of the source SharePoint Foundation content database to use for the export process.</maml:para>
+          <maml:para>The type must be one of the following values:</maml:para>
+          <maml:para>- None</maml:para>
+          <maml:para>- CreateNew</maml:para>
+          <maml:para></maml:para>
+          <maml:para>The CreateNew value requires thatSQL Server Enterprise Edition be installed.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ContentDeploymentSqlSnapshotSetting</command:parameterValue>
+        <dev:type>
+          <maml:name>ContentDeploymentSqlSnapshotSetting</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:Description>
+          <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>--------- ------------------EXAMPLE------------------ ---------</maml:title>
+        <dev:code>C:\PS&gt;Get-SPContentDeploymentPath "Path 1" | New-SPContentDeploymentJob -Name "Deployment Job" -SPContentDeploymentPath $_ -IncrementalEnabled:$true -ScheduleEnabled:$false</dev:code>
+        <dev:remarks>
+          <maml:para>This example creates a new content deployment job called Deployment Job by using the deployment path Path 1. The job is configured to be an incremental job with no schedule.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-SPContentDeploymentPath</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>SPContentDeploymentPath</command:noun>
+      <maml:description>
+        <maml:para>Creates a new content deployment path.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The New-SPContentDeploymentPath cmdlet adds a new content deployment path for a content deployment job.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-SPContentDeploymentPath</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DestinationCentralAdministrationURL</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the SharePoint Central Administration URL for the destination farm.</maml:para>
+            <maml:para>The type must be a valid URL, in the form http://server_name.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Uri</command:parameterValue>
+          <dev:type>
+            <maml:name>Uri</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DestinationSPSite</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the destination site collection.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid URL, in the form http://server_name; or an instance of a valid SPSite object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DestinationSPWebApplication</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the destination Web application.</maml:para>
+            <maml:para>The type must be a valid URL, in the form http://server_name; a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of Web application (for example, MyOfficeApp1); or an instance of a valid SPWebApplication object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Uri</command:parameterValue>
+          <dev:type>
+            <maml:name>Uri</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the name of the new content deployment path.</maml:para>
+            <maml:para>The type must be a valid name of a content deployment path; for example, DeployPath1.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PathAccount</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the user ID that is an administrator on the Central Administration page on the destination farm.</maml:para>
+            <maml:para>The type must be a valid SharePoint user.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+          <dev:type>
+            <maml:name>PSCredential</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SourceSPSite</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the source site collection for the deployment path. Must be a site collection in the source specified in the SourceSPWebApplication parameter.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid URL, in the form http://server_name; or an instance of a valid SPSite object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPSitePipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPSitePipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SourceSPWebApplication</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the source Web application for the deployment path.</maml:para>
+            <maml:para>The type must be a valid URL, in the form http://server_name; a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of SharePoint Web application (for example, MyOfficeApp1); or an instance of a valid SPWebApplication object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPWebApplicationPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPWebApplicationPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Authentication</maml:name>
+          <maml:Description>
+            <maml:para>Sets the Windows-based authentication type that the source front-end Web server uses to communicate with the destination Web application.</maml:para>
+            <maml:para>The type must be one of the following values: WindowsAuth or BasicAuth.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">PathAuthenticationOption</command:parameterValue>
+          <dev:type>
+            <maml:name>PathAuthenticationOption</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>CompressionEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Turns on compression during the export.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:Description>
+            <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DeploySecurityInformation</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the user and group information to include during the export operation for this content deployment path. The default value is All.</maml:para>
+            <maml:para>The type must be one of the following values: None, All, or WssOnly- Applies only SharePoint Foundation security settings. Includes user memberships and role assignments such as default roles, for example, Web Designer or any custom roles that extend from the default roles. The access control list (ACL) for each object is migrated. No user information defined in the DAP or LDAP servers is included.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPIncludeSecurity</command:parameterValue>
+          <dev:type>
+            <maml:name>SPIncludeSecurity</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DeployUserNamesEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Specifies whether to include user names during a deployment.</maml:para>
+            <maml:para>Valid values are one of the following:</maml:para>
+            <maml:para>- $True Retains the original author and editor information, time and date stamp, and user lookup value.</maml:para>
+            <maml:para>- $False Retains the original date and time stamp, but replaces the author and editor data with the System Account, and replaces the user lookup value with an empty string ("").</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Description</maml:name>
+          <maml:Description>
+            <maml:para>Sets the description for the content deployment path. The description can contain a maximum of 4096 alphanumeric characters.</maml:para>
+            <maml:para>The type must be a valid string.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>EventReceiversEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Turns on event receivers during import.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>KeepTemporaryFilesOptions</maml:name>
+          <maml:Description>
+            <maml:para>Specifies that temporary files are kept after content deployment is finished.</maml:para>
+            <maml:para>The type must be one of the following values: Never, Always, or OnFailure.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">TemporaryFilesOption</command:parameterValue>
+          <dev:type>
+            <maml:name>TemporaryFilesOption</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PathEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Enables the new content deployment path.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:Description>
+            <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DestinationCentralAdministrationURL</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the SharePoint Central Administration URL for the destination farm.</maml:para>
+          <maml:para>The type must be a valid URL, in the form http://server_name.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Uri</command:parameterValue>
+        <dev:type>
+          <maml:name>Uri</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DestinationSPSite</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the destination site collection.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid URL, in the form http://server_name; or an instance of a valid SPSite object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DestinationSPWebApplication</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the destination Web application.</maml:para>
+          <maml:para>The type must be a valid URL, in the form http://server_name; a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of Web application (for example, MyOfficeApp1); or an instance of a valid SPWebApplication object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Uri</command:parameterValue>
+        <dev:type>
+          <maml:name>Uri</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the name of the new content deployment path.</maml:para>
+          <maml:para>The type must be a valid name of a content deployment path; for example, DeployPath1.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PathAccount</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the user ID that is an administrator on the Central Administration page on the destination farm.</maml:para>
+          <maml:para>The type must be a valid SharePoint user.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+        <dev:type>
+          <maml:name>PSCredential</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SourceSPSite</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the source site collection for the deployment path. Must be a site collection in the source specified in the SourceSPWebApplication parameter.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid URL, in the form http://server_name; or an instance of a valid SPSite object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPSitePipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPSitePipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SourceSPWebApplication</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the source Web application for the deployment path.</maml:para>
+          <maml:para>The type must be a valid URL, in the form http://server_name; a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of SharePoint Web application (for example, MyOfficeApp1); or an instance of a valid SPWebApplication object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPWebApplicationPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPWebApplicationPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Authentication</maml:name>
+        <maml:Description>
+          <maml:para>Sets the Windows-based authentication type that the source front-end Web server uses to communicate with the destination Web application.</maml:para>
+          <maml:para>The type must be one of the following values: WindowsAuth or BasicAuth.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">PathAuthenticationOption</command:parameterValue>
+        <dev:type>
+          <maml:name>PathAuthenticationOption</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>CompressionEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Turns on compression during the export.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:Description>
+          <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DeploySecurityInformation</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the user and group information to include during the export operation for this content deployment path. The default value is All.</maml:para>
+          <maml:para>The type must be one of the following values: None, All, or WssOnly- Applies only SharePoint Foundation security settings. Includes user memberships and role assignments such as default roles, for example, Web Designer or any custom roles that extend from the default roles. The access control list (ACL) for each object is migrated. No user information defined in the DAP or LDAP servers is included.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPIncludeSecurity</command:parameterValue>
+        <dev:type>
+          <maml:name>SPIncludeSecurity</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DeployUserNamesEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Specifies whether to include user names during a deployment.</maml:para>
+          <maml:para>Valid values are one of the following:</maml:para>
+          <maml:para>- $True Retains the original author and editor information, time and date stamp, and user lookup value.</maml:para>
+          <maml:para>- $False Retains the original date and time stamp, but replaces the author and editor data with the System Account, and replaces the user lookup value with an empty string ("").</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Description</maml:name>
+        <maml:Description>
+          <maml:para>Sets the description for the content deployment path. The description can contain a maximum of 4096 alphanumeric characters.</maml:para>
+          <maml:para>The type must be a valid string.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>EventReceiversEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Turns on event receivers during import.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>KeepTemporaryFilesOptions</maml:name>
+        <maml:Description>
+          <maml:para>Specifies that temporary files are kept after content deployment is finished.</maml:para>
+          <maml:para>The type must be one of the following values: Never, Always, or OnFailure.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">TemporaryFilesOption</command:parameterValue>
+        <dev:type>
+          <maml:name>TemporaryFilesOption</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PathEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Enables the new content deployment path.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:Description>
+          <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------- -----------------EXAMPLE---------------------- --------</maml:title>
+        <dev:code>C:\PS&gt;$source = Get-SPSite "http://source/"
+
+C:\PS&gt;$credentials=Get-Credential
+
+C:\PS&gt;New-SPContentDeploymentPath -Name "Deployment Path" -SourceSPWebApplication $source.WebApplication -SourceSPSite $source DestinationCentralAdministrationURL "http://destination:8080" -DestinationSPWebApplication "http://destination" -DestinationSPSite "http://destination" -KeepTemporaryFilesOptions "Failure" -PathAccount $credentials -PathEnabled:$true</dev:code>
+        <dev:remarks>
+          <maml:para>This example creates a new deployment path called Deployment Path that connects a source at http://source to a destination at http://destination. The path is enabled and configured to keep temporary files on job failure.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Remove-SPContentDeploymentJob</command:name>
+      <command:verb>Remove</command:verb>
+      <command:noun>SPContentDeploymentJob</command:noun>
+      <maml:description>
+        <maml:para>Removes a content deployment job.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `Remove-SPContentDeploymentJob` cmdlet removes a content deployment job.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Remove-SPContentDeploymentJob</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the content deployment job to remove. The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment job (for example; DeployJob1); or an instance of a valid SPContentDeploymentJob object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPContentDeploymentJobPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPContentDeploymentJobPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:Description>
+            <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:Description>
+            <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>Identity</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the content deployment job to remove. The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment job (for example; DeployJob1); or an instance of a valid SPContentDeploymentJob object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPContentDeploymentJobPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPContentDeploymentJobPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:Description>
+          <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:Description>
+          <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>--------- -------------------EXAMPLE------------------ ---------</maml:title>
+        <dev:code>C:\PS&gt;Remove-SPContentDeploymentJob -Identity "DeployJob1"</dev:code>
+        <dev:remarks>
+          <maml:para>This example removes a deployment job named DeployJob1.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Remove-SPContentDeploymentPath</command:name>
+      <command:verb>Remove</command:verb>
+      <command:noun>SPContentDeploymentPath</command:noun>
+      <maml:description>
+        <maml:para>Removes a content deployment path.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `Remove-SPContentDeploymentPath` cmdlet removes a content deployment path.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Remove-SPContentDeploymentPath</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the content deployment path to remove. The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment path (for example; DeployPath1); or an instance of a valid SPContentDeploymentPath object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPContentDeploymentPathPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPContentDeploymentPathPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:Description>
+            <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:Description>
+            <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>Identity</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the content deployment path to remove. The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment path (for example; DeployPath1); or an instance of a valid SPContentDeploymentPath object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPContentDeploymentPathPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPContentDeploymentPathPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:Description>
+          <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:Description>
+          <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------ --------------------EXAMPLE----------------------- ------</maml:title>
+        <dev:code>C:\PS&gt;Remove-SPContentDeploymentPath -Path1</dev:code>
+        <dev:remarks>
+          <maml:para>This example removes a content path named Path1.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-SPContentDeploymentJob</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>SPContentDeploymentJob</command:noun>
+      <maml:description>
+        <maml:para>Sets properties of a content deployment job.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `Set-SPContentDeploymentJob` cmdlet sets the properties of a content deployment job.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-SPContentDeploymentJob</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the content deployment job to update.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment job (for example, DeployJob1); or an instance of a valid SPContentDeploymentJob object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPContentDeploymentJobPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPContentDeploymentJobPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:Description>
+            <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>Description</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the description for the content deployment job. The name can be a maximum of 4096 alphanumeric characters.</maml:para>
+            <maml:para>The type must be a valid string.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>EmailAddresses</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the e-mail addresses of individuals who receive notification e-mails about this ContentDeploymentJob object.</maml:para>
+            <maml:para>The type must be a list of valid e-mail addresses.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>EmailNotifications</maml:name>
+          <maml:Description>
+            <maml:para>Specifies how e-mail notifications are sent about this ContentDeploymentJob object.</maml:para>
+            <maml:para>The type must be one of the following:</maml:para>
+            <maml:para>-Never specifies that e-mail notifications will not be sent when a job succeeds or fails.</maml:para>
+            <maml:para>- Success specifies that e-mail notifications will be sent if a content deployment job succeeds.</maml:para>
+            <maml:para>- Failure specifies that e-mail notifications will be sent if a content deployment job fails.</maml:para>
+            <maml:para>- Always specifies that e-mail notifications will be sent when a job succeeds or fails.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ContentDeploymentNotificationSettings</command:parameterValue>
+          <dev:type>
+            <maml:name>ContentDeploymentNotificationSettings</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>HostingSupportEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Enables special hosting behavior. The default value is False.</maml:para>
+            <maml:para>Normally, a content deployment job is enabled or disabled by using the SharePoint Central Administration Web site. However, in the case of hosting, the tenant administrator does not have permissions to access the Central Administration page to configure jobs. Therefore, when the HostingSupportEnabled parameter is set to True, the hoster creates the job, so that tenants can enable or disable their deployment jobs from their tenant administration site.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>IncrementalEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Specifies that only incremental changes are deployed to the destination site collection.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the name of the new content deployment job.</maml:para>
+            <maml:para>The type must be a valid name of a content deployment job; for example, DeployJob1.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Schedule</maml:name>
+          <maml:Description>
+            <maml:para>Sets the schedule for the deployment job.</maml:para>
+            <maml:para>The type must be a valid SPSchedule object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ScheduleEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Enables the schedule for the deployment job. If the schedule is not enabled, the job can be run manually only.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Scope</maml:name>
+          <maml:Description>
+            <maml:para>Sets the scope of the deployment job. SPSite objects that are passed in must exist in the current path of the source site collection. The default scope is the entire site collection. Valid values include a SPWeb object or an array of SPWeb objects.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a SharePoint Foundation Web site (for example, MySPSite1); or an instance of a valid SPWeb object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPWebPipeBind[]</command:parameterValue>
+          <dev:type>
+            <maml:name>SPWebPipeBind[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SqlSnapshotSetting</maml:name>
+          <maml:Description>
+            <maml:para>Backs up the SharePoint Foundation content database by using SQL Server.</maml:para>
+            <maml:para>The type must be one of the following values: None or CreateNew.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ContentDeploymentSqlSnapshotSetting</command:parameterValue>
+          <dev:type>
+            <maml:name>ContentDeploymentSqlSnapshotSetting</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:Description>
+            <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>Identity</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the content deployment job to update.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment job (for example, DeployJob1); or an instance of a valid SPContentDeploymentJob object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPContentDeploymentJobPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPContentDeploymentJobPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:Description>
+          <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>Description</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the description for the content deployment job. The name can be a maximum of 4096 alphanumeric characters.</maml:para>
+          <maml:para>The type must be a valid string.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>EmailAddresses</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the e-mail addresses of individuals who receive notification e-mails about this ContentDeploymentJob object.</maml:para>
+          <maml:para>The type must be a list of valid e-mail addresses.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>EmailNotifications</maml:name>
+        <maml:Description>
+          <maml:para>Specifies how e-mail notifications are sent about this ContentDeploymentJob object.</maml:para>
+          <maml:para>The type must be one of the following:</maml:para>
+          <maml:para>-Never specifies that e-mail notifications will not be sent when a job succeeds or fails.</maml:para>
+          <maml:para>- Success specifies that e-mail notifications will be sent if a content deployment job succeeds.</maml:para>
+          <maml:para>- Failure specifies that e-mail notifications will be sent if a content deployment job fails.</maml:para>
+          <maml:para>- Always specifies that e-mail notifications will be sent when a job succeeds or fails.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ContentDeploymentNotificationSettings</command:parameterValue>
+        <dev:type>
+          <maml:name>ContentDeploymentNotificationSettings</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>HostingSupportEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Enables special hosting behavior. The default value is False.</maml:para>
+          <maml:para>Normally, a content deployment job is enabled or disabled by using the SharePoint Central Administration Web site. However, in the case of hosting, the tenant administrator does not have permissions to access the Central Administration page to configure jobs. Therefore, when the HostingSupportEnabled parameter is set to True, the hoster creates the job, so that tenants can enable or disable their deployment jobs from their tenant administration site.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>IncrementalEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Specifies that only incremental changes are deployed to the destination site collection.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the name of the new content deployment job.</maml:para>
+          <maml:para>The type must be a valid name of a content deployment job; for example, DeployJob1.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Schedule</maml:name>
+        <maml:Description>
+          <maml:para>Sets the schedule for the deployment job.</maml:para>
+          <maml:para>The type must be a valid SPSchedule object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ScheduleEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Enables the schedule for the deployment job. If the schedule is not enabled, the job can be run manually only.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Scope</maml:name>
+        <maml:Description>
+          <maml:para>Sets the scope of the deployment job. SPSite objects that are passed in must exist in the current path of the source site collection. The default scope is the entire site collection. Valid values include a SPWeb object or an array of SPWeb objects.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a SharePoint Foundation Web site (for example, MySPSite1); or an instance of a valid SPWeb object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPWebPipeBind[]</command:parameterValue>
+        <dev:type>
+          <maml:name>SPWebPipeBind[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SqlSnapshotSetting</maml:name>
+        <maml:Description>
+          <maml:para>Backs up the SharePoint Foundation content database by using SQL Server.</maml:para>
+          <maml:para>The type must be one of the following values: None or CreateNew.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ContentDeploymentSqlSnapshotSetting</command:parameterValue>
+        <dev:type>
+          <maml:name>ContentDeploymentSqlSnapshotSetting</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:Description>
+          <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>---------- -----------------EXAMPLE------------------ ----------</maml:title>
+        <dev:code>C:\PS&gt;Get-SPContentDeploymentJob "Job 1" | Set-SPContentDeploymentJob -Schedule "hourly between 0 and 59" -ScheduleEnabled:$true</dev:code>
+        <dev:remarks>
+          <maml:para>This example sets the deployment job called Job 1 to run hourly.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-SPContentDeploymentPath</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>SPContentDeploymentPath</command:noun>
+      <maml:description>
+        <maml:para>Sets properties of a content deployment path.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `Set-SPContentDeploymentPath` cmdlet sets the properties of a content deployment path for a content deployment job.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-SPContentDeploymentPath</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the content deployment path to update.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment job (for example; DeployPath1); or an instance of a valid SPContentDeploymentPath object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPContentDeploymentPathPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPContentDeploymentPathPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Authentication</maml:name>
+          <maml:Description>
+            <maml:para>Sets the Windows-based authentication type that the source front-end Web server uses to communicate with the destination Web application.</maml:para>
+            <maml:para>The type must be one of the following values: WindowsAuth or BasicAuth.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">PathAuthenticationOption</command:parameterValue>
+          <dev:type>
+            <maml:name>PathAuthenticationOption</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>CompressionEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Turns on compression during the export.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DeploySecurityInformation</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the user and group information to include during the export operation for this content deployment path. The default value is All.</maml:para>
+            <maml:para>The type must be one of the following values: None, All, or WssOnly- Applies only SharePoint Foundation security settings. Includes user memberships and role assignments such as default roles, for example, Web Designer or any custom roles that extend from the default roles. The access control list (ACL) for each object is migrated. No user information defined in the DAP or LDAP servers is included.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPIncludeSecurity</command:parameterValue>
+          <dev:type>
+            <maml:name>SPIncludeSecurity</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DeployUserNamesEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Specify to enable event receivers during import.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>Description</maml:name>
+          <maml:Description>
+            <maml:para>Sets the description for the content deployment path. The description can contain a maximum of 4096 alphanumeric characters.</maml:para>
+            <maml:para>The type must be a valid string.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DestinationCentralAdministrationURL</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the SharePoint Central Administration URL for the destination farm.</maml:para>
+            <maml:para>The type must be a valid URL, in the form http://server_name.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Uri</command:parameterValue>
+          <dev:type>
+            <maml:name>Uri</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>EventReceiversEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Turns on event receivers during import.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>KeepTemporaryFilesOptions</maml:name>
+          <maml:Description>
+            <maml:para>Specifies that temporary files are kept after content deployment is finished.</maml:para>
+            <maml:para>The type must be one of the following values: Never, Always, or OnFailure.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">TemporaryFilesOption</command:parameterValue>
+          <dev:type>
+            <maml:name>TemporaryFilesOption</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the name of the content deployment path.</maml:para>
+            <maml:para>The type must be a valid name of a content deployment path; for example, DeploymentPath1.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PathAccount</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the user ID that is an administrator on the Central Administration page on the destination farm.</maml:para>
+            <maml:para>The type must be a valid SharePoint user.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+          <dev:type>
+            <maml:name>PSCredential</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PathEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Enables the content deployment path.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:Description>
+            <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:Description>
+            <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>Identity</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the content deployment path to update.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment job (for example; DeployPath1); or an instance of a valid SPContentDeploymentPath object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPContentDeploymentPathPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPContentDeploymentPathPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Authentication</maml:name>
+        <maml:Description>
+          <maml:para>Sets the Windows-based authentication type that the source front-end Web server uses to communicate with the destination Web application.</maml:para>
+          <maml:para>The type must be one of the following values: WindowsAuth or BasicAuth.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">PathAuthenticationOption</command:parameterValue>
+        <dev:type>
+          <maml:name>PathAuthenticationOption</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>CompressionEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Turns on compression during the export.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DeploySecurityInformation</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the user and group information to include during the export operation for this content deployment path. The default value is All.</maml:para>
+          <maml:para>The type must be one of the following values: None, All, or WssOnly- Applies only SharePoint Foundation security settings. Includes user memberships and role assignments such as default roles, for example, Web Designer or any custom roles that extend from the default roles. The access control list (ACL) for each object is migrated. No user information defined in the DAP or LDAP servers is included.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPIncludeSecurity</command:parameterValue>
+        <dev:type>
+          <maml:name>SPIncludeSecurity</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DeployUserNamesEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Specify to enable event receivers during import.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>Description</maml:name>
+        <maml:Description>
+          <maml:para>Sets the description for the content deployment path. The description can contain a maximum of 4096 alphanumeric characters.</maml:para>
+          <maml:para>The type must be a valid string.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DestinationCentralAdministrationURL</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the SharePoint Central Administration URL for the destination farm.</maml:para>
+          <maml:para>The type must be a valid URL, in the form http://server_name.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Uri</command:parameterValue>
+        <dev:type>
+          <maml:name>Uri</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>EventReceiversEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Turns on event receivers during import.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>KeepTemporaryFilesOptions</maml:name>
+        <maml:Description>
+          <maml:para>Specifies that temporary files are kept after content deployment is finished.</maml:para>
+          <maml:para>The type must be one of the following values: Never, Always, or OnFailure.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">TemporaryFilesOption</command:parameterValue>
+        <dev:type>
+          <maml:name>TemporaryFilesOption</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the name of the content deployment path.</maml:para>
+          <maml:para>The type must be a valid name of a content deployment path; for example, DeploymentPath1.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PathAccount</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the user ID that is an administrator on the Central Administration page on the destination farm.</maml:para>
+          <maml:para>The type must be a valid SharePoint user.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+        <dev:type>
+          <maml:name>PSCredential</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PathEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Enables the content deployment path.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:Description>
+          <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:Description>
+          <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------- --------------------EXAMPLE--------------------- -------</maml:title>
+        <dev:code>C:\PS&gt;Get-SPContentDeploymentPath "Path 1" | Set-SPContentDeploymentPath -PathEnabled:$false</dev:code>
+        <dev:remarks>
+          <maml:para>This example sets the deployment path Path 1 to be disabled.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-SPSiteSubscriptionEdiscoveryHub</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>SPSiteSubscriptionEdiscoveryHub</command:noun>
+      <maml:description>
+        <maml:para>Sets properties for the eDiscovery hub of a site subscription.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `Set-SPSiteSubscriptionEdiscoveryHub` cmdlet sets global properties and settings for the Ediscovery hub.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-SPSiteSubscriptionEdiscoveryHub</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>Site</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the site collection for the Ediscovery hub.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPSitePipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPSitePipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:Description>
+            <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>SearchScope</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the name for the search scope. The default value is All Sites.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:Description>
+            <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>Site</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the site collection for the Ediscovery hub.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPSitePipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPSitePipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:Description>
+          <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>SearchScope</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the name for the search scope. The default value is All Sites.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:Description>
+          <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------- --------------------EXAMPLE-------------------- -------</maml:title>
+        <dev:code>C:\PS&gt;Set-SPSiteSubscriptionEdiscoverySearchScope -Site http://contoso.com/sites/sitecollection1 -SearchScope 1</dev:code>
+        <dev:remarks>
+          <maml:para>This example enables the search scope for the entire site subscription. A value of zero (0) disables the search scope across the entire site subscription.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Start-SPContentDeploymentJob</command:name>
+      <command:verb>Start</command:verb>
+      <command:noun>SPContentDeploymentJob</command:noun>
+      <maml:description>
+        <maml:para>Starts a content deployment job.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `Start-SPContentDeploymentJob` cmdlet starts a content deployment job.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Start-SPContentDeploymentJob</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="1" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the content deployment job to run.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment job (for example, DeployJob1); or an instance of a valid SPContentDeploymentJob object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPContentDeploymentJobPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPContentDeploymentJobPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:Description>
+            <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DeploySinceTime</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the date to use to determine what changes to export incrementally. This parameter is ignored if the deployment job type is full.</maml:para>
+            <maml:para>The type must be a valid DateTime type, in the form 2010,12,05.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>TestEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Runs the content deployment job in test mode only.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>WaitEnabled</maml:name>
+          <maml:Description>
+            <maml:para>Specifies that the command is not returned until the operation is complete.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:Description>
+            <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UseSpecificSnapshot</maml:name>
+          <maml:Description>
+            <maml:para>Use a snapshot of the named Content Database.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="1" aliases="none">
+        <maml:name>Identity</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the content deployment job to run.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a content deployment job (for example, DeployJob1); or an instance of a valid SPContentDeploymentJob object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPContentDeploymentJobPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPContentDeploymentJobPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:Description>
+          <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DeploySinceTime</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the date to use to determine what changes to export incrementally. This parameter is ignored if the deployment job type is full.</maml:para>
+          <maml:para>The type must be a valid DateTime type, in the form 2010,12,05.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>TestEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Runs the content deployment job in test mode only.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>WaitEnabled</maml:name>
+        <maml:Description>
+          <maml:para>Specifies that the command is not returned until the operation is complete.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:Description>
+          <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>UseSpecificSnapshot</maml:name>
+        <maml:Description>
+          <maml:para>Use a snapshot of the named Content Database.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------------ --------------EXAMPLE----------------- ------------</maml:title>
+        <dev:code>PS C:\&gt;Get-SPContentDeploymentPath "Path 1" | New-SPContentDeploymentJob -Name "Job 1" -SPContentDeploymentPath $_ -IncrementalEnabled:$true -ScheduleEnabled:$false | Start-SPContentDeploymentJob</dev:code>
+        <dev:remarks>
+          <maml:para>This example creates a content deployment job Job 1 and runs it immediately.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+</helpItems>

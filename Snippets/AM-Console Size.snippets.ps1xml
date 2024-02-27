@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+    <Snippets  xmlns='http://schemas.microsoft.com/PowerShell/Snippets'>
+        <Snippet Version='1.0.0'>
+            <Header>
+                <Title>AM-Console Size</Title>
+                <Description>To stop line wrapping in output</Description>
+                <Author>Art Malin</Author>
+                <SnippetTypes>
+                    <SnippetType>Expansion</SnippetType>
+                </SnippetTypes>
+            </Header>
+
+            <Code>
+                <Script Language='PowerShell' CaretOffset='0'>
+                    <![CDATA[ 
+#buffer (otherwise e.g. columns are cut off on the right)
+$buffer = $host.ui.RawUI.BufferSize; 
+$buffer.width = 3000; 
+$buffer.height = 3000; 
+$host.UI.RawUI.Set_BufferSize($buffer)
+]]>
+                </Script>
+            </Code>
+
+    </Snippet>
+</Snippets>
+

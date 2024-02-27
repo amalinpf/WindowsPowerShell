@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../sharepoint/SP Scripts"
+		}
+	],
+	"settings": {
+		"powershell.cwd": "WindowsPowerShell",
+		"explorer.compactFolders": false,
+		"explorer.decorations.badges": false,
+		"explorer.openEditors.sortOrder": "alphabetical",
+		"explorer.sortOrder": "default"
+	}
+}

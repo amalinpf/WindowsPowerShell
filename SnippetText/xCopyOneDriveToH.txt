@@ -1,0 +1,7 @@
+﻿
+$OneDrive = "\\amalin-pc\c$\Users\amalin\OneDrive - postfallsidaho.org\Documents\WindowsPowerShell\Snippets"
+$H = "\\triumph\homes$\amalin\Documents\WindowsPowerShell\Snippets"
+
+robocopy `"$H`" `"$OneDrive`" /XO
+robocopy `"$OneDrive`" `"$H`" /XO
+

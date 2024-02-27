@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "editor.renderWhitespace": "all",
+            "editor.renderControlCharacters": true,
+            "files.trimTrailingWhitespace": true,
+            "files.encoding": "utf8bom",
+            "files.autoGuessEncoding": true
+        },
+        {
+            "name": "PowerShell: Launch Current File",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${file}",
+            "args": []
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+    <Snippets  xmlns='http://schemas.microsoft.com/PowerShell/Snippets'>
+        <Snippet Version='1.0.0'>
+            <Header>
+                <Title>AM-Get O365 group members</Title>
+                <Description>List of membership for groups in Exchange</Description>
+                <Author>Art Malin</Author>
+                <SnippetTypes>
+                    <SnippetType>Expansion</SnippetType>
+                </SnippetTypes>
+            </Header>
+
+            <Code>
+                <Script Language='PowerShell' CaretOffset='0'>
+                    <![CDATA[ 
+$GroupName="Department Heads 365"
+$UserProperties = @()		# initialize array to hold results
+
+Import-Module ExchangeOnlineManagement
+Connect-ExchangeOnline -UserPrincipalName amalin@postfalls.gov
+
+#List group members
+$GroupMembers = Get-UnifiedGroup -Identity $GroupName | Get-UnifiedGroupLinks -LinkType Member | Sort-Object DisplayName
+
+# Iterate through each user and retrieve the required properties
+$UserProperties = @()
+foreach ($User in $GroupMembers) {
+    $UserProperties += $User | Select-Object DisplayName, Department, Title
+}
+
+# Display the user properties
+$UserProperties | Format-Table -AutoSize
+]]>
+                </Script>
+            </Code>
+
+    </Snippet>
+</Snippets>
+

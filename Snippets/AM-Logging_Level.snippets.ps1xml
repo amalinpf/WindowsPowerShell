@@ -1,0 +1,72 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+    <Snippets  xmlns='http://schemas.microsoft.com/PowerShell/Snippets'>
+        <Snippet Version='1.0.0'>
+            <Header>
+                <Title>AM-Logging_Level</Title>
+                <Description>Set logging level for SharePoint</Description>
+                <Author></Author>
+                <SnippetTypes>
+                    <SnippetType>Expansion</SnippetType>
+                </SnippetTypes>
+            </Header>
+
+            <Code>
+                <Script Language='PowerShell' CaretOffset='594'>
+                    <![CDATA[ 
+<#
+Get-SPLogLevel 
+Get-SPLogLevel -Identity "nintex*"
+
+Set-SPLogLevel  to change them
+
+Our Normal:  Trace - Monitorable, Event - Error
+Bumped Up:  Trace - High, Event - Warning
+MS Defaults: Trace - Medium, Event - Information
+
+Change all to our normal:
+Set-SPLogLevel -TraceSeverity Monitorable -EventSeverity Error
+
+Reset to defaults:
+Clear-SPLogLevel
+----------
+TRACE log levels (down is more logging):
+None
+Unexpected 
+Monitorable
+High
+Medium 
+Verbose
+VerboseEx
+----------
+EVENT log levels (down is more logging):
+None
+Critical
+Error
+Warning
+Information
+Verbose
+-----------------------
+Security Logging example:
+$Categories = ("App Auth","Application Authentication","Authentication Authorization","Claims Authentication","Claims Authentication","RESTful List Data","CSOM Api","CSOM","Security Context","Security","Security","Security Token","Security Token Handler","Security Token Service","Security Token Service Caller","Token Binding")
+
+$TraceLevel = "Medium"
+$EventLevel = "Warning"
+
+# Defaults
+# $TraceLevel = "Monitorable"
+# $EventLevel = "Error"
+
+foreach ($Category in $Categories) 
+{
+	Write-Output $Category
+	Set-SPLogLevel -TraceSeverity $TraceLevel -EventSeverity $EventLevel -Identity $Category 
+}
+
+#>
+]]>
+                </Script>
+            </Code>
+
+    </Snippet>
+</Snippets>
+

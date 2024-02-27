@@ -1,0 +1,27 @@
+<ps:Config
+    xmlns:ps="urn:Microsoft.SharePoint.PowerShell"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:Microsoft.SharePoint.PowerShell SPCmdletSchema.xsd">
+  <ps:Assembly Name="Microsoft.SharePoint.WorkflowServices, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+    <ps:Cmdlet>
+      <ps:VerbName>New-SPWorkflowServiceApplicationProxy</ps:VerbName>
+      <ps:ClassName>Microsoft.SharePoint.WorkflowServices.PowerShell.NewSPWorkflowServiceApplicationProxy</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.WorkflowServices.PowerShell.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Get-SPWorkflowServiceApplicationProxy</ps:VerbName>
+      <ps:ClassName>Microsoft.SharePoint.WorkflowServices.PowerShell.GetSPWorkflowServiceApplicationProxy</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.WorkflowServices.PowerShell.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Copy-SPActivitiesToWorkflowService</ps:VerbName>
+      <ps:ClassName>Microsoft.SharePoint.WorkflowServices.PowerShell.CopySPActivitiesToWorkflowService</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.WorkflowServices.PowerShell.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+	<ps:Cmdlet>
+      <ps:VerbName>Register-SPWorkflowService</ps:VerbName>
+      <ps:ClassName>Microsoft.SharePoint.WorkflowServices.PowerShell.RegisterSPWorkflowService</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.WorkflowServices.PowerShell.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+  </ps:Assembly>
+</ps:Config>

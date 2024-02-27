@@ -1,0 +1,63 @@
+ 
+<# 
+
+Install-PackageProvider -Name NuGet -Force
+
+Install-Module -Name PowerShellGet -Force
+import-Module -Name powershellget 
+Get-Module -Name *powershellget* -ListAvailable | Select Name,Version,path
+Uninstall-Module -Name powershellget
+
+Install-Module -Name OfficeWebApps
+
+Update-Help
+
+
+===== Module Commands =====
+Get-InstalledModule											# From current session
+Get-Module -ListAvailable -Name ModName #| Import-Module	# To see modules installed in $env:psmodulepath
+Get-Module -ListAvailable | Select Name,Version,path
+Find-Module	-Name "*office*"	#[| Install-Module]		# Check PowerShell Gallery for all - https://www.powershellgallery.com/
+Install-Module 												# Add new ones locally 
+Update-Module												# Get the latest version
+
+
+
+
+Import-Module       										# Add to the current session
+Remove-Module   											# From current session
+Help about_modules											# Detailed reference
+
+Modules Used, Install-Module/Import-Module as needed:		Verify first
+AzureAD
+dbatools
+Hyper-V
+IISAdministration
+ISE
+Microsoft.Online.SharePoint.PowerShell
+MSOnline
+OfficeWebApps
+SharePoint2019Commands
+SharePointPnPPowerShell2019
+SqlServer
+WebAdministration
+
+SharePointPatchScript.psm1									# Automate SharePoint patching
+
+--------------- Misc module commands --------------- 
+Get-Module -Name Microsoft.Online.SharePoint.PowerShell -ListAvailable | Select Name,Version
+Uninstall-Module -Name Microsoft.Online.SharePoint.PowerShell -MinimumVersion 16.0.8414.1200
+
+--------------- Update all modules to latest version --------------
+# Update all modules 
+Update-Module -Force -verbose
+
+--------------- Uninstall all previous versions ---------------
+Get-InstalledModule | ForEach-Object {
+    $CurrentVersion = $PSItem.Version
+    Get-InstalledModule -Name $PSItem.Name -AllVersions | Where-Object -Property Version -LT -Value $CurrentVersion
+} | Uninstall-Module -Verbose
+
+Add-PSSnapin Microsoft.SharePoint.PowerShell -ErrorAction SilentlyContinue	# For Reference...
+#>
+

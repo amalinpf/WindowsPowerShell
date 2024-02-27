@@ -1,0 +1,1876 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-SPVisioExternalData</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>SPVisioExternalData</command:noun>
+      <maml:description>
+        <maml:para>Returns the settings for external data connections for a Visio Services application.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-SPVisioExternalData cmdlet reads the service settings for managing settings that are related to connecting to external data.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-SPVisioExternalData</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>VisioServiceApplication</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the Visio Services application that contains the SPVisioExternalData object.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>VisioServiceApplication</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the Visio Services application that contains the SPVisioExternalData object.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>----- ------------------EXAMPLE 1------------------------ -----</maml:title>
+        <dev:code>C:\PS&gt;Get-SPVisioExternalData -VisioServiceApplication "VGS1"</dev:code>
+        <dev:remarks>
+          <maml:para>This example gets settings related to external data for a Visio Services application.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>----- ------------------EXAMPLE 2------------------------ -----</maml:title>
+        <dev:code>C:\PS&gt;Get-SPVisioServiceApplication -identity "VGS1" | Get-SPVisioExternalData</dev:code>
+        <dev:remarks>
+          <maml:para>This example uses a pipe bind to get settings related to external data for a Visio Services application.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-SPVisioPerformance</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>SPVisioPerformance</command:noun>
+      <maml:description>
+        <maml:para>Returns the Visio Services settings for the performance of a Visio Services application.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-SPVisioPerformance cmdlet reads the service settings for managing and configuring peformance for a Visio Services application.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-SPVisioPerformance</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>VisioServiceApplication</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the Visio Services application that contains the SPVisioPerformance object.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>VisioServiceApplication</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the Visio Services application that contains the SPVisioPerformance object.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------- -----------------EXAMPLE---------------------- --------</maml:title>
+        <dev:code>C:\PS&gt;Get-SPVisioPerformance -VisioServiceApplication "VGS1"</dev:code>
+        <dev:remarks>
+          <maml:para>This example gets settings related to performance for a Visio Services application.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-SPVisioSafeDataProvider</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>SPVisioSafeDataProvider</command:noun>
+      <maml:description>
+        <maml:para>Returns the settings of a safe data provider for a Visio Services application.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-SPVisioSafeDataProvider cmdlet retrieves the settings of the safe provider for a Visio Services application. If the DataProviderID parameter is not specified, this cmdlet returns the collection of safe providers in the farm.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-SPVisioSafeDataProvider</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>VisioServiceApplication</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the Visio Services application that contains the SPVisioSafeDataProvider object.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DataProviderId</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the safe data provider to get. The combination of DataProviderID and DataProviderType uniquely identify a data provider for a Visio Graphics Service application. The string that identifies the data provider can be a maximum of 255 alphanumeric characters.</maml:para>
+            <maml:para>The type must be a valid string that identifies the data provider; for example, VisioDataProvider1.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DataProviderType</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the supported type of the data provider to get. Custom data types are supported; for example, Excel services.</maml:para>
+            <maml:para>The type must be a valid identity of a data provider type.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>VisioServiceApplication</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the Visio Services application that contains the SPVisioSafeDataProvider object.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DataProviderId</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the safe data provider to get. The combination of DataProviderID and DataProviderType uniquely identify a data provider for a Visio Graphics Service application. The string that identifies the data provider can be a maximum of 255 alphanumeric characters.</maml:para>
+          <maml:para>The type must be a valid string that identifies the data provider; for example, VisioDataProvider1.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DataProviderType</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the supported type of the data provider to get. Custom data types are supported; for example, Excel services.</maml:para>
+          <maml:para>The type must be a valid identity of a data provider type.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------ -------------------EXAMPLE 1---------------------- ------</maml:title>
+        <dev:code>C:\PS&gt;Get-SPVisioSafeDataProvider -VisioServiceApplication "VGS1"</dev:code>
+        <dev:remarks>
+          <maml:para>This example returns a list of safe data providers for a specific Visio Services application.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>------ -------------------EXAMPLE 2---------------------- ------</maml:title>
+        <dev:code>C:\PS&gt;Get-SPVisioSafeDataProvider -VisioServiceApplication "VGS1" -DataProviderID "SQLOLEDB" -DataProviderType 1</dev:code>
+        <dev:remarks>
+          <maml:para>This example returns information about a specified safe data provider for a specific Visio Services application.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-SPVisioServiceApplication</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>SPVisioServiceApplication</command:noun>
+      <maml:description>
+        <maml:para>Returns properties of a Visio Services application or a collection of Visio Services applications.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-SPVisioServiceApplication cmdlet retrieves the settings of the specified Visio Services application. If the Identity parameter is not specified, this cmdlet returns the collection of Visio Services applications in the farm.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-SPVisioServiceApplication</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="1" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the Visio Services application to get.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="1" aliases="none">
+        <maml:name>Identity</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the Visio Services application to get.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-- -----------------------EXAMPLE 1------------------------- --</maml:title>
+        <dev:code>C:\PS&gt;Get-SPVisioServiceApplication</dev:code>
+        <dev:remarks>
+          <maml:para>This example returns a collection of all Visio Services applications in the farm.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-- -----------------------EXAMPLE 2------------------------- --</maml:title>
+        <dev:code>C:\PS&gt;Get-SPVisioServiceApplication "VGS1"</dev:code>
+        <dev:remarks>
+          <maml:para>This example returns properties of the VGS1  Visio Services application.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-SPVisioServiceApplicationProxy</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>SPVisioServiceApplicationProxy</command:noun>
+      <maml:description>
+        <maml:para>Returns properties of a Visio Services application proxy or a collection of Visio Services application proxies.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-SPVisioServiceApplicationProxy cmdlet reads the settings of a Visio Services application proxy. If the Identity parameter is not specified, this cmdlet returns the collection of Visio Services application proxies on the farm.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-SPVisioServiceApplicationProxy</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="1" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the Visio Services application proxy to get.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationProxyPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPVisioServiceApplicationProxyPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="1" aliases="none">
+        <maml:name>Identity</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the Visio Services application proxy to get.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationProxyPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPVisioServiceApplicationProxyPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------- ----------------EXAMPLE 1--------------------- --------</maml:title>
+        <dev:code>C:\PS&gt;Get-SPVisioServiceApplicationProxy</dev:code>
+        <dev:remarks>
+          <maml:para>This example returns a list of Visio Services application proxies.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------- ----------------EXAMPLE 2--------------------- --------</maml:title>
+        <dev:code>C:\PS&gt;Get-SPVisioServiceApplicationProxy "Connection to VGS2"</dev:code>
+        <dev:remarks>
+          <maml:para>This example returns settings for a Visio Services application proxy.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-SPVisioSafeDataProvider</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>SPVisioSafeDataProvider</command:noun>
+      <maml:description>
+        <maml:para>Adds a new data provider to a Visio Services application.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `New-SPVisioSafeDataProvider` cmdlet adds a new data provider to the list of safe data providers for a Visio Services application.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-SPVisioSafeDataProvider</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DataProviderId</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the name of the data provider to create. The combination of DataProviderID and DataProviderType uniquely identify a data provider for a Visio Services application. The string that identifies the data provider can be a maximum of 255 alphanumeric characters.</maml:para>
+            <maml:para>The type must be a valid string that identifies the data provider; for example, VisioDataProvider1.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DataProviderType</maml:name>
+          <maml:Description>
+            <maml:para>The type must be a valid identity of a data provider type.</maml:para>
+            <maml:para>Specifies the supported type of the data provider to add. Custom data types are supported; for example, Excel Services.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>VisioServiceApplication</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the Visio Services application in which to add the new safe data provider.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Description</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the description of the new safe data provider.</maml:para>
+            <maml:para>The type must be a string with a maximum of 4096 characters.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DataProviderId</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the name of the data provider to create. The combination of DataProviderID and DataProviderType uniquely identify a data provider for a Visio Services application. The string that identifies the data provider can be a maximum of 255 alphanumeric characters.</maml:para>
+          <maml:para>The type must be a valid string that identifies the data provider; for example, VisioDataProvider1.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DataProviderType</maml:name>
+        <maml:Description>
+          <maml:para>The type must be a valid identity of a data provider type.</maml:para>
+          <maml:para>Specifies the supported type of the data provider to add. Custom data types are supported; for example, Excel Services.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>VisioServiceApplication</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the Visio Services application in which to add the new safe data provider.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Description</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the description of the new safe data provider.</maml:para>
+          <maml:para>The type must be a string with a maximum of 4096 characters.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------ -------------------EXAMPLE------------------------ ------</maml:title>
+        <dev:code>C:\PS&gt;New-SPVisioSafeDataProvider -VisioServiceApplication "VGS1" -DataProviderID "CustomProvider" -DataProviderType 5 -Description "Custom Data Provider"</dev:code>
+        <dev:remarks>
+          <maml:para>This example creates a new safe data provider for a specified Visio Services application.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-SPVisioServiceApplication</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>SPVisioServiceApplication</command:noun>
+      <maml:description>
+        <maml:para>Adds a new Visio Services application to a farm.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `New-SPVisioServiceApplication` cmdlet adds a new Visio Services application to a farm.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-SPVisioServiceApplication</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ApplicationPool</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the existing IIS application pool in which to run the Web service for the service application.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of an application pool (for example, AppPoolName1); or an instance of a valid IISWebServiceApplicationPool object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPIisWebServiceApplicationPoolPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPIisWebServiceApplicationPoolPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>AddToDefaultGroup</maml:name>
+          <maml:Description>
+            <maml:para>Specifies that a default proxy is created for the new Visio Services application.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:Description>
+            <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the Visio Services application to create.</maml:para>
+            <maml:para>The type must be a valid name of a Visio Service application; for example, MyVisioService1.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:Description>
+            <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ApplicationPool</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the existing IIS application pool in which to run the Web service for the service application.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of an application pool (for example, AppPoolName1); or an instance of a valid IISWebServiceApplicationPool object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPIisWebServiceApplicationPoolPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPIisWebServiceApplicationPoolPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>AddToDefaultGroup</maml:name>
+        <maml:Description>
+          <maml:para>Specifies that a default proxy is created for the new Visio Services application.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:Description>
+          <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the Visio Services application to create.</maml:para>
+          <maml:para>The type must be a valid name of a Visio Service application; for example, MyVisioService1.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:Description>
+          <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------- ----------------EXAMPLE 1--------------------- --------</maml:title>
+        <dev:code>PS C:\&gt;New-SPVisioServiceApplication -Identity 'Visio Graphics Service Application' -ApplicationPool 'SharePoint Web Services Default' -CreateDefaultProxy</dev:code>
+        <dev:remarks>
+          <maml:para>This example creates a new Visio Services application named 'Visio Graphics Service Application' and also creates a service application proxy associated with it.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-SPVisioServiceApplicationProxy</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>SPVisioServiceApplicationProxy</command:noun>
+      <maml:description>
+        <maml:para>Adds a new Visio Services application proxy to a farm.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `New-SPVisioServiceApplicationProxy` cmdlet adds a new Visio Services application proxy to a farm.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-SPVisioServiceApplicationProxy</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ServiceApplication</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the Visio Services application that is associated with the application proxy.</maml:para>
+            <maml:para>The type must be a valid name of a Visio Services application; for example, MyVisioService1.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the Visio Services application proxy to create.</maml:para>
+            <maml:para>The type must be a valid name of a Visio Services application; for example, MyVisioService1.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:Description>
+            <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:Description>
+            <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ServiceApplication</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the Visio Services application that is associated with the application proxy.</maml:para>
+          <maml:para>The type must be a valid name of a Visio Services application; for example, MyVisioService1.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the Visio Services application proxy to create.</maml:para>
+          <maml:para>The type must be a valid name of a Visio Services application; for example, MyVisioService1.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:Description>
+          <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:Description>
+          <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>----- --------------------EXAMPLE------------------------ -----</maml:title>
+        <dev:code>PS C:\&gt;$sa = New-SPVisioServiceApplication -Identity 'Visio Graphics Service Application' -ApplicationPool 'SharePoint Web Services Default'
+PS C:\&gt;New-SPVisioServiceApplicationProxy -Identity 'Visio Graphics Service Application Proxy' -ServiceApplication $sa</dev:code>
+        <dev:remarks>
+          <maml:para>This example creates a new Visio Services application proxy connected to a Visio Services application.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Remove-SPVisioSafeDataProvider</command:name>
+      <command:verb>Remove</command:verb>
+      <command:noun>SPVisioSafeDataProvider</command:noun>
+      <maml:description>
+        <maml:para>Removes a data provider from a Visio Services application.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `Remove-SPVisioSafeDataProvider` cmdlet deletes the safe data provider that is specified in the DataProviderID parameter.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Remove-SPVisioSafeDataProvider</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>DataProviderId</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the name of the data provider to delete. The combination of DataProviderID and DataProviderType uniquely identifies a data provider for a Visio Services application. The string that identifies the data provider can be a maximum of 255 alphanumeric characters.</maml:para>
+            <maml:para>The type must be a valid string that identifies the data provider.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>DataProviderType</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the supported type of the data provider to delete.</maml:para>
+            <maml:para>The type must be a valid identity of a data provider type.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>VisioServiceApplication</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the Visio Services application that contains the SPVisioSafeDataProvider object.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>DataProviderId</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the name of the data provider to delete. The combination of DataProviderID and DataProviderType uniquely identifies a data provider for a Visio Services application. The string that identifies the data provider can be a maximum of 255 alphanumeric characters.</maml:para>
+          <maml:para>The type must be a valid string that identifies the data provider.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>DataProviderType</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the supported type of the data provider to delete.</maml:para>
+          <maml:para>The type must be a valid identity of a data provider type.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>VisioServiceApplication</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the Visio Services application that contains the SPVisioSafeDataProvider object.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------ -------------------EXAMPLE------------------------ ------</maml:title>
+        <dev:code>C:\PS&gt;Remove-SPVisioSafeDataProvider -VisioServiceApplication "VGS1" -DataProviderID "CustomProvider" -DataProviderType 5</dev:code>
+        <dev:remarks>
+          <maml:para>This example removes a safe data provider for a specified Visio Services application.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-SPVisioExternalData</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>SPVisioExternalData</command:noun>
+      <maml:description>
+        <maml:para>Configures settings related to external data connections for a Visio Services application.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `Set-SPVisioExternalData` cmdlet sets and configures settings for external data connections for the Visio Services application.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-SPVisioExternalData</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UnattendedServiceAccountApplicationID</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the target application ID in the registered secure store service that is used to reference unattended service account credentials. The unattended service account is a single account that all documents can use to refresh data. It is required when connecting to external data sources.</maml:para>
+            <maml:para>The type must be a valid value less than or equal to 256 characters. The application ID must be registered in the secure store service application or an error message will be displayed.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>VisioServiceApplication</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the Visio Services application that contains the SPVisioExternalData object.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>UnattendedServiceAccountApplicationID</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the target application ID in the registered secure store service that is used to reference unattended service account credentials. The unattended service account is a single account that all documents can use to refresh data. It is required when connecting to external data sources.</maml:para>
+          <maml:para>The type must be a valid value less than or equal to 256 characters. The application ID must be registered in the secure store service application or an error message will be displayed.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>VisioServiceApplication</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the Visio Services application that contains the SPVisioExternalData object.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------ --------------------EXAMPLE----------------------- ------</maml:title>
+        <dev:code>C:\PS&gt;Set-SPVisioExternalData -VisioServiceApplication "VGS1" -UnattendedServiceAccountApplicationID "SSSApp1"</dev:code>
+        <dev:remarks>
+          <maml:para>This example sets the unattended service account application ID to SSSApp1 for the Visio Services application named VGS1.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-SPVisioPerformance</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>SPVisioPerformance</command:noun>
+      <maml:description>
+        <maml:para>Sets performance properties for a Visio Services application.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `Set-SPVisioPerformance` cmdlet sets properties related to performance for a Visio Services application.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-SPVisioPerformance</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>MaxDiagramCacheAge</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the time, in minutes, after which cached items are purged. This value affects memory use on the server. A large cache age slows the rate at which diagrams can be refreshed by users and reduces CPU and memory use of the server. The default value is 60 minutes.</maml:para>
+            <maml:para>The type must be an integer in the range of 0 to 34560 (24 days).</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>MaxDiagramSize</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the maximum size, in megabytes, of a diagram that can be opened by the Visio Services application. The default value is 5.</maml:para>
+            <maml:para>The type must be an integer in the range of 1 to 50.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
+          <dev:type>
+            <maml:name>Int64</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>MaxRecalcDuration</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the maximum time, in seconds, that a diagram can only be recalculated by the Visio Services application. Diagram recalculation operations that take longer than this number of seconds are canceled by the service. A low value increases performance by allowing only simple diagrams to be processed by the server, which minimizes CPU and memory use. A larger value allows the recalculation of more complex diagrams while using more CPU cycles and memory.</maml:para>
+            <maml:para>The type must be a valid integer value in the range of 1 to 120 seconds (2 minutes). The default value is 60 seconds.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>MinDiagramCacheAge</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the minimum time, in minutes, a diagram is cached in memory. This value affects memory use on the server. A small value allows users to refresh their diagrams more often, but will increase memory and CPU load of the server. The default value is 5.</maml:para>
+            <maml:para>The type must be an integer in the range of 0 to 34560 (24 days).</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>VisioServiceApplication</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the Visio Services application that contains the SPVisioPerformance object.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>MaxCacheSize</maml:name>
+          <maml:Description>
+            <maml:para>{{Fill MaxCacheSize Description}}</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
+          <dev:type>
+            <maml:name>Int64</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>MaxDiagramCacheAge</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the time, in minutes, after which cached items are purged. This value affects memory use on the server. A large cache age slows the rate at which diagrams can be refreshed by users and reduces CPU and memory use of the server. The default value is 60 minutes.</maml:para>
+          <maml:para>The type must be an integer in the range of 0 to 34560 (24 days).</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>MaxDiagramSize</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the maximum size, in megabytes, of a diagram that can be opened by the Visio Services application. The default value is 5.</maml:para>
+          <maml:para>The type must be an integer in the range of 1 to 50.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
+        <dev:type>
+          <maml:name>Int64</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>MaxRecalcDuration</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the maximum time, in seconds, that a diagram can only be recalculated by the Visio Services application. Diagram recalculation operations that take longer than this number of seconds are canceled by the service. A low value increases performance by allowing only simple diagrams to be processed by the server, which minimizes CPU and memory use. A larger value allows the recalculation of more complex diagrams while using more CPU cycles and memory.</maml:para>
+          <maml:para>The type must be a valid integer value in the range of 1 to 120 seconds (2 minutes). The default value is 60 seconds.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>MinDiagramCacheAge</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the minimum time, in minutes, a diagram is cached in memory. This value affects memory use on the server. A small value allows users to refresh their diagrams more often, but will increase memory and CPU load of the server. The default value is 5.</maml:para>
+          <maml:para>The type must be an integer in the range of 0 to 34560 (24 days).</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>VisioServiceApplication</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the Visio Services application that contains the SPVisioPerformance object.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>MaxCacheSize</maml:name>
+        <maml:Description>
+          <maml:para>{{Fill MaxCacheSize Description}}</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
+        <dev:type>
+          <maml:name>Int64</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------ -------------------EXAMPLE 1---------------------- ------</maml:title>
+        <dev:code>C:\PS&gt;Set-SPVisioPerformance -VisioServiceApplication "VGS2" -MaxDiagramSize 10 -MaxRecalcDuration 120 -MinDiagramCacheAge 1 -MaxDiagramCacheAge 4</dev:code>
+        <dev:remarks>
+          <maml:para>This example changes settings that are related to performance for a Visio Services application.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>------ -------------------EXAMPLE 2---------------------- ------</maml:title>
+        <dev:code>C:\PS&gt;Set-SPVisioPerformance -VisioServiceApplication "VGS2" -MaxDiagramSize 10</dev:code>
+        <dev:remarks>
+          <maml:para>This example changes settings that are related to performance for a Visio Services application. Note that only one setting value is specified. The cmdlet prompts you for the other parameter values.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-SPVisioSafeDataProvider</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>SPVisioSafeDataProvider</command:noun>
+      <maml:description>
+        <maml:para>Specifies a description of a safe data provider for a Visio Services application.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `Set-SPVisioSafeDataProvider` cmdlet sets the Description property of a safe data provider for a Visio Services application.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-SPVisioSafeDataProvider</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DataProviderId</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the name of the data provider to update. The combination of DataProviderID and DataProviderType uniquely identifies a data provider for a Visio Services application. The string that identifies the data provider can be a maximum of 255 alphanumeric characters. Custom data types are supported; for example, Excel Services.</maml:para>
+            <maml:para>The type must be a valid string that identifies the data provider.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DataProviderType</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the supported type of the data provider to get. Custom data types are supported; for example, Excel services.</maml:para>
+            <maml:para>The type must be a valid identity of a data provider type.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Description</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the description of the safe data provider to set.</maml:para>
+            <maml:para>The type must be a string with a maximum of 4096 characters.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>VisioServiceApplication</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the Visio Services application that contains the SPVisioSafeDataProvider object.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DataProviderId</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the name of the data provider to update. The combination of DataProviderID and DataProviderType uniquely identifies a data provider for a Visio Services application. The string that identifies the data provider can be a maximum of 255 alphanumeric characters. Custom data types are supported; for example, Excel Services.</maml:para>
+          <maml:para>The type must be a valid string that identifies the data provider.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DataProviderType</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the supported type of the data provider to get. Custom data types are supported; for example, Excel services.</maml:para>
+          <maml:para>The type must be a valid identity of a data provider type.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Description</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the description of the safe data provider to set.</maml:para>
+          <maml:para>The type must be a string with a maximum of 4096 characters.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>VisioServiceApplication</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the Visio Services application that contains the SPVisioSafeDataProvider object.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------ -------------------EXAMPLE 1---------------------- ------</maml:title>
+        <dev:code>C:\PS&gt;Set-SPVisioSafeDataProvider -VisioServiceApplication "VGS1" -DataProviderID "SQLOLEDB" -DataProviderType 1 -Description "SQL OLEDB Driver!"</dev:code>
+        <dev:remarks>
+          <maml:para>This example sets the description property of a safe data provider for a specific Visio Services application.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>------ -------------------EXAMPLE 2---------------------- ------</maml:title>
+        <dev:code>C:\PS&gt;Get-SPVisioServiceApplication -Identity "VGS1" | Set-SPVisioSafeDataProvider -DataProviderID "SQLOLEDB" -DataProviderType 1 -Description "SQL OLEDB Driver!"</dev:code>
+        <dev:remarks>
+          <maml:para>This example sets the Description property of a safe data provider for a specific Visio Services application. The result is piped from the `Set-SPVisioSafeDataProvider` cmdlet.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-SPVisioServiceApplication</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>SPVisioServiceApplication</command:noun>
+      <maml:description>
+        <maml:para>Sets the ServiceApplicationPool property for a Visio Services application.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `Set-SPVisioServiceApplication` cmdlet sets the ServiceApplicationPool property for a Visio Services application.</maml:para>
+      <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Products, see the online documentation at http://go.microsoft.com/fwlink/p/?LinkId=251831 (http://go.microsoft.com/fwlink/p/?LinkId=251831).</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-SPVisioServiceApplication</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the Visio Services application to update.</maml:para>
+            <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="2" aliases="none">
+          <maml:name>ServiceApplicationPool</maml:name>
+          <maml:Description>
+            <maml:para>Specifies the IIS application pool to change. The Web service for the service application runs in the specified application pool.</maml:para>
+            <maml:para>The type must be a valid name of a Visio Service application pool, such as MyVisioServiceAppPool1; or a valid GUID, such as 12345678-90ab-cdef-1234-567890bcdefgh, or an instance of a valid SPIisWebServiceApplicationPoolPipeBind object.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPIisWebServiceApplicationPoolPipeBind</command:parameterValue>
+          <dev:type>
+            <maml:name>SPIisWebServiceApplicationPoolPipeBind</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>AssignmentCollection</maml:name>
+          <maml:Description>
+            <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+            <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+          <dev:type>
+            <maml:name>SPAssignmentCollection</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:Description>
+            <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:Description>
+            <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>Identity</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the Visio Services application to update.</maml:para>
+          <maml:para>The type must be a valid GUID, in the form 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a Visio Services application (for example, MyVisioService1); or an instance of a valid SPVisioServiceApplication object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPVisioServiceApplicationPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPVisioServiceApplicationPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="2" aliases="none">
+        <maml:name>ServiceApplicationPool</maml:name>
+        <maml:Description>
+          <maml:para>Specifies the IIS application pool to change. The Web service for the service application runs in the specified application pool.</maml:para>
+          <maml:para>The type must be a valid name of a Visio Service application pool, such as MyVisioServiceAppPool1; or a valid GUID, such as 12345678-90ab-cdef-1234-567890bcdefgh, or an instance of a valid SPIisWebServiceApplicationPoolPipeBind object.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPIisWebServiceApplicationPoolPipeBind</command:parameterValue>
+        <dev:type>
+          <maml:name>SPIisWebServiceApplicationPoolPipeBind</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>AssignmentCollection</maml:name>
+        <maml:Description>
+          <maml:para>Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.</maml:para>
+          <maml:para>When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the `Stop-SPAssignment` command, an out-of-memory scenario can occur.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">SPAssignmentCollection</command:parameterValue>
+        <dev:type>
+          <maml:name>SPAssignmentCollection</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:Description>
+          <maml:para>Prompts you for confirmation before executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:Description>
+          <maml:para>Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: `get-help about_commonparameters`</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------- -----------------EXAMPLE 1---------------------- -------</maml:title>
+        <dev:code>C:\PS&gt;Set-SPVisioServiceApplication -identity "VGS1" -ServiceApplicationPool "SharePoint Web Services System Default"</dev:code>
+        <dev:remarks>
+          <maml:para>This example changes the application pool of the VGS1 service application.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>------- -----------------EXAMPLE 2---------------------- -------</maml:title>
+        <dev:code>C:\PS&gt;Get-SPServiceApplicationPool "SharePoint Web Services Default" | Set-SPVisioServiceApplication VGS1</dev:code>
+        <dev:remarks>
+          <maml:para>This example changes the application pool of the VGS1 service application. The results are piped from the `Get-SPServiceApplicationPool` cmdlet.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+</helpItems>

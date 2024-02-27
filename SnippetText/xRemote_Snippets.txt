@@ -1,0 +1,23 @@
+﻿
+$Computers = '"hyperv2019-svr","hyperv2021-svr","hypervspdev-svr","monitor-pc","shadowbdc-svr","sharepoint-dev","sharepoint-svr","triumph","vmoos-svr"'
+
+########## Run remotely template ##########
+invoke-command -computername xxx -FilePath $PROFILE.CurrentUserAllHosts
+{
+### Insert command(s) here
+}
+
+########## Update computers with my custom configs ##########
+C:\Scripts\Misc\CopyAmalin-pcConfigs.cmd
+
+########## Setup new computers for remote admin ##########
+winrm.cmd quickconfig -q
+Enable-PSRemoting -Force
+Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
+Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -name "fDenyTSConnections" -value 0
+set-executionpolicy -ExecutionPolicy Unrestricted
+
+########## Schedule BGinfo ##########
+SCHTASKS /Query /tn "\Custom\Run Bginfo at logon"
+# SCHTASKS /Create /tn "\Custom\Run Bginfo at logon" /xml "C:\Scripts\Bginfo\BginfoLogon.xml"
+# SCHTASKS /Delete /f /tn "\Custom\Run Bginfo at logon" 

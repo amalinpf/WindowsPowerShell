@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2021/03/ProvisioningSchema">
+  <pnp:Preferences Generator="PnP.Framework, Version=1.10.2.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-AF0AB2DDF26341FEACEBB71A042B11B9">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-AF0AB2DDF26341FEACEBB71A042B11B9" Version="1" BaseSiteTemplate="STS#0" Scope="Web" />
+  </pnp:Templates>
+</pnp:Provisioning>

@@ -1,0 +1,28 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+    <Snippets  xmlns='http://schemas.microsoft.com/PowerShell/Snippets'>
+        <Snippet Version='1.0.0'>
+            <Header>
+                <Title>AM-Allow scripting on site</Title>
+                <Description>Required by NITRO Studio</Description>
+                <Author>Art Malin</Author>
+                <SnippetTypes>
+                    <SnippetType>Expansion</SnippetType>
+                </SnippetTypes>
+            </Header>
+
+            <Code>
+                <Script Language='PowerShell' CaretOffset='133'>
+                    <![CDATA[ 
+$AdminSite = "https://postfallsidahoorg-admin.sharepoint.com" 
+$SiteCollection = "https://postfallsidahoorg.sharepoint.com/sites/SITE"
+
+Connect-SPOService -Url $AdminSite 
+Set-SPOsite $SiteCollection -DenyAddAndCustomizePages 0
+
+]]>
+                </Script>
+            </Code>
+
+    </Snippet>
+</Snippets>
+

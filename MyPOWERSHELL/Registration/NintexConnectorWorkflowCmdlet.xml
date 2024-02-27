@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ps:Config xmlns:ps="urn:Microsoft.SharePoint.PowerShell"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="urn:Microsoft.SharePoint.PowerShell  SPCmdletSchema.xsd">
+  <ps:Assembly Name="Nintex.Workflow.Live, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bd539bd4aa1e2820">
+    <ps:Cmdlet>
+      <ps:VerbName>Install-ExternalConnector</ps:VerbName>
+      <ps:ClassName>Nintex.Workflow.Live.PowerShell.CmdletInstallService</ps:ClassName>
+      <ps:HelpFile></ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>UnInstall-ExternalConnector</ps:VerbName>
+      <ps:ClassName>Nintex.Workflow.Live.PowerShell.CmdletUnInstallService</ps:ClassName>
+      <ps:HelpFile></ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>UpdateSiteMappings-ExternalConnector</ps:VerbName>
+      <ps:ClassName>Nintex.Workflow.Live.PowerShell.CmdletUpdateSiteMappings</ps:ClassName>
+      <ps:HelpFile></ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>SyncServices-ExternalConnector</ps:VerbName>
+      <ps:ClassName>Nintex.Workflow.Live.PowerShell.CmdletSyncServices</ps:ClassName>
+      <ps:HelpFile></ps:HelpFile>
+    </ps:Cmdlet>
+  </ps:Assembly>
+</ps:Config>

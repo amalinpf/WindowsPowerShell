@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ps:Config xmlns:ps="urn:Microsoft.SharePoint.PowerShell"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="urn:Microsoft.SharePoint.PowerShell  SPCmdletSchema.xsd">
+
+  <ps:Assembly Name="Microsoft.PerformancePoint.Scorecards.BIMonitoringService, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+    <ps:Cmdlet>
+      <ps:VerbName>New-SPPerformancePointServiceApplication</ps:VerbName>
+      <ps:ClassName>Microsoft.PerformancePoint.Scorecards.NewSPPerformancePointMonitoringServiceApplication</ps:ClassName>
+      <ps:HelpFile>Microsoft.PerformancePoint.Scorecards.BIMonitoringService.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Get-SPPerformancePointServiceApplication</ps:VerbName>
+      <ps:ClassName>Microsoft.PerformancePoint.Scorecards.GetSPPerformancePointMonitoringServiceApplication</ps:ClassName>
+      <ps:HelpFile>Microsoft.PerformancePoint.Scorecards.BIMonitoringService.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Set-SPPerformancePointServiceApplication</ps:VerbName>
+      <ps:ClassName>Microsoft.PerformancePoint.Scorecards.SetSPPerformancePointMonitoringServiceApplication</ps:ClassName>
+      <ps:HelpFile>Microsoft.PerformancePoint.Scorecards.BIMonitoringService.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Remove-SPPerformancePointServiceApplication</ps:VerbName>
+      <ps:ClassName>Microsoft.PerformancePoint.Scorecards.RemoveSPPerformancePointMonitoringServiceApplication</ps:ClassName>
+      <ps:HelpFile>Microsoft.PerformancePoint.Scorecards.BIMonitoringService.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>New-SPPerformancePointServiceApplicationProxy</ps:VerbName>
+      <ps:ClassName>Microsoft.PerformancePoint.Scorecards.NewSPPerformancePointMonitoringServiceApplicationProxy</ps:ClassName>
+      <ps:HelpFile>Microsoft.PerformancePoint.Scorecards.BIMonitoringService.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Remove-SPPerformancePointServiceApplicationProxy</ps:VerbName>
+      <ps:ClassName>Microsoft.PerformancePoint.Scorecards.RemoveSPPerformancePointMonitoringServiceApplicationProxy</ps:ClassName>
+      <ps:HelpFile>Microsoft.PerformancePoint.Scorecards.BIMonitoringService.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Set-SPPerformancePointSecureDataValues</ps:VerbName>
+      <ps:ClassName>Microsoft.PerformancePoint.Scorecards.SetSPPerformancePointSecureDataValues</ps:ClassName>
+      <ps:HelpFile>Microsoft.PerformancePoint.Scorecards.BIMonitoringService.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>New-SPPerformancePointServiceApplicationTrustedLocation</ps:VerbName>
+      <ps:ClassName>Microsoft.PerformancePoint.Scorecards.NewSPPerformancePointMonitoringServiceApplicationTrustedLocation</ps:ClassName>
+      <ps:HelpFile>Microsoft.PerformancePoint.Scorecards.BIMonitoringService.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Get-SPPerformancePointServiceApplicationTrustedLocation</ps:VerbName>
+      <ps:ClassName>Microsoft.PerformancePoint.Scorecards.GetSPPerformancePointMonitoringServiceApplicationTrustedLocation</ps:ClassName>
+      <ps:HelpFile>Microsoft.PerformancePoint.Scorecards.BIMonitoringService.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Remove-SPPerformancePointServiceApplicationTrustedLocation</ps:VerbName>
+      <ps:ClassName>Microsoft.PerformancePoint.Scorecards.RemoveSPPerformancePointMonitoringServiceApplicationTrustedLocation</ps:ClassName>
+      <ps:HelpFile>Microsoft.PerformancePoint.Scorecards.BIMonitoringService.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Clear-SPPerformancePointServiceApplicationTrustedLocation</ps:VerbName>
+      <ps:ClassName>Microsoft.PerformancePoint.Scorecards.ClearSPPerformancePointMonitoringServiceApplicationTrustedLocation</ps:ClassName>
+      <ps:HelpFile>Microsoft.PerformancePoint.Scorecards.BIMonitoringService.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Export-SPPerformancePointContent</ps:VerbName>
+      <ps:ClassName>Microsoft.PerformancePoint.Scorecards.ExportSPPerformancePointContent</ps:ClassName>
+      <ps:HelpFile>Microsoft.PerformancePoint.Scorecards.BIMonitoringService.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Import-SPPerformancePointContent</ps:VerbName>
+      <ps:ClassName>Microsoft.PerformancePoint.Scorecards.ImportSPPerformancePointContent</ps:ClassName>
+      <ps:HelpFile>Microsoft.PerformancePoint.Scorecards.BIMonitoringService.dll-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+</ps:Assembly>
+
+</ps:Config>

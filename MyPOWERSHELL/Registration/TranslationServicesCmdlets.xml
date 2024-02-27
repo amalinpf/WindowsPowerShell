@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. -->
+<ps:Config xmlns:ps="urn:Microsoft.SharePoint.PowerShell"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="urn:Microsoft.SharePoint.PowerShell SPCmdletSchema.xsd">
+	<ps:Assembly Name="Microsoft.Office.TranslationServices, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+		<ps:Cmdlet>
+			<ps:VerbName>Set-SPTranslationServiceApplication</ps:VerbName>
+			<ps:ClassName>Microsoft.Office.TranslationServices.Powershell.TranslationServiceApplicationSet</ps:ClassName>
+			<ps:HelpFile>Microsoft.Office.TranslationServices.dll-Help.xml</ps:HelpFile>
+		</ps:Cmdlet>
+		<ps:Cmdlet>
+			<ps:VerbName>New-SPTranslationServiceApplication</ps:VerbName>
+			<ps:ClassName>Microsoft.Office.TranslationServices.Powershell.TranslationServiceApplicationNew</ps:ClassName>
+			<ps:HelpFile>Microsoft.Office.TranslationServices.dll-Help.xml</ps:HelpFile>
+		</ps:Cmdlet>
+		<ps:Cmdlet>
+			<ps:VerbName>Set-SPTranslationServiceApplicationProxy</ps:VerbName>
+			<ps:ClassName>Microsoft.Office.TranslationServices.Powershell.TranslationServiceApplicationProxySet</ps:ClassName>
+			<ps:HelpFile>Microsoft.Office.TranslationServices.dll-Help.xml</ps:HelpFile>
+		</ps:Cmdlet>
+		<ps:Cmdlet>
+			<ps:VerbName>New-SPTranslationServiceApplicationProxy</ps:VerbName>
+			<ps:ClassName>Microsoft.Office.TranslationServices.Powershell.TranslationServiceApplicationProxyNew</ps:ClassName>
+			<ps:HelpFile>Microsoft.Office.TranslationServices.dll-Help.xml</ps:HelpFile>
+		</ps:Cmdlet>
+		<ps:Cmdlet>
+			<ps:VerbName>Remove-SPTranslationServiceJobHistory</ps:VerbName>
+			<ps:ClassName>Microsoft.Office.TranslationServices.Powershell.TranslationJobHistoryRemove</ps:ClassName>
+			<ps:HelpFile>Microsoft.Office.TranslationServices.dll-Help.xml</ps:HelpFile>
+		</ps:Cmdlet>
+	</ps:Assembly>
+</ps:Config>

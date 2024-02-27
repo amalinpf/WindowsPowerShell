@@ -1,0 +1,19 @@
+﻿
+# Keep apostrophes, etc. as they are:
+$code = 
+{ 
+<#
+PutYourCodeHere	REMOVE COMMENT BLOCK FOR ACTUAL CODE
+#>
+}
+ New-IseSnippet `
+    -Text $code.ToString() `
+    -CaretOffset 0 `
+    -Force `
+    -Title ‘AM-snippetTitle’ `
+    -Description ‘SnippetDescription’ `
+	-Author ‘Art Malin’					
+<#
+Replace the #PutYourCodeHere by your Powershell commands, set the snippet Title, description and run it.
+Stored in C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\WindowsPowerShell\Snippets
+#>

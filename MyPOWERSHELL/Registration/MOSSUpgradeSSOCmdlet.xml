@@ -1,0 +1,119 @@
+<ps:Config xmlns:ps="urn:Microsoft.SharePoint.PowerShell"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="urn:Microsoft.SharePoint.PowerShell  SPCmdletSchema.xsd">
+
+  <ps:Assembly Name="Microsoft.Office.SecureStoreService, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+    <ps:Cmdlet>
+      <ps:VerbName>Upgrade-SPSingleSignOnDatabase</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.UpgradeCommand</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Disable-SPSingleSignOn</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.DisableServiceCommand</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>New-SPSecureStoreServiceApplication</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPNewSecureStoreServiceApplication</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Set-SPSecureStoreServiceApplication</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPSetSecureStoreServiceApplication</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>New-SPSecureStoreServiceApplicationProxy</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPNewSecureStoreServiceApplicationProxy</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+
+    <ps:Cmdlet>
+      <ps:VerbName>Clear-SPSecureStoreCredentialMapping</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPClearSPSecureStoreCredentialMapping</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Get-SPSecureStoreApplication</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPGetSPSecureStoreApplication</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>New-SPSecureStoreApplication</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPNewSPNewSPSecureStoreApplication</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>New-SPSecureStoreApplicationField</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPNewSPNewSPSecureStoreTargetApplicationField</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>New-SPSecureStoreTargetApplication</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPNewSPNewSPSecureStoreTargetApplication</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Remove-SPSecureStoreApplication</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPRemoveSPSecureStoreApplication</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Set-SPSecureStoreApplication</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPSetSPSecureStoreApplication</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Update-SPSecureStoreCredentialMapping</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPUpdateSPSecureStoreCredentialMapping</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Update-SPSecureStoreGroupCredentialMapping</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPUpdateSPSecureStoreGroupCredentialMapping</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+
+    <ps:Cmdlet>
+      <ps:VerbName>Update-SPSecureStoreApplicationServerKey</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPUpdateSPSecureStoreApplicationServerKey</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Update-SPSecureStoreMasterKey</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPUpdateSPSecureStoreMasterKey</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+
+    <ps:Cmdlet>
+      <ps:VerbName>Set-SPSecureStoreDefaultProvider</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPSetSPSecureStoreDefaultProvider</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Clear-SPSecureStoreDefaultProvider</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPClearSPSecureStoreDefaultProvider</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+
+    <ps:Cmdlet>
+      <ps:VerbName>Add-SPSecureStoreSystemAccount</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPAddSPSecureStoreSystemAccount</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+    <ps:Cmdlet>
+      <ps:VerbName>Get-SPSecureStoreSystemAccount</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPGetSPSecureStoreSystemAccount</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+
+    <ps:Cmdlet>
+    <ps:VerbName>Remove-SPSecureStoreSystemAccount</ps:VerbName>
+      <ps:ClassName>Microsoft.Office.SecureStoreService.PowerShellCmdlet.SPRemoveSecureStoreSystemAccount</ps:ClassName>
+      <ps:HelpFile>Microsoft.SharePoint.PowerShell.SSOUpgrade-help.xml</ps:HelpFile>
+    </ps:Cmdlet>
+
+  </ps:Assembly>
+
+</ps:Config>

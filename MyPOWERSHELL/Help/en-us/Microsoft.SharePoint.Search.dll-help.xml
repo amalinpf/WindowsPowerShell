@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?><!--Version 1.0.9176.836 --><!--Date created: 10/23/2009 11:29:40 AM--><HelpItems xmlns="http://msh" schema="maml">
+	
+	
+	
+  <command:command xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><command:details><command:name>Set-SPSearchService [[-Identity] &lt;SPSearchServicePipeBind&gt;]</command:name><maml:description>
+      <maml:para>Sets properties of a search service.</maml:para><maml:para />
+    </maml:description><maml:copyright><maml:para /></maml:copyright><command:verb>Set</command:verb><command:noun>SPSearchService [[-Identity] &lt;SPSearchServicePipeBind&gt;]</command:noun><dev:version /></command:details><command:syntax /><command:parameters><command:parameter required="" variableLength="" globbing="False" pipelineInput="" position=""><maml:name>Identity</maml:name><maml:description>
+              <maml:para>Specifies the search service instance to set.</maml:para><maml:para />
+              <maml:para>The type must be a valid GUID, such as 12345678-90ab-cdef-1234-567890bcdefgh; a valid name of a search service instance, such as SearchServiceInstance1; or an instance a valid SearchServiceInstance object</maml:para><maml:para />
+            </maml:description><command:parameterValue required="True" /><dev:type><maml:name /><maml:uri href="" /></dev:type><dev:defaultValue /></command:parameter><command:parameter required="" variableLength="" globbing="False" pipelineInput="" position=""><maml:name>AddStartAddressForNonNTZone</maml:name><maml:description>
+              <maml:para>Specifies to add start address for Web applications that do not have a Windows NT zone.</maml:para><maml:para />
+            </maml:description><command:parameterValue required="True" /><dev:type><maml:name /><maml:uri href="" /></dev:type><dev:defaultValue /></command:parameter><command:parameter required="" variableLength="" globbing="False" pipelineInput="" position=""><maml:name>AssignmentCollection</maml:name><maml:description>
+              <maml:para>
+                Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.
+              </maml:para><maml:para />
+              
+                <maml:para>
+                  When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.
+                </maml:para><maml:para />
+              
+            </maml:description><command:parameterValue required="True" /><dev:type><maml:name /><maml:uri href="" /></dev:type><dev:defaultValue /></command:parameter><command:parameter required="" variableLength="" globbing="False" pipelineInput="" position=""><maml:name>CrawlAccount</maml:name><maml:description>
+              <maml:para>Specifies the user account or service account to use for crawling.</maml:para><maml:para />
+              <maml:para>The type must be a valid administrator account, such as MyAdminAcct1.</maml:para><maml:para />
+            </maml:description><command:parameterValue required="True" /><dev:type><maml:name /><maml:uri href="" /></dev:type><dev:defaultValue /></command:parameter><command:parameter required="" variableLength="" globbing="False" pipelineInput="" position=""><maml:name>CrawlPassword</maml:name><maml:description>
+              <maml:para>Provides the password for the service account that is specified in CrawlAccount.</maml:para><maml:para />
+              <maml:para>The type must be a valid password, such as UserIDPassword.</maml:para><maml:para />
+            </maml:description><command:parameterValue required="True" /><dev:type><maml:name /><maml:uri href="" /></dev:type><dev:defaultValue /></command:parameter><command:parameter required="" variableLength="" globbing="False" pipelineInput="" position=""><maml:name>MaxBackupDuration</maml:name><maml:description>
+              <maml:para>Specifies the interval, in minutes, from the time the backup operation started for the search service in the Microsoft SharePoint Foundation 2010 content index and the time the search services will resume.</maml:para><maml:para />
+            </maml:description><command:parameterValue required="True" /><dev:type><maml:name /><maml:uri href="" /></dev:type><dev:defaultValue /></command:parameter><command:parameter required="" variableLength="" globbing="False" pipelineInput="" position=""><maml:name>PerformanceLevel</maml:name><maml:description>
+              <maml:para>Specifies the relative number of threads for the indexer performance:</maml:para><maml:para />
+              <maml:para>
+                Reduced: Total number of threads = number of processors, Max Threads/host =  number of processors</maml:para><maml:para />
+              <maml:para>
+                PartlyReduced: Total number of threads = 4 times the number of processors , Max Threads/host = 16 times the number of processors</maml:para><maml:para />
+              <maml:para>
+                Maximum: Total number of threads = number of processors </maml:para><maml:para />
+              <maml:para>The type must be any of the following values: Reduced,  PartlyReduced, orMaximum</maml:para><maml:para />
+              <maml:para /><maml:para />
+            </maml:description><command:parameterValue required="True" /><dev:type><maml:name /><maml:uri href="" /></dev:type><dev:defaultValue /></command:parameter></command:parameters><maml:description>
+        <maml:para>The Set-SPSearchService cmdlet modifies the SearchService object properties.</maml:para><maml:para />
+        <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Foundation 2010, see TechNet (http://go.microsoft.com/fwlink/?LinkId=163184).</maml:para><maml:para />
+      </maml:description><command:inputTypes /><command:returnValues /><command:examples><command:example><maml:title>
+        
+          --------------------EXAMPLE--------------------
+        
+      </maml:title>
+<dev:code>C:\PS>Set-SPSearchService -MaxBackupDuration 120</dev:code><dev:remarks>
+        
+          <maml:para>This example sets the maximum time, in minutes, between the start of a backup and the resumption of search services.</maml:para><maml:para />
+        
+      </dev:remarks></command:example></command:examples><maml:relatedLinks>
+      
+      
+      
+    <maml:navigationLink><maml:linkText>Get-SPSearchService</maml:linkText><maml:uri /></maml:navigationLink><maml:navigationLink><maml:linkText>Get-SPSearchServiceInstance</maml:linkText><maml:uri /></maml:navigationLink><maml:navigationLink><maml:linkText>Set-SPSearchServiceInstance</maml:linkText><maml:uri /></maml:navigationLink></maml:relatedLinks></command:command>
+
+	
+	
+		
+	
+	<UserDefinedData xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns=""><name>Set-SPSearchService [[-Identity] &lt;SPSearchServicePipeBind&gt;]</name><role /><functionality /><component /></UserDefinedData>
+
+	
+	
+	
+  <command:command xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><command:details><command:name>Set-SPSearchServiceInstance</command:name><maml:description>
+      <maml:para>Sets properties of a search service instance.</maml:para><maml:para />
+    </maml:description><maml:copyright><maml:para /></maml:copyright><command:verb>Set</command:verb><command:noun>SPSearchServiceInstance</command:noun><dev:version /></command:details><command:syntax><command:syntaxItem><maml:name>Set-SPSearchServiceInstance</maml:name><command:parameter required="True"><maml:name>Identity</maml:name><command:parameterValue required="True">SPSearchServiceInstancePipeBind</command:parameterValue></command:parameter><command:parameter required="False"><maml:name>AssignmentCollection</maml:name><command:parameterValue required="True">SPAssignmentCollection</command:parameterValue></command:parameter><command:parameter required="False"><maml:name>ProxyType</maml:name><command:parameterValue required="True">String</command:parameterValue></command:parameter></command:syntaxItem></command:syntax><command:parameters><command:parameter required="True" variableLength="False" globbing="False" pipelineInput="True" position="1"><maml:name>Identity</maml:name><maml:description>
+              <maml:para>Specifies the search service instance to set.</maml:para><maml:para />
+              <maml:para>The type must be a valid GUID, such as 12345678-90ab-cdef-1234-567890bcdefgh, or a valid name of a search service instance, such as SearchServiceInstance1, or an instance a valid SearchServiceInstance object.</maml:para><maml:para />
+            </maml:description><command:parameterValue required="True">SPSearchServiceInstancePipeBind</command:parameterValue><dev:type><maml:name>SPSearchServiceInstancePipeBind</maml:name><maml:uri href="" /></dev:type><dev:defaultValue>
+        </dev:defaultValue></command:parameter><command:parameter required="False" variableLength="False" globbing="False" pipelineInput="True" position="Named"><maml:name>AssignmentCollection</maml:name><maml:description>
+              <maml:para>
+                Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.
+              </maml:para><maml:para />
+              
+                <maml:para>
+                  When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.
+                </maml:para><maml:para />
+              
+            </maml:description><command:parameterValue required="True">SPAssignmentCollection</command:parameterValue><dev:type><maml:name>SPAssignmentCollection</maml:name><maml:uri href="" /></dev:type><dev:defaultValue>
+        </dev:defaultValue></command:parameter><command:parameter required="False" variableLength="False" globbing="False" pipelineInput="False" position="Named"><maml:name>ProxyType</maml:name><maml:description>
+              <maml:para>Defines whether crawler uses default, direct, or proxy connection parameters. Valid values are default, direct, and proxy. The default value is default.</maml:para><maml:para />
+              <maml:para>The type must be a valid name of a proxy type, such as default.</maml:para><maml:para />
+            </maml:description><command:parameterValue required="True">String</command:parameterValue><dev:type><maml:name>String</maml:name><maml:uri href="" /></dev:type><dev:defaultValue>
+        </dev:defaultValue></command:parameter></command:parameters><maml:description>
+        <maml:para>The Set-SPSearchServiceInstance cmdlet modifies the SearchServiceInstance object.</maml:para><maml:para />
+        <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Foundation 2010, see TechNet (http://go.microsoft.com/fwlink/?LinkId=163184).</maml:para><maml:para />
+      </maml:description><command:inputTypes /><command:returnValues /><command:examples><command:example><maml:title>
+        
+          --------------------EXAMPLE--------------------
+        
+      </maml:title>
+<dev:code>C:\PS>Get-SPSearchServiceInstance -Local | Set-SPSearchServiceInstance -ProxyType proxy</dev:code><dev:remarks>
+        
+          <maml:para>This example sets the local search service instance proxy type to proxy.</maml:para><maml:para />
+        
+      </dev:remarks></command:example></command:examples><maml:relatedLinks>
+      
+      
+      
+    <maml:navigationLink><maml:linkText>Set-SPSearchService</maml:linkText><maml:uri /></maml:navigationLink><maml:navigationLink><maml:linkText>Get-SPSearchService</maml:linkText><maml:uri /></maml:navigationLink><maml:navigationLink><maml:linkText>Get-SPSearchServiceInstance</maml:linkText><maml:uri /></maml:navigationLink></maml:relatedLinks></command:command>
+
+	
+	
+		
+	
+	<UserDefinedData xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns=""><name>Set-SPSearchServiceInstance</name><role /><functionality /><component /></UserDefinedData>
+
+	
+	
+	
+  <command:command xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><command:details><command:name>Get-SPSearchService</command:name><maml:description>
+      <maml:para>Returns a search service.</maml:para><maml:para />
+    </maml:description><maml:copyright><maml:para /></maml:copyright><command:verb>Get</command:verb><command:noun>SPSearchService</command:noun><dev:version /></command:details><command:syntax><command:syntaxItem><maml:name>Get-SPSearchService</maml:name><command:parameter required="False"><maml:name>AssignmentCollection</maml:name><command:parameterValue required="True">SPAssignmentCollection</command:parameterValue></command:parameter></command:syntaxItem></command:syntax><command:parameters><command:parameter required="False" variableLength="False" globbing="False" pipelineInput="True" position="Named"><maml:name>AssignmentCollection</maml:name><maml:description>
+              <maml:para>
+                Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.
+              </maml:para><maml:para />
+              
+                <maml:para>
+                  When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.
+                </maml:para><maml:para />
+              
+            </maml:description><command:parameterValue required="True">SPAssignmentCollection</command:parameterValue><dev:type><maml:name>SPAssignmentCollection</maml:name><maml:uri href="" /></dev:type><dev:defaultValue>
+        </dev:defaultValue></command:parameter></command:parameters><maml:description>
+        <maml:para>The Get-SPSearchService cmdlet reads the SPSearch object when the cmdlet updates a search service.</maml:para><maml:para />
+        <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Foundation 2010, see TechNet (http://go.microsoft.com/fwlink/?LinkId=163184).</maml:para><maml:para />
+      </maml:description><command:inputTypes /><command:returnValues /><command:examples><command:example><maml:title>
+        
+          --------------------EXAMPLE--------------------
+        
+      </maml:title>
+<dev:code>C:\PS>$searchService = Get-SPSearchService</dev:code><dev:remarks>
+        
+          <maml:para>This example obtains a reference to the search service object.</maml:para><maml:para />
+        
+      </dev:remarks></command:example></command:examples><maml:relatedLinks>
+      
+      
+      
+    <maml:navigationLink><maml:linkText>Set-SPSearchService</maml:linkText><maml:uri /></maml:navigationLink><maml:navigationLink><maml:linkText>Get-SPSearchServiceInstance</maml:linkText><maml:uri /></maml:navigationLink><maml:navigationLink><maml:linkText>Set-SPSearchServiceInstance</maml:linkText><maml:uri /></maml:navigationLink></maml:relatedLinks></command:command>
+
+	
+	
+		
+	
+	<UserDefinedData xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns=""><name>Get-SPSearchService</name><role /><functionality /><component /></UserDefinedData>
+
+	
+	
+	
+  <command:command xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><command:details><command:name>Get-SPSearchServiceInstance [[-Identity] &lt;SPSearchServiceInstancePipeBind&gt;]</command:name><maml:description>
+      <maml:para>Returns an instance of a search service.</maml:para><maml:para />
+    </maml:description><maml:copyright><maml:para /></maml:copyright><command:verb>Get</command:verb><command:noun>SPSearchServiceInstance [[-Identity] &lt;SPSearchServiceInstancePipeBind&gt;]</command:noun><dev:version /></command:details><command:syntax /><command:parameters><command:parameter required="" variableLength="" globbing="False" pipelineInput="" position=""><maml:name>Identity</maml:name><maml:description>
+              <maml:para>Specifies the search service to update.</maml:para><maml:para />
+              <maml:para>The type must be a valid GUID, such as 12345678-90ab-cdef-1234-567890bcdefgh a valid name of a search service, such as MySearch1; or an instance a valid SearchService object.</maml:para><maml:para />
+            </maml:description><command:parameterValue required="True" /><dev:type><maml:name /><maml:uri href="" /></dev:type><dev:defaultValue /></command:parameter><command:parameter required="" variableLength="" globbing="False" pipelineInput="" position=""><maml:name>AssignmentCollection</maml:name><maml:description>
+              <maml:para>
+                Manages objects for the purpose of proper disposal. Use of objects, such as SPWeb or SPSite, can use large amounts of memory and use of these objects in Windows PowerShell scripts requires proper memory management. Using the SPAssignment object, you can assign objects to a variable and dispose of the objects after they are needed to free up memory. When SPWeb, SPSite, or SPSiteAdministration objects are used, the objects are automatically disposed of if an assignment collection or the Global parameter is not used.
+              </maml:para><maml:para />
+              
+                <maml:para>
+                  When the Global parameter is used, all objects are contained in the global store. If objects are not immediately used, or disposed of by using the Stop-SPAssignment command, an out-of-memory scenario can occur.
+                </maml:para><maml:para />
+              
+            </maml:description><command:parameterValue required="True" /><dev:type><maml:name /><maml:uri href="" /></dev:type><dev:defaultValue /></command:parameter><command:parameter required="" variableLength="" globbing="False" pipelineInput="" position=""><maml:name>Local</maml:name><maml:description>
+              <maml:para>Specifies to return the search service instance for the current search server.</maml:para><maml:para />
+            </maml:description><command:parameterValue required="True" /><dev:type><maml:name /><maml:uri href="" /></dev:type><dev:defaultValue /></command:parameter></command:parameters><maml:description>
+        <maml:para>The Get-SPSearchServiceInstance cmdlet reads an SPSearchServiceInstance object when the cmdlet updates an instance of a search service that runs on one or more servers in the server farm.</maml:para><maml:para />
+        <maml:para>For permissions and the most current information about Windows PowerShell for SharePoint Foundation 2010, see TechNet (http://go.microsoft.com/fwlink/?LinkId=163184).</maml:para><maml:para />
+      </maml:description><command:inputTypes /><command:returnValues /><command:examples><command:example><maml:title>
+        
+          --------------------EXAMPLE--------------------
+        
+      </maml:title>
+<dev:code>C:\PS>Get-SPSearchServiceInstance -Local</dev:code><dev:remarks>
+        
+          <maml:para>This example obtains a reference to the search service instance object that runs on the local computer.</maml:para><maml:para />
+        
+      </dev:remarks></command:example></command:examples><maml:relatedLinks>
+      
+      
+      
+    <maml:navigationLink><maml:linkText>Set-SPSearchService</maml:linkText><maml:uri /></maml:navigationLink><maml:navigationLink><maml:linkText>Get-SPSearchService</maml:linkText><maml:uri /></maml:navigationLink><maml:navigationLink><maml:linkText>Set-SPSearchServiceInstance</maml:linkText><maml:uri /></maml:navigationLink></maml:relatedLinks></command:command>
+
+	
+	
+		
+	
+	<UserDefinedData xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns=""><name>Get-SPSearchServiceInstance [[-Identity] &lt;SPSearchServiceInstancePipeBind&gt;]</name><role /><functionality /><component /></UserDefinedData>
+</HelpItems>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns="urn:Microsoft.SharePoint.PowerShell"
+     elementFormDefault="qualified"
+     targetNamespace="urn:Microsoft.SharePoint.PowerShell">
+
+  <xs:element name="Config" type="ConfigType"/>
+
+  <xs:complexType name="ConfigType">
+    <xs:sequence>
+      <xs:element name="Assembly" type="AssemblyType" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AssemblyType">
+    <xs:sequence>
+      <xs:element name="Cmdlet" type="CmdletType" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="Name" type="xs:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="CmdletType">
+    <xs:sequence minOccurs="1" maxOccurs="1">
+      <xs:element name="VerbName" type="xs:string" />
+      <xs:element name="ClassName" type="xs:string" />
+      <xs:element name="HelpFile" type="xs:string" />
+      <xs:element name="FeatureDependencyId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

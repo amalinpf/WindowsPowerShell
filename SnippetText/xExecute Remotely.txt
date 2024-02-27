@@ -1,0 +1,5 @@
+﻿
+invoke-command -computername sharepoint-svr #[, sharepoint-dev,localhost]  
+{ 
+Remote Command Here
+}

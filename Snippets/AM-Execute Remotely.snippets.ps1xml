@@ -1,0 +1,26 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+    <Snippets  xmlns='http://schemas.microsoft.com/PowerShell/Snippets'>
+        <Snippet Version='1.0.0'>
+            <Header>
+                <Title>AM-Execute Remotely</Title>
+                <Description>Run a command [block] on one or multiple computers</Description>
+                <Author>Art Malin</Author>
+                <SnippetTypes>
+                    <SnippetType>Expansion</SnippetType>
+                </SnippetTypes>
+            </Header>
+
+            <Code>
+                <Script Language='PowerShell' CaretOffset='107'>
+                    <![CDATA[
+invoke-command -computername sharepoint-svr #[, sharepoint-dev,localhost]  
+{ 
+Remote Command Here
+}
+]]>
+                </Script>
+            </Code>
+
+    </Snippet>
+</Snippets>
+

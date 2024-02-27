@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<helpItems xmlns="http://msh" schema="maml">
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>Get-SPTopologyWebServiceApplication</command:name>
+		<maml:description>
+			<maml:para>[[To Do: Short Description]]</maml:para>
+		</maml:description>
+		<maml:copyright>
+           <maml:para />
+		<!--Add copy right info here.-->
+		</maml:copyright>
+		<command:verb>Get</command:verb>
+		<command:noun>SPTopologyWebServiceApplication</command:noun>
+		<!--Add Dev version info here.-->
+		<dev:version />
+	</command:details>
+	<maml:description>
+	<!--This is the Description section-->
+		<maml:para>[[To Do: Detailed Description]]</maml:para>
+	</maml:description>
+	<command:syntax>
+	<command:syntaxItem><maml:name>Get-SPTopologyWebServiceApplication</maml:name>	<command:parameter required="false" pipelineInput = "true" position = "named" > 
+	<maml:name>Farm</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "true" position = "named" > 
+	<maml:name>GarbageMan</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>Verbose</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>Debug</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>ErrorAction</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>ErrorVariable</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>OutVariable</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>OutBuffer</maml:name>
+ 	</command:parameter>
+	</command:syntaxItem>
+	</command:syntax>
+	<command:parameters>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>ErrorAction</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: ErrorAction Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.ActionPreference</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>Debug</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Debug Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>ErrorVariable</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: ErrorVariable Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.String</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>OutBuffer</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: OutBuffer Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Int32</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "true" position = "named" >
+			<maml:name>GarbageMan</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: GarbageMan Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>Microsoft.SharePoint.Cmdlet.SPGarbageMan</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>OutVariable</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: OutVariable Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.String</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "true" position = "named" >
+			<maml:name>Farm</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Farm Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>Microsoft.SharePoint.Cmdlet.SPFarmPipeBind</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>Verbose</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Verbose Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+	</command:parameters>
+	<!--Other Details go here.-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name>[[To Do: Input Type]]</maml:name>
+				<maml:uri/>
+				<maml:description>
+					<maml:para>[[To Do: Input Type Description]]</maml:para>
+				</maml:description>
+			</dev:type>
+			<maml:description></maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name>[[To Do: Return Type]]</maml:name>
+				<maml:uri />
+				<maml:description>
+					<maml:para>[[To Do: Return Type Description]]</maml:para>
+				</maml:description>
+			</dev:type>
+			<maml:description></maml:description>
+		</command:returnValue>
+	</command:returnValues>
+	<command:terminatingErrors>
+	</command:terminatingErrors>
+	<command:nonTerminatingErrors>
+	</command:nonTerminatingErrors>
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<command:examples>
+	</command:examples>
+	<maml:relatedLinks>
+	</maml:relatedLinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>Get-SPTopologyWebServiceProxy</command:name>
+		<maml:description>
+			<maml:para>[[To Do: Short Description]]</maml:para>
+		</maml:description>
+		<maml:copyright>
+           <maml:para />
+		<!--Add copy right info here.-->
+		</maml:copyright>
+		<command:verb>Get</command:verb>
+		<command:noun>SPTopologyWebServiceProxy</command:noun>
+		<!--Add Dev version info here.-->
+		<dev:version />
+	</command:details>
+	<maml:description>
+	<!--This is the Description section-->
+		<maml:para>[[To Do: Detailed Description]]</maml:para>
+	</maml:description>
+	<command:syntax>
+	<command:syntaxItem><maml:name>Get-SPTopologyWebServiceProxy</maml:name>	<command:parameter required="false" pipelineInput = "true" position = "named" > 
+	<maml:name>Farm</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "true" position = "named" > 
+	<maml:name>GarbageMan</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>Verbose</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>Debug</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>ErrorAction</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>ErrorVariable</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>OutVariable</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>OutBuffer</maml:name>
+ 	</command:parameter>
+	</command:syntaxItem>
+	</command:syntax>
+	<command:parameters>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>ErrorAction</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: ErrorAction Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.ActionPreference</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>Debug</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Debug Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>ErrorVariable</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: ErrorVariable Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.String</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>OutBuffer</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: OutBuffer Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Int32</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "true" position = "named" >
+			<maml:name>GarbageMan</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: GarbageMan Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>Microsoft.SharePoint.Cmdlet.SPGarbageMan</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>OutVariable</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: OutVariable Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.String</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "true" position = "named" >
+			<maml:name>Farm</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Farm Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>Microsoft.SharePoint.Cmdlet.SPFarmPipeBind</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>Verbose</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Verbose Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+	</command:parameters>
+	<!--Other Details go here.-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name>[[To Do: Input Type]]</maml:name>
+				<maml:uri/>
+				<maml:description>
+					<maml:para>[[To Do: Input Type Description]]</maml:para>
+				</maml:description>
+			</dev:type>
+			<maml:description></maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name>[[To Do: Return Type]]</maml:name>
+				<maml:uri />
+				<maml:description>
+					<maml:para>[[To Do: Return Type Description]]</maml:para>
+				</maml:description>
+			</dev:type>
+			<maml:description></maml:description>
+		</command:returnValue>
+	</command:returnValues>
+	<command:terminatingErrors>
+	</command:terminatingErrors>
+	<command:nonTerminatingErrors>
+	</command:nonTerminatingErrors>
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<command:examples>
+	</command:examples>
+	<maml:relatedLinks>
+	</maml:relatedLinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>Set-SPTopologyWebServiceApplication</command:name>
+		<maml:description>
+			<maml:para>[[To Do: Short Description]]</maml:para>
+		</maml:description>
+		<maml:copyright>
+           <maml:para />
+		<!--Add copy right info here.-->
+		</maml:copyright>
+		<command:verb>Set</command:verb>
+		<command:noun>SPTopologyWebServiceApplication</command:noun>
+		<!--Add Dev version info here.-->
+		<dev:version />
+	</command:details>
+	<maml:description>
+	<!--This is the Description section-->
+		<maml:para>[[To Do: Detailed Description]]</maml:para>
+	</maml:description>
+	<command:syntax>
+	<command:syntaxItem><maml:name>Set-SPTopologyWebServiceApplication</maml:name>	<command:parameter required="true" pipelineInput = "true" position = "0" > 
+	<maml:name>Identity</maml:name>
+ 	</command:parameter>
+	<command:parameter required="true" pipelineInput = "false" position = "named" > 
+	<maml:name>LoadBalancerUrl</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "true" position = "named" > 
+	<maml:name>GarbageMan</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>Verbose</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>Debug</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>ErrorAction</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>ErrorVariable</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>OutVariable</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>OutBuffer</maml:name>
+ 	</command:parameter>
+	</command:syntaxItem>
+	</command:syntax>
+	<command:parameters>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>ErrorAction</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: ErrorAction Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.ActionPreference</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>Debug</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Debug Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>ErrorVariable</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: ErrorVariable Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.String</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>OutBuffer</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: OutBuffer Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Int32</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "true" position = "named" >
+			<maml:name>GarbageMan</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: GarbageMan Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>Microsoft.SharePoint.Cmdlet.SPGarbageMan</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="true" pipelineInput = "true" position = "0" >
+			<maml:name>Identity</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Identity Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>Microsoft.SharePoint.Cmdlet.SPTopologyWebServiceApplicationPipeBind</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>OutVariable</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: OutVariable Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.String</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="true" pipelineInput = "false" position = "named" >
+			<maml:name>LoadBalancerUrl</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: LoadBalancerUrl Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.String</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>Verbose</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Verbose Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+	</command:parameters>
+	<!--Other Details go here.-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name>[[To Do: Input Type]]</maml:name>
+				<maml:uri/>
+				<maml:description>
+					<maml:para>[[To Do: Input Type Description]]</maml:para>
+				</maml:description>
+			</dev:type>
+			<maml:description></maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name>[[To Do: Return Type]]</maml:name>
+				<maml:uri />
+				<maml:description>
+					<maml:para>[[To Do: Return Type Description]]</maml:para>
+				</maml:description>
+			</dev:type>
+			<maml:description></maml:description>
+		</command:returnValue>
+	</command:returnValues>
+	<command:terminatingErrors>
+	</command:terminatingErrors>
+	<command:nonTerminatingErrors>
+	</command:nonTerminatingErrors>
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<command:examples>
+	</command:examples>
+	<maml:relatedLinks>
+	</maml:relatedLinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>Set-SPTopologyWebServiceProxy</command:name>
+		<maml:description>
+			<maml:para>[[To Do: Short Description]]</maml:para>
+		</maml:description>
+		<maml:copyright>
+           <maml:para />
+		<!--Add copy right info here.-->
+		</maml:copyright>
+		<command:verb>Set</command:verb>
+		<command:noun>SPTopologyWebServiceProxy</command:noun>
+		<!--Add Dev version info here.-->
+		<dev:version />
+	</command:details>
+	<maml:description>
+	<!--This is the Description section-->
+		<maml:para>[[To Do: Detailed Description]]</maml:para>
+	</maml:description>
+	<command:syntax>
+	<command:syntaxItem><maml:name>Set-SPTopologyWebServiceProxy</maml:name>	<command:parameter required="true" pipelineInput = "true" position = "0" > 
+	<maml:name>Identity</maml:name>
+ 	</command:parameter>
+	<command:parameter required="true" pipelineInput = "false" position = "named" > 
+	<maml:name>BadListPeriod</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "true" position = "named" > 
+	<maml:name>GarbageMan</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>Verbose</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>Debug</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>ErrorAction</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>ErrorVariable</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>OutVariable</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>OutBuffer</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>WhatIf</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>Confirm</maml:name>
+ 	</command:parameter>
+	</command:syntaxItem>
+	</command:syntax>
+	<command:parameters>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>ErrorAction</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: ErrorAction Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.ActionPreference</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>Debug</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Debug Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>ErrorVariable</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: ErrorVariable Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.String</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>OutBuffer</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: OutBuffer Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Int32</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>WhatIf</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: WhatIf Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>Confirm</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Confirm Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "true" position = "named" >
+			<maml:name>GarbageMan</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: GarbageMan Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>Microsoft.SharePoint.Cmdlet.SPGarbageMan</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="true" pipelineInput = "true" position = "0" >
+			<maml:name>Identity</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Identity Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>Microsoft.SharePoint.Cmdlet.SPTopologyWebServiceProxyPipeBind</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>OutVariable</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: OutVariable Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.String</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="true" pipelineInput = "false" position = "named" >
+			<maml:name>BadListPeriod</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: BadListPeriod Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.String</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>Verbose</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Verbose Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+	</command:parameters>
+	<!--Other Details go here.-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name>[[To Do: Input Type]]</maml:name>
+				<maml:uri/>
+				<maml:description>
+					<maml:para>[[To Do: Input Type Description]]</maml:para>
+				</maml:description>
+			</dev:type>
+			<maml:description></maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name>[[To Do: Return Type]]</maml:name>
+				<maml:uri />
+				<maml:description>
+					<maml:para>[[To Do: Return Type Description]]</maml:para>
+				</maml:description>
+			</dev:type>
+			<maml:description></maml:description>
+		</command:returnValue>
+	</command:returnValues>
+	<command:terminatingErrors>
+	</command:terminatingErrors>
+	<command:nonTerminatingErrors>
+	</command:nonTerminatingErrors>
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<command:examples>
+	</command:examples>
+	<maml:relatedLinks>
+	</maml:relatedLinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>Receive-SPSharedServiceApplicationInfo</command:name>
+		<maml:description>
+			<maml:para>[[To Do: Short Description]]</maml:para>
+		</maml:description>
+		<maml:copyright>
+           <maml:para />
+		<!--Add copy right info here.-->
+		</maml:copyright>
+		<command:verb>Receive</command:verb>
+		<command:noun>SPSharedServiceApplicationInfo</command:noun>
+		<!--Add Dev version info here.-->
+		<dev:version />
+	</command:details>
+	<maml:description>
+	<!--This is the Description section-->
+		<maml:para>[[To Do: Detailed Description]]</maml:para>
+	</maml:description>
+	<command:syntax>
+	<command:syntaxItem><maml:name>Receive-SPSharedServiceApplicationInfo</maml:name>	<command:parameter required="true" pipelineInput = "false" position = "0" > 
+	<maml:name>FarmUrl</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>Filter</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "true" position = "named" > 
+	<maml:name>GarbageMan</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>Verbose</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>Debug</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>ErrorAction</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>ErrorVariable</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>OutVariable</maml:name>
+ 	</command:parameter>
+	<command:parameter required="false" pipelineInput = "false" position = "named" > 
+	<maml:name>OutBuffer</maml:name>
+ 	</command:parameter>
+	</command:syntaxItem>
+	</command:syntax>
+	<command:parameters>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>ErrorAction</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: ErrorAction Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.ActionPreference</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>Debug</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Debug Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>ErrorVariable</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: ErrorVariable Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.String</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>OutBuffer</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: OutBuffer Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Int32</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "true" position = "named" >
+			<maml:name>GarbageMan</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: GarbageMan Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>Microsoft.SharePoint.Cmdlet.SPGarbageMan</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>Verbose</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Verbose Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Management.Automation.SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>OutVariable</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: OutVariable Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.String</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="true" pipelineInput = "false" position = "0" >
+			<maml:name>FarmUrl</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: FarmUrl Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.Uri</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" pipelineInput = "false" position = "named" >
+			<maml:name>Filter</maml:name>
+			<maml:description>
+				<maml:para>[[To Do: Filter Parameter Description]]</maml:para>
+			</maml:description>
+			<command:parameterValue>System.String</command:parameterValue>
+			<dev:type>
+				<maml:name>System.Management.Automation.CommandParameterInfo.ParameterType</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+	</command:parameters>
+	<!--Other Details go here.-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name>[[To Do: Input Type]]</maml:name>
+				<maml:uri/>
+				<maml:description>
+					<maml:para>[[To Do: Input Type Description]]</maml:para>
+				</maml:description>
+			</dev:type>
+			<maml:description></maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name>[[To Do: Return Type]]</maml:name>
+				<maml:uri />
+				<maml:description>
+					<maml:para>[[To Do: Return Type Description]]</maml:para>
+				</maml:description>
+			</dev:type>
+			<maml:description></maml:description>
+		</command:returnValue>
+	</command:returnValues>
+	<command:terminatingErrors>
+	</command:terminatingErrors>
+	<command:nonTerminatingErrors>
+	</command:nonTerminatingErrors>
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<command:examples>
+	</command:examples>
+	<maml:relatedLinks>
+	</maml:relatedLinks>
+</command:command>
+</helpItems>

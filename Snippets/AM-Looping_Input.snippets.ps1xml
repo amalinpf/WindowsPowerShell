@@ -1,0 +1,47 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+    <Snippets  xmlns='http://schemas.microsoft.com/PowerShell/Snippets'>
+        <Snippet Version='1.0.0'>
+            <Header>
+                <Title>AM-Looping_Input</Title>
+                <Description>Processing a list of items.</Description>
+                <Author>Art Malin</Author>
+                <SnippetTypes>
+                    <SnippetType>Expansion</SnippetType>
+                </SnippetTypes>
+            </Header>
+
+            <Code>
+                <Script Language='PowerShell' CaretOffset='0'>
+                    <![CDATA[ 
+# For better performance in some cases, especially with many values, use see ForEach() method
+
+$InFile = ".\Input\INFILE.csv"      # or .txt
+
+# LIST OF VALUES
+$servers = @('sharepoint-svr','sharepoint-dev','hypervspdev-svr')
+
+# TEXT FILE WITH ONE VALUE PER LINE:
+$servers = Get-Content $InFile
+
+# CSV FILE WITH ONE VALUE PER LINE, column names in first row:
+Import-Csv $InFile | ForEach-Object {
+	Write-Output "$($_.Column_Name)"
+	# Other Stuff
+}
+
+# DYNAMIC COLLECTION
+$servers = {something that returns a collection of server names}
+    foreach ($server in $servers) {
+    Write-Output $server
+    # or other code
+    }
+
+################## ALSO SEE ITERATE SNIPPET(S)
+
+]]>
+                </Script>
+            </Code>
+
+    </Snippet>
+</Snippets>
+

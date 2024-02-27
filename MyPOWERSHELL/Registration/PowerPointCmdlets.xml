@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. -->
+<ps:Config xmlns:ps="urn:Microsoft.SharePoint.PowerShell"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="urn:Microsoft.SharePoint.PowerShell SPCmdletSchema.xsd">
+    <ps:Assembly Name="Microsoft.Office.Server.Powerpoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+        <ps:Cmdlet>
+            <ps:VerbName>Set-SPPowerPointConversionServiceApplication</ps:VerbName>
+            <ps:ClassName>Microsoft.Office.Server.PowerPoint.PowerShell.SetSPPowerPointConversionServiceApplication</ps:ClassName>
+            <ps:HelpFile>Microsoft.Office.Server.Powerpoint.dll-Help.xml</ps:HelpFile>
+        </ps:Cmdlet>
+        <ps:Cmdlet>
+            <ps:VerbName>New-SPPowerPointConversionServiceApplication</ps:VerbName>
+            <ps:ClassName>Microsoft.Office.Server.PowerPoint.PowerShell.NewSPPowerPointConversionServiceApplication</ps:ClassName>
+            <ps:HelpFile>Microsoft.Office.Server.Powerpoint.dll-Help.xml</ps:HelpFile>
+        </ps:Cmdlet>
+        <ps:Cmdlet>
+            <ps:VerbName>New-SPPowerPointConversionServiceApplicationProxy</ps:VerbName>
+            <ps:ClassName>Microsoft.Office.Server.PowerPoint.PowerShell.NewSPPowerPointConversionServiceApplicationProxy</ps:ClassName>
+            <ps:HelpFile>Microsoft.Office.Server.Powerpoint.dll-Help.xml</ps:HelpFile>
+        </ps:Cmdlet>
+    </ps:Assembly>
+</ps:Config>

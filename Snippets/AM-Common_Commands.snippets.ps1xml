@@ -1,0 +1,49 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+    <Snippets  xmlns='http://schemas.microsoft.com/PowerShell/Snippets'>
+        <Snippet Version='1.0.0'>
+            <Header>
+                <Title>AM-Common_Commands</Title>
+                <Description>Reusable commands and common variables</Description>
+                <Author>Art Malin</Author>
+                <SnippetTypes>
+                    <SnippetType>Expansion</SnippetType>
+                </SnippetTypes>
+            </Header>
+
+            <Code>
+                <Script Language='PowerShell' CaretOffset='0'>
+                    <![CDATA[ 
+<#
+############ Common commands
+# Avoid line wrapping
+$buffer = $host.ui.RawUI.BufferSize; 
+$buffer.width = 3000; 
+$buffer.height = 3000; 
+$host.UI.RawUI.Set_BufferSize($buffer)
+
+############ Conditional Filter
+$SourceListFields = Get-PnPField -List $SourceList -Connection $SourceConn | Where { (-Not ($_.ReadOnlyField)) -and (-Not ($_.Hidden)) -and ($_.InternalName -ne  "ContentType") -and ($_.InternalName -ne  "Attachments" -and $_.Title -notlike "*Archive*" -and $_.Title -notin $ExcludedLists) }
+If($FieldType -eq "User" -or $FieldType -eq "UserMulti"){...}
+
+############ Comparison Operators
+-eq -ne -gt -ge -lt -le -notin (array) -notlike (*wildcard*)    https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.3
+
+############ Common variables sitepart rootpart
+$AdminSite = "https://postfallsidahoorg-admin.sharepoint.com" 
+
+$Site = "CityHallITDept"
+$Root = "https://postfallsidahoorg.sharepoint.com/sites/" 
+$SiteURL = $Root+$Site
+
+$InFile = ".\Input\INFILE_Name.csv"
+$OutFile = ".\Output\OUTFILE_$Site.csv"
+
+Connect-PnPOnline -Url $SiteURL -Interactive
+#>
+]]>
+                </Script>
+            </Code>
+
+    </Snippet>
+</Snippets>
+
