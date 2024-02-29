@@ -5,7 +5,7 @@ Add users to SharePoint group from csv	https://www.sharepointdiary.com/2016/06/s
 #Connection paramaters
 #$OnPremURL = "https://inet.postfallsidaho.org/finance"
 $OnlineURL = "https://postfallsidahoorg-admin.sharepoint.com/"
-$CSVFile="C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\sharepoint\Security\Invoice & CC Approvers for import.csv"
+$CSVFile="C:\Users\amalin\OneDrive - City of Post Falls\Documents\sharepoint\Security\Invoice & CC Approvers for import.csv"
  
 #Install-Module Microsoft.Online.SharePoint.PowerShell -Force -AllowClobber
 Import-Module Microsoft.Online.SharePoint.PowerShell

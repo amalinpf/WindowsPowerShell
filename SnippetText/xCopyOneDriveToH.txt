@@ -1,5 +1,5 @@
 ﻿
-$OneDrive = "\\amalin-pc\c$\Users\amalin\OneDrive - postfallsidaho.org\Documents\WindowsPowerShell\Snippets"
+$OneDrive = "\\amalin-pc\c$\Users\amalin\OneDrive - City of Post Falls\Documents\WindowsPowerShell\Snippets"
 $H = "\\triumph\homes$\amalin\Documents\WindowsPowerShell\Snippets"
 
 robocopy `"$H`" `"$OneDrive`" /XO

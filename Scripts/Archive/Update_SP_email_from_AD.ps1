@@ -8,7 +8,7 @@ View user list:
 
 $site = "https://postfallsidahoorg.sharepoint.com"
 #$Site = "https://inet.postfallsidaho.org"
-$UserList = "\\amalin-pc\c$\Users\amalin\OneDrive - postfallsidaho.org\Documents\WindowsPowerShell\Scripts\Users.txt"
+$UserList = "\\amalin-pc\c$\Users\amalin\OneDrive - City of Post Falls\Documents\WindowsPowerShell\Scripts\Users.txt"
 $Users = Get-Content $UserList
 ForEach ($User in $Users) {
   write-output $user

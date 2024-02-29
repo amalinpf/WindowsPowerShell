@@ -6,7 +6,7 @@ If one doesn't change, you should manually remove it from 'Change the look'>'Hea
 
 #Install-Module SharePointPnPPowerShellOnline -force
 #Set the source csv file path
-#$SourceCSVFilePath="C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\sharepoint\Scripts\Input\SiteLogos.csv";
+#$SourceCSVFilePath="C:\Users\amalin\OneDrive - City of Post Falls\Documents\sharepoint\Scripts\Input\SiteLogos.csv";
 $SourceCSVFilePath=".\Input\SiteLogos.csv";
 
 try

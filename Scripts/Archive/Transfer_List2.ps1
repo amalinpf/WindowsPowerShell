@@ -1,7 +1,7 @@
 ﻿$site = "https://inet.postfallsidaho.org/cityhallit/"
 $list = "KnowBe4"
 $dest = "https://postfallsidahoorg.sharepoint.com/sites/Generaltesting/"
-$FileLoc = "C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\sharepoint\O365\Templates\"
+$FileLoc = "C:\Users\amalin\OneDrive - City of Post Falls\Documents\sharepoint\O365\Templates\"
 $TemplateName = "PNPTest.xml"
 
 Import-Module -name SharePointPnPPowerShell2019 	# onsite

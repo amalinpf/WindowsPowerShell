@@ -33,7 +33,7 @@ $SiteCollections = Get-PnPTenantSite | Where -Property Template -NotIn ("SRCHCEN
 ######## Fields ########################################## Select All Fields in Site
 
 $SiteURL = 'https://postfallsidahoorg.sharepoint.com/sites/FinanceDepartment'
-$OutFile = 'C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\WindowsPowerShell\Output\AllFields.csv'
+$OutFile = 'C:\Users\amalin\OneDrive - City of Post Falls\Documents\WindowsPowerShell\Output\AllFields.csv'
 
 Connect-PnPOnline $SiteURL -Interactive
 

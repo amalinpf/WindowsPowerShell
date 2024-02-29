@@ -8,10 +8,10 @@ Name                   MemberType   Definition
 ----                   ----------   ----------                                                                                                                         
 AllUsersAllHosts       NoteProperty string AllUsersAllHosts=C:\Windows\System32\WindowsPowerShell\v1.0\profile.ps1                                                     
 AllUsersCurrentHost    NoteProperty string AllUsersCurrentHost=C:\Windows\System32\WindowsPowerShell\v1.0\Microsoft.PowerShellISE_profile.ps1                          
-CurrentUserAllHosts    NoteProperty string CurrentUserAllHosts=C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\WindowsPowerShell\profile.ps1                   
-CurrentUserCurrentHost NoteProperty string CurrentUserCurrentHost=C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\WindowsPowerShell\Microsoft.PowerShellISE_...
+CurrentUserAllHosts    NoteProperty string CurrentUserAllHosts=C:\Users\amalin\OneDrive - City of Post Falls\Documents\WindowsPowerShell\profile.ps1                   
+CurrentUserCurrentHost NoteProperty string CurrentUserCurrentHost=C:\Users\amalin\OneDrive - City of Post Falls\Documents\WindowsPowerShell\Microsoft.PowerShellISE_...
 
-Current Profile: C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\WindowsPowerShell\Microsoft.PowerShellISE_profile.ps1
+Current Profile: C:\Users\amalin\OneDrive - City of Post Falls\Documents\WindowsPowerShell\Microsoft.PowerShellISE_profile.ps1
 
  #>
 
@@ -19,8 +19,8 @@ Current Profile: C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\Windows
 
 Test-Path -Path $profile.AllUsersAllHosts       False	 C:\Windows\System32\WindowsPowerShell\v1.0\profile.ps1                                                     
 Test-Path -Path $profile.AllUsersCurrentHost    False	 C:\Windows\System32\WindowsPowerShell\v1.0\Microsoft.PowerShellISE_profile.ps1                          
-Test-Path -Path $profile.CurrentUserAllHosts    True	 C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\WindowsPowerShell\profile.ps1                   
-Test-Path -Path $profile.CurrentUserCurrentHost True	 C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\WindowsPowerShell\Microsoft.PowerShellISE_...
+Test-Path -Path $profile.CurrentUserAllHosts    True	 C:\Users\amalin\OneDrive - City of Post Falls\Documents\WindowsPowerShell\profile.ps1                   
+Test-Path -Path $profile.CurrentUserCurrentHost True	 C:\Users\amalin\OneDrive - City of Post Falls\Documents\WindowsPowerShell\Microsoft.PowerShellISE_...
 
 np $profile.AllUsersAllHosts       
 np $profile.AllUsersCurrentHost    

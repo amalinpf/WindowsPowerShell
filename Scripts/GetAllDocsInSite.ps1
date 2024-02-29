@@ -11,7 +11,7 @@ $SiteURL = $RootPart+$SitePart
 
 $Ext = "PDF"
 $OutFN = $Ext + $SitePart.replace('/','_') + ".csv"
-$CSVPath = "C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\WindowsPowerShell\Scripts\Output\$Ext_$OutFN"
+$CSVPath = "C:\Users\amalin\OneDrive - City of Post Falls\Documents\WindowsPowerShell\Scripts\Output\$Ext_$OutFN"
 
 $global:DocumentInventory = @()
 $Pagesize = 2000

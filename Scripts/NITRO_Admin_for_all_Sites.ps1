@@ -10,7 +10,7 @@
 
 
 $WebURL = "https://postfallsidahoorg.sharepoint.com"
-$InFile = "C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\WindowsPowerShell\Input\Site_Collections_All.csv"
+$InFile = "C:\Users\amalin\OneDrive - City of Post Falls\Documents\WindowsPowerShell\Input\Site_Collections_All.csv"
 
 Import-Csv $InFile | ForEach-Object {
 	$Address = "$WebURL$($_.Site_Collection)"

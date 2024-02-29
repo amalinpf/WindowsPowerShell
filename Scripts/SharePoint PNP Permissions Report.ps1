@@ -1,23 +1,3 @@
-<#
-JUST OPEN BROWSER WINDOW INSTEAD OF $CRED
-$credential = Get-Credential
-
-Install-Module -Name Microsoft.Online.SharePoint.PowerShell -Scope CurrentUser -Force -AllowClobber	#Online only
-Install-Module -Name PnP.PowerShell -Scope CurrentUser -Force -AllowClobber	#Online only
-Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
-Import-Module PnP.PowerShell -DisableNameChecking
-
-$AdminSite = "https://postfallsidahoorg-admin.sharepoint.com" 
-Connect-SPOService -Url $AdminSite 
-Disconnect-SPOService
-
-$SiteURL = "https://postfallsidahoorg.sharepoint.com/FinanceDepartment"
-Connect-PnPOnline -Url $SiteURL -UseWebLogin
-Disconnect-PnPOnline
-
-#>
-
-
 #Function to Get Permissions Applied on a particular Object, such as: Web, List, Folder or List Item
 Function Get-PnPPermissions([Microsoft.SharePoint.Client.SecurableObject]$Object)
 {
@@ -94,7 +74,7 @@ Function Get-PnPPermissions([Microsoft.SharePoint.Client.SecurableObject]$Object
         If($PermissionType -eq "SharePointGroup")
         {
             #Get Group Members
-            $GroupMembers = Get-PnPGroupMembers -Identity $RoleAssignment.Member.LoginName
+            $GroupMembers = Get-PnPGroupMember -Identity $RoleAssignment.Member.LoginName
                  
             #Leave Empty Groups
             If($GroupMembers.count -eq 0){Continue}
@@ -145,7 +125,7 @@ Function Generate-PnPSitePermissionRpt()
     )  
     Try {
         #Connect to the Site
-        Connect-PnPOnline -URL $SiteURL -UseWebLogin
+        Connect-PnPOnline -URL $SiteURL -Interactive
         #Get the Web
         $Web = Get-PnPWeb
  
@@ -300,30 +280,13 @@ Function Generate-PnPSitePermissionRpt()
 }
    
 #region ***Parameters***
-$SiteURL="https://postfallsidahoorg.sharepoint.com/sites/CityHallITDept"
+$SiteURL="https://postfallsidahoorg.sharepoint.com/sites/LegalDepartment"
 $AdminSite = "https://postfallsidahoorg-admin.sharepoint.com" 
-$ReportFile="C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\WindowsPowerShell\Output\Permissions_News.csv"
+$ReportFile="C:\Users\amalin\OneDrive - City of Post Falls\Documents\WindowsPowerShell\Output\All_Unique_Permissions_Legal.csv"
 #endregion
-Connect-PnPOnline -Url $SiteURL -UseWebLogin
-
-#Call the function to generate permission report
-Generate-PnPSitePermissionRpt -SiteURL $SiteURL -ReportFile $ReportFile -Recursive
-#Generate-PnPSitePermissionRpt -SiteURL $SiteURL -ReportFile $ReportFile -Recursive -ScanItemLevel -IncludeInheritedPermissions
-
-#Connect site and admin site using MFA
-#$SiteURL = "https://postfallsidahoorg.sharepoint.com"
-
-<#
-#Connect site and admin site using MFA
-Install-Module -Name Microsoft.Online.SharePoint.PowerShell -Scope CurrentUser -Force -AllowClobber	#Online only
-Install-Module -Name PnP.PowerShell -Scope CurrentUser -Force -AllowClobber	#Online only
-
-$SiteURL = "https://postfallsidahoorg.sharepoint.com"
-$AdminSite = "https://postfallsidahoorg-admin.sharepoint.com" 
-
 Connect-PnPOnline -Url $SiteURL -Interactive
 
-####
-connect MFA PNP, in preferential order:
-You can also use Connect-SPOService.
-#>
+#Call the function to generate permission report
+#Generate-PnPSitePermissionRpt -SiteURL $SiteURL -ReportFile $ReportFile -Recursive
+Generate-PnPSitePermissionRpt -SiteURL $SiteURL -ReportFile $ReportFile -Recursive -ScanItemLevel #-IncludeInheritedPermissions
+

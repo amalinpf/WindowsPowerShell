@@ -15,5 +15,5 @@ PutYourCodeHere	REMOVE COMMENT BLOCK FOR ACTUAL CODE
 	-Author ‘Art Malin’					
 <#
 Replace the #PutYourCodeHere by your Powershell commands, set the snippet Title, description and run it.
-Stored in C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\WindowsPowerShell\Snippets
+Stored in C:\Users\amalin\OneDrive - City of Post Falls\Documents\WindowsPowerShell\Snippets
 #>

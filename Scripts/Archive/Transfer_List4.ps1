@@ -6,7 +6,7 @@
 $site = "https://inet.postfallsidaho.org/cityhallit/"
 $list = "ITInvoices"
 $dest = "https://postfallsidahoorg.sharepoint.com/sites/CityHallITDept/"
-$FileLoc = "C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\sharepoint\O365\Templates\2019toSPO\"
+$FileLoc = "C:\Users\amalin\OneDrive - City of Post Falls\Documents\sharepoint\O365\Templates\2019toSPO\"
 $TemplateName = $list+".xml"
 
 #Import-Module -name PnP.PowerShell 					# online

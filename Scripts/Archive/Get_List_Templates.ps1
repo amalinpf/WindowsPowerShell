@@ -1,12 +1,12 @@
 ﻿$SourceSite = "https://inet.postfallsidaho.org/Finance/"
 $DestSite = "https://postfallsidahoorg.sharepoint.com/sites/FinanceDepartment/Migrate/"
-$TemplateLoc = "C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\sharepoint\O365\Templates\Finance\"
+$TemplateLoc = "C:\Users\amalin\OneDrive - City of Post Falls\Documents\sharepoint\O365\Templates\Finance\"
 $ListsToProcess = $TemplateLoc+".Lists_To_Process.txt"
  
 $lists = Get-Content $ListsToProcess	#One list per line
 
 <# Temp changes:
-	$OneOff = "C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\sharepoint\O365\Templates\Finance\BudReq.xml"
+	$OneOff = "C:\Users\amalin\OneDrive - City of Post Falls\Documents\sharepoint\O365\Templates\Finance\BudReq.xml"
 	$lists = @("Dept Approvers")
 	$list = $lists
  #>

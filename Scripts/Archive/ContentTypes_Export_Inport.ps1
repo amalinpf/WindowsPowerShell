@@ -47,9 +47,9 @@ Function Export-PnPContentType
 #Variables
 $SiteURL = "	https://inet.postfallsidaho.org/clerk"
 $ContentTypeName= "Certificates Of Insurance"
-$ExportFile = "C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\sharepoint\Templates\CertOfIns.xml"
+$ExportFile = "C:\Users\amalin\OneDrive - City of Post Falls\Documents\sharepoint\Templates\CertOfIns.xml"
 # $ContentTypeName= "Clerk Budget Documents"
-# $ExportFile = "C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\sharepoint\Templates\ClerkBudget.xml"
+# $ExportFile = "C:\Users\amalin\OneDrive - City of Post Falls\Documents\sharepoint\Templates\ClerkBudget.xml"
  
 #Call the function to Export the content type
 Export-PnPContentType -SiteURL $SiteURL -ContentTypeName $ContentTypeName -ExportFile $ExportFile
@@ -136,9 +136,9 @@ Function Import-PnPContentType
 #Variables
 $SiteURL = "https://postfallsidahoorg.sharepoint.com/sites/contentTypeHub"
 $ContentTypeName= "Certificates Of Insurance"
-$ExportFile = "C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\sharepoint\Templates\CertOfIns.xml"
+$ExportFile = "C:\Users\amalin\OneDrive - City of Post Falls\Documents\sharepoint\Templates\CertOfIns.xml"
 # $ContentTypeName= "Clerk Budget Documents"
-# $ExportFile = "C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\sharepoint\Templates\ClerkBudget.xml"
+# $ExportFile = "C:\Users\amalin\OneDrive - City of Post Falls\Documents\sharepoint\Templates\ClerkBudget.xml"
  
 #Call the function to Import the content type
 Import-PnPContentType -SiteURL $SiteURL -ContentTypeName $ContentTypeName -ImportFile $ImportFile

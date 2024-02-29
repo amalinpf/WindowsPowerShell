@@ -1,5 +1,5 @@
 ﻿$SiteURL = "https://postfallsidahoorg.sharepoint.com/sites/CityClerkDepartment"
-$ReportOutput ="C:\Users\amalin\OneDrive - postfallsidaho.org\Documents\sharepoint\Scripts\Output\ContentTypeUsage.csv"
+$ReportOutput ="C:\Users\amalin\OneDrive - City of Post Falls\Documents\sharepoint\Scripts\Output\ContentTypeUsage.csv"
 $ContentTypeName="Temp"
  
 #Delete the Output Report, if exists
