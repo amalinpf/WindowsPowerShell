@@ -1,19 +1,23 @@
 ##### SCRIPT
-$SiteURL = "https://postfallsidahoorg.sharepoint.com/sites/CityClerkDepartment"
-$GroupName = "Everyone except external users"     #But you assign it as a user
-$cclib = "CrowCanyonAppsLib"
-$sa = "SiteAssets"
-$sp = "SitePages"
 
-#Connect to PnP Online
-Connect-PnPOnline -Url $SiteURL -interactive
-
-#Break Permission Inheritance of the List, then Grant permission on list to Group
-Set-PnPList -Identity $cclib -BreakRoleInheritance -CopyRoleAssignments
-Set-PnPListPermission -Identity $cclib -AddRole "Read" -User $GroupName
-
-Set-PnPList -Identity $sa -BreakRoleInheritance -CopyRoleAssignments
-Set-PnPListPermission -Identity $sa -AddRole "Read" -User $GroupName
-
-Set-PnPList -Identity $sp -BreakRoleInheritance -CopyRoleAssignments
-Set-PnPListPermission -Identity $sp -AddRole "Read" -User $GroupName
+$SiteURL = "https://postfallsidahoorg.sharepoint.com/sites/Shared"
+$ListName ="Z_Drive_Migration"
+$FolderServerRelativeURL = "/sites/Shared"
+write-host "Starting, list: "$ListName
+Try {
+    #Connect to PnP Online
+    Connect-PnPOnline -Url $SiteURL -Interactive
+       
+    #Get All Items from Folder in Batch
+    $ListItems = Get-PnPListItem -List $ListName -FolderServerRelativeUrl $FolderServerRelativeURL -PageSize 2000 | Sort-Object ID -Descending
+   
+    #Powershell to delete all files from a folder
+    ForEach ($Item in $ListItems)
+    {
+        Remove-PnPListItem -List $ListName -Identity $Item.Id -Recycle -Force
+        Write-host "Removed File:"$Item.FieldValues.FileRef
+    }
+}
+Catch {
+    write-host "Error: $($_.Exception.Message)" -foregroundcolor Red
+}
