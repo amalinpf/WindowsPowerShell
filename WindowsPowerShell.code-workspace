@@ -12,6 +12,10 @@
 		"explorer.compactFolders": false,
 		"explorer.decorations.badges": false,
 		"explorer.openEditors.sortOrder": "alphabetical",
-		"explorer.sortOrder": "default"
+		"explorer.sortOrder": "default",
+		"workbench.colorTheme": "PowerShell ISE",
+		"workbench.preferredDarkColorTheme": "PowerShell ISE",
+		"workbench.preferredLightColorTheme": "PowerShell ISE",
+		"window.autoDetectColorScheme": false
 	}
 }
