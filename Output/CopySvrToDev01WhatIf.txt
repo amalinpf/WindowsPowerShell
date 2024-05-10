@@ -1,0 +1,351 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20210409125425
+Username: POSTFALLSCITY\amalin
+RunAs User: POSTFALLSCITY\amalin
+Configuration Name: 
+Machine: AMALIN-PC (Microsoft Windows NT 10.0.19042.0)
+Host Application: C:\WINDOWS\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Process ID: 10992
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\amalin\Documents\SharePoint\Scripts\Output\CopySvrToDev01.txt
+What if: Performing the operation "Updating RecoveryInterval [recovery interval (min)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating AllowUpdates [allow updates]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating UserConnections [user connections]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Locks [locks]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating OpenObjects [open objects]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating FillFactor [fill factor (%)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DisallowResultsFromTriggers [disallow results from triggers]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating NestedTriggers [nested triggers]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ServerTriggerRecursionEnabled [server trigger recursion]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating RemoteAccess [remote access]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DefaultLanguage [default language]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating CrossDBOwnershipChaining [cross db ownership chaining]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating MaxWorkerThreads [max worker threads]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating NetworkPacketSize [network packet size (B)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ShowAdvancedOptions [show advanced options]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating RemoteProcTrans [remote proc trans]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating C2AuditMode [c2 audit mode]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DefaultFullTextLanguage [default full-text language]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating TwoDigitYearCutoff [two digit year cutoff]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating IndexCreateMemory [index create memory (KB)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating PriorityBoost [priority boost]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating RemoteLoginTimeout [remote login timeout (s)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating RemoteQueryTimeout [remote query timeout (s)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating CursorThreshold [cursor threshold]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating SetWorkingSetSize [set working set size]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating UserOptions [user options]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating AffinityMask [affinity mask]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReplicationMaxTextSize [max text repl size (B)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating MediaRetention [media retention]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating CostThresholdForParallelism [cost threshold for parallelism]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating MaxDegreeOfParallelism [max degree of parallelism]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating MinMemoryPerQuery [min memory per query (KB)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating QueryWait [query wait (s)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating MinServerMemory [min server memory (MB)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating MaxServerMemory [max server memory (MB)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating QueryGovernorCostLimit [query governor cost limit]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating LightweightPooling [lightweight pooling]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ScanForStartupProcedures [scan for startup procs]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Affinity64Mask [affinity64 mask]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating AffinityIOMask [affinity I/O mask]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Affinity64IOMask [affinity64 I/O mask]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating TransformNoiseWords [transform noise words]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating PrecomputeRank [precompute rank]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ProtocolHandlerTimeout [PH timeout (s)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating IsSqlClrEnabled [clr enabled]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating FullTextCrawlRangeMax [max full-text crawl range]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating FullTextNotifyBandwidthMin [ft notify bandwidth (min)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating FullTextNotifyBandwidthMax [ft notify bandwidth (max)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating FullTextCrawlBandwidthMin [ft crawl bandwidth (min)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating FullTextCrawlBandwidthMax [ft crawl bandwidth (max)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DefaultTraceEnabled [default trace enabled]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BlockedProcessThreshold [blocked process threshold (s)]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating InDoubtTransactionResolution [in-doubt xact resolution]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating RemoteDacConnectionsEnabled [remote admin connections]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DefaultBackupCompression [backup compression default]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating FilestreamAccessLevel [filestream access level]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating OptimizeAdhocWorkloads [optimize for ad hoc workloads]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating AccessCheckCacheBucketCount [access check cache bucket count]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating AccessCheckCacheQuota [access check cache quota]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BackupChecksumDefault [backup checksum default]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating AutomaticSoftnumaDisabled [automatic soft-NUMA disabled]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ExternalScriptsEnabled [external scripts enabled]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ClrStrictSecurity [clr strict security]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating AgentXPsEnabled [Agent XPs]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseMailEnabled [Database Mail XPs]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating SmoAndDmoXPsEnabled [SMO and DMO XPs]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating OleAutomationProceduresEnabled [Ole Automation Procedures]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating XPCmdShellEnabled [xp_cmdshell]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating AdHocDistributedQueriesEnabled [Ad Hoc Distributed Queries]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReplicationXPsEnabled [Replication XPs]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ContainmentEnabled [contained database authentication]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating HadoopConnectivity [hadoop connectivity]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating PolybaseNetworkEncryption [polybase network encryption]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating RemoteDataArchiveEnabled [remote data archive]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating AllowPolybaseExport [allow polybase export]" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Migrating all mail server configuration values." on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Migrating account 'SharePoint-dev@postfallsidaho.org'." on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Migrating mail profile 'SPdevEmail'." on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Dropping mail server exch2016-svr and recreating." on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Migrating account mail server exch2016-svr." on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup AppMng_Service_DB_abe2907eb32542c4b876c3d7a75947c7 from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for AppMng_Service_DB_abe2907eb32542c4b876c3d7a75947c7" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on AppMng_Service_DB_abe2907eb32542c4b876c3d7a75947c7" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on AppMng_Service_DB_abe2907eb32542c4b876c3d7a75947c7" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on AppMng_Service_DB_abe2907eb32542c4b876c3d7a75947c7" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on AppMng_Service_DB_abe2907eb32542c4b876c3d7a75947c7" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup Bdc_Service_DB_1c6b514e11304c8099450eed74e8d154 from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for Bdc_Service_DB_1c6b514e11304c8099450eed74e8d154" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on Bdc_Service_DB_1c6b514e11304c8099450eed74e8d154" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on Bdc_Service_DB_1c6b514e11304c8099450eed74e8d154" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on Bdc_Service_DB_1c6b514e11304c8099450eed74e8d154" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on Bdc_Service_DB_1c6b514e11304c8099450eed74e8d154" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup Blank_WSS_Content from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for Blank_WSS_Content" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on Blank_WSS_Content" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on Blank_WSS_Content" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on Blank_WSS_Content" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on Blank_WSS_Content" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup DEV-ReportServer from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\Administrator for DEV-ReportServer" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on DEV-ReportServer" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on DEV-ReportServer" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on DEV-ReportServer" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on DEV-ReportServer" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup DEV-ReportServerTempDB from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\Administrator for DEV-ReportServerTempDB" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on DEV-ReportServerTempDB" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on DEV-ReportServerTempDB" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on DEV-ReportServerTempDB" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on DEV-ReportServerTempDB" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup Managed Metadata Service_83765004aeec4edd81000b13abef6db3 from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for Managed Metadata Service_83765004aeec4edd81000b13abef6db3" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on Managed Metadata Service_83765004aeec4edd81000b13abef6db3" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on Managed Metadata Service_83765004aeec4edd81000b13abef6db3" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on Managed Metadata Service_83765004aeec4edd81000b13abef6db3" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on Managed Metadata Service_83765004aeec4edd81000b13abef6db3" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup Metalogix_BackupRepository from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\Administrator for Metalogix_BackupRepository" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on Metalogix_BackupRepository" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on Metalogix_BackupRepository" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on Metalogix_BackupRepository" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on Metalogix_BackupRepository" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup NintexFormsDB from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to sa for NintexFormsDB" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on NintexFormsDB" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on NintexFormsDB" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on NintexFormsDB" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on NintexFormsDB" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup NintexWorkflowDB from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to sa for NintexWorkflowDB" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on NintexWorkflowDB" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on NintexWorkflowDB" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on NintexWorkflowDB" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on NintexWorkflowDB" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup Search_Service_Application_AnalyticsReportingStoreDB_d9b45c1b80424f96b288d91af1eea269 from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for Search_Service_Application_AnalyticsReportingStoreDB_d9b45c1b80424f96b288d91af1eea269" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on Search_Service_Application_AnalyticsReportingStoreDB_d9b45c1b80424f96b288d91af1eea269" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on Search_Service_Application_AnalyticsReportingStoreDB_d9b45c1b80424f96b288d91af1eea269" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on Search_Service_Application_AnalyticsReportingStoreDB_d9b45c1b80424f96b288d91af1eea269" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on Search_Service_Application_AnalyticsReportingStoreDB_d9b45c1b80424f96b288d91af1eea269" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup Search_Service_Application_CrawlStoreDB_94506a12495049b0abad63d52e83ac91 from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for Search_Service_Application_CrawlStoreDB_94506a12495049b0abad63d52e83ac91" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on Search_Service_Application_CrawlStoreDB_94506a12495049b0abad63d52e83ac91" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on Search_Service_Application_CrawlStoreDB_94506a12495049b0abad63d52e83ac91" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on Search_Service_Application_CrawlStoreDB_94506a12495049b0abad63d52e83ac91" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on Search_Service_Application_CrawlStoreDB_94506a12495049b0abad63d52e83ac91" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup Search_Service_Application_DB_4ec9666855a044a5886abd8b02eac1fa from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for Search_Service_Application_DB_4ec9666855a044a5886abd8b02eac1fa" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on Search_Service_Application_DB_4ec9666855a044a5886abd8b02eac1fa" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on Search_Service_Application_DB_4ec9666855a044a5886abd8b02eac1fa" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on Search_Service_Application_DB_4ec9666855a044a5886abd8b02eac1fa" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on Search_Service_Application_DB_4ec9666855a044a5886abd8b02eac1fa" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup Search_Service_Application_LinksStoreDB_8132f002bdc74fc98f408bfd81fdecfe from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for Search_Service_Application_LinksStoreDB_8132f002bdc74fc98f408bfd81fdecfe" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on Search_Service_Application_LinksStoreDB_8132f002bdc74fc98f408bfd81fdecfe" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on Search_Service_Application_LinksStoreDB_8132f002bdc74fc98f408bfd81fdecfe" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on Search_Service_Application_LinksStoreDB_8132f002bdc74fc98f408bfd81fdecfe" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on Search_Service_Application_LinksStoreDB_8132f002bdc74fc98f408bfd81fdecfe" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup Secure_Store_Service_DB_96d7d19a3ec249d69e78c7846570a81d from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for Secure_Store_Service_DB_96d7d19a3ec249d69e78c7846570a81d" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on Secure_Store_Service_DB_96d7d19a3ec249d69e78c7846570a81d" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on Secure_Store_Service_DB_96d7d19a3ec249d69e78c7846570a81d" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on Secure_Store_Service_DB_96d7d19a3ec249d69e78c7846570a81d" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on Secure_Store_Service_DB_96d7d19a3ec249d69e78c7846570a81d" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup SharePoint_AdminContent_f52237e0-b000-4067-828f-dbdc9909a47e from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\Administrator for SharePoint_AdminContent_f52237e0-b000-4067-828f-dbdc9909a47e" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on SharePoint_AdminContent_f52237e0-b000-4067-828f-dbdc9909a47e" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on SharePoint_AdminContent_f52237e0-b000-4067-828f-dbdc9909a47e" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on SharePoint_AdminContent_f52237e0-b000-4067-828f-dbdc9909a47e" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on SharePoint_AdminContent_f52237e0-b000-4067-828f-dbdc9909a47e" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup SharePoint_Config from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\Administrator for SharePoint_Config" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on SharePoint_Config" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on SharePoint_Config" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on SharePoint_Config" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on SharePoint_Config" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup StateService_44f06437f1be4a2bbd0fb936e1fccae2 from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for StateService_44f06437f1be4a2bbd0fb936e1fccae2" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on StateService_44f06437f1be4a2bbd0fb936e1fccae2" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on StateService_44f06437f1be4a2bbd0fb936e1fccae2" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on StateService_44f06437f1be4a2bbd0fb936e1fccae2" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on StateService_44f06437f1be4a2bbd0fb936e1fccae2" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup Testingdb from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\amalin for Testingdb" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on Testingdb" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on Testingdb" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on Testingdb" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on Testingdb" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup TranslationService_e2e88f20a475478ea6e3900197028487 from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for TranslationService_e2e88f20a475478ea6e3900197028487" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on TranslationService_e2e88f20a475478ea6e3900197028487" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on TranslationService_e2e88f20a475478ea6e3900197028487" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on TranslationService_e2e88f20a475478ea6e3900197028487" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on TranslationService_e2e88f20a475478ea6e3900197028487" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup User Profile Service Application_ProfileDB_c72a29f13c9a46d495f82bd881e249bb from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for User Profile Service Application_ProfileDB_c72a29f13c9a46d495f82bd881e249bb" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on User Profile Service Application_ProfileDB_c72a29f13c9a46d495f82bd881e249bb" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on User Profile Service Application_ProfileDB_c72a29f13c9a46d495f82bd881e249bb" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on User Profile Service Application_ProfileDB_c72a29f13c9a46d495f82bd881e249bb" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on User Profile Service Application_ProfileDB_c72a29f13c9a46d495f82bd881e249bb" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup User Profile Service Application_SocialDB_f1de9bc1de1142fe905a89b225b75019 from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for User Profile Service Application_SocialDB_f1de9bc1de1142fe905a89b225b75019" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on User Profile Service Application_SocialDB_f1de9bc1de1142fe905a89b225b75019" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on User Profile Service Application_SocialDB_f1de9bc1de1142fe905a89b225b75019" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on User Profile Service Application_SocialDB_f1de9bc1de1142fe905a89b225b75019" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on User Profile Service Application_SocialDB_f1de9bc1de1142fe905a89b225b75019" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup User Profile Service Application_SyncDB_f55aae7654e64c00bc2038cca0fd4eda from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for User Profile Service Application_SyncDB_f55aae7654e64c00bc2038cca0fd4eda" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on User Profile Service Application_SyncDB_f55aae7654e64c00bc2038cca0fd4eda" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on User Profile Service Application_SyncDB_f55aae7654e64c00bc2038cca0fd4eda" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on User Profile Service Application_SyncDB_f55aae7654e64c00bc2038cca0fd4eda" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on User Profile Service Application_SyncDB_f55aae7654e64c00bc2038cca0fd4eda" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup WordAutomationServices_b196652dd91c42238b2d3fef99c6a3a6 from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for WordAutomationServices_b196652dd91c42238b2d3fef99c6a3a6" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on WordAutomationServices_b196652dd91c42238b2d3fef99c6a3a6" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on WordAutomationServices_b196652dd91c42238b2d3fef99c6a3a6" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on WordAutomationServices_b196652dd91c42238b2d3fef99c6a3a6" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on WordAutomationServices_b196652dd91c42238b2d3fef99c6a3a6" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup WSS_Content from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to sa for WSS_Content" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on WSS_Content" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on WSS_Content" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on WSS_Content" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on WSS_Content" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup WSS_Content_63aaf266324f47069788fd9b565b7a79 from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\amalin for WSS_Content_63aaf266324f47069788fd9b565b7a79" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on WSS_Content_63aaf266324f47069788fd9b565b7a79" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on WSS_Content_63aaf266324f47069788fd9b565b7a79" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on WSS_Content_63aaf266324f47069788fd9b565b7a79" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on WSS_Content_63aaf266324f47069788fd9b565b7a79" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup WSS_Content_ab701c0a919646928a5d05e5d5c0652a from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\amalin for WSS_Content_ab701c0a919646928a5d05e5d5c0652a" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on WSS_Content_ab701c0a919646928a5d05e5d5c0652a" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on WSS_Content_ab701c0a919646928a5d05e5d5c0652a" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on WSS_Content_ab701c0a919646928a5d05e5d5c0652a" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on WSS_Content_ab701c0a919646928a5d05e5d5c0652a" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Backup WSS_UsageApplication from SHAREPOINT-DEV and restoring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Setting db owner to POSTFALLSCITY\sp_farm for WSS_UsageApplication" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating DatabaseOwnershipChaining on WSS_UsageApplication" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Trustworthy on WSS_UsageApplication" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating BrokerEnabled on WSS_UsageApplication" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating ReadOnly status on WSS_UsageApplication" on target "SPSQL-SVR\SPDEV".
+PS>TerminatingError(): "System error."
+PS>TerminatingError(): "System error."
+What if: Performing the operation "Stating NT AUTHORITY\SYSTEM was skipped because it is a local machine name." on target "console".
+>> TerminatingError(): "System error."
+What if: Performing the operation "Stating NT Service\MSSQLSERVER was skipped because it is a local machine name." on target "console".
+>> TerminatingError(): "System error."
+What if: Performing the operation "Stating NT SERVICE\SQLSERVERAGENT was skipped because it is a local machine name." on target "console".
+>> TerminatingError(): "System error."
+What if: Performing the operation "Stating NT SERVICE\SQLTELEMETRY was skipped because it is a local machine name." on target "console".
+>> TerminatingError(): "System error."
+What if: Performing the operation "Stating NT SERVICE\SQLWriter was skipped because it is a local machine name." on target "console".
+>> TerminatingError(): "System error."
+What if: Performing the operation "Stating NT SERVICE\Winmgmt was skipped because it is a local machine name." on target "console".
+>> TerminatingError(): "System error."
+What if: Performing the operation "Adding SQL login POSTFALLSCITY\Administrator" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Stating POSTFALLSCITY\amalin is skipped because it is performing the migration." on target "console".
+>> TerminatingError(): "System error."
+What if: Performing the operation "Adding SQL login POSTFALLSCITY\bpsadmin" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Adding SQL login POSTFALLSCITY\IT_Employees" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Adding SQL login POSTFALLSCITY\sp_c2wts" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Adding SQL login POSTFALLSCITY\sp_farm" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Adding SQL login POSTFALLSCITY\sp_ssrs" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Adding SQL login POSTFALLSCITY\sp_svc" on target "SPSQL-SVR\SPDEV".
+PS>TerminatingError(): "System error."
+What if: Performing the operation "Server reconfiguration not yet supported. Only Collection Set migration will be migrated at this time." on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Attempting to modify Data Collector configuration" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Updating Resource Governor settings" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Reconfiguring" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Copying user objects." on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Migrating session ADS_Standard_OnPrem" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Migrating session ADS_TSQL_OnPrem" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Migrating session Find closed workflows" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Migrating session QuickSessionTSQL" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Migrating session SharePoint_Diagnostics_77c374b8766c4f93a221c70a8110d8b1_0" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Migrating session SharePoint_Diagnostics_77c374b8766c4f93a221c70a8110d8b1_1" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Attempting to drop telemetry_xevents" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Migrating session telemetry_xevents" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Migrating session View SQL" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating Operator Art Malin" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating Alert Defaults" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Schedule [CollectorSchedule_Every_10min] has associated jobs. Skipping." on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Dropping schedule CollectorSchedule_Every_10min and recreating" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule CollectorSchedule_Every_10min" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Schedule [CollectorSchedule_Every_15min] has associated jobs. Skipping." on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Dropping schedule CollectorSchedule_Every_15min and recreating" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule CollectorSchedule_Every_15min" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Schedule [CollectorSchedule_Every_30min] has associated jobs. Skipping." on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Dropping schedule CollectorSchedule_Every_30min and recreating" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule CollectorSchedule_Every_30min" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Schedule [CollectorSchedule_Every_5min] has associated jobs. Skipping." on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Dropping schedule CollectorSchedule_Every_5min and recreating" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule CollectorSchedule_Every_5min" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Schedule [CollectorSchedule_Every_60min] has associated jobs. Skipping." on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Dropping schedule CollectorSchedule_Every_60min and recreating" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule CollectorSchedule_Every_60min" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Schedule [CollectorSchedule_Every_6h] has associated jobs. Skipping." on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Dropping schedule CollectorSchedule_Every_6h and recreating" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule CollectorSchedule_Every_6h" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Schedule [Daily error log recycle] has associated jobs. Skipping." on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Dropping schedule Daily error log recycle and recreating" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule Daily error log recycle" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule General performance items" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule Index Maintenance" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Schedule [RunAsSQLAgentServiceStartSchedule] has associated jobs. Skipping." on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Dropping schedule RunAsSQLAgentServiceStartSchedule and recreating" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule RunAsSQLAgentServiceStartSchedule" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule SysBackup - Differential.Subplan_1" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule SysBackup - Full.Subplan_1" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule System Backup Differential.Subplan_1" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule System Backup Full.Subplan_1" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule User Backup Differential.Subplan_1" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule User Backup Full.User Full" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule User Backup Trans Log.Subplan_1" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule UserBackup - Differential.Subplan_1" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating schedule UserBackup - Full.Subplan_1" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Job [Index Maintenance & general cleanup.Subplan_1] is associated with Maintenance Plan: " on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Dropping job New error log and recreating" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Creating Job New error log" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Disabling New error log" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Disabling New error log" on target "SHAREPOINT-DEV".
+What if: Performing the operation "Reporting status of migration for New error log" on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Job [SysBackup - Differential.Subplan_1] is associated with Maintenance Plan: " on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Job [SysBackup - Full.Subplan_1] is associated with Maintenance Plan: " on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Job [UserBackup - Differential.Subplan_1] is associated with Maintenance Plan: " on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Job [UserBackup - Full.Subplan_1] is associated with Maintenance Plan: " on target "SPSQL-SVR\SPDEV".
+What if: Performing the operation "Copying Agent Properties" on target "SPSQL-SVR\SPDEV".
+**********************
+Windows PowerShell transcript end
+End time: 20210409125521
+**********************

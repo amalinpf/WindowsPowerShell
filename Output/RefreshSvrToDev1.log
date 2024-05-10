@@ -1,0 +1,47 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20211014151544
+Username: POSTFALLSCITY\amalin
+RunAs User: POSTFALLSCITY\amalin
+Configuration Name: 
+Machine: SHAREPOINT-DEV (Microsoft Windows NT 10.0.17763.0)
+Host Application: C:\Windows\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Process ID: 996
+PSVersion: 5.1.17763.2090
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17763.2090
+BuildVersion: 10.0.17763.2090
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is \\amalin-pc\c$\Users\amalin\Documents\SharePoint\Scripts\Output\RefreshSvrToDev.log
+PS>TerminatingError(New-PSSession): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: [SHAREPOINT-SVR] Connecting to remote server SHAREPOINT-SVR failed with the following error message : WinRM cannot process the request. The following error with errorcode 0x80090322 occurred while using Kerberos authentication: An unknown security error occurred.  
+ Possible causes are:
+  -The user name or password specified are invalid.
+  -Kerberos is used when no authentication method and no user name are specified.
+  -Kerberos accepts domain user names, but not local user names.
+  -The Service Principal Name (SPN) for the remote computer name and port does not exist.
+  -The client and remote computers are in different domains and there is no trust between the two domains.
+ After checking for the above issues, try the following:
+  -Check the Event Viewer for events related to authentication.
+  -Change the authentication method; add the destination computer to the WinRM TrustedHosts configuration setting or use HTTPS transport.
+ Note that computers in the TrustedHosts list might not be authenticated.
+   -For more information about WinRM configuration, run the following command: winrm help config. For more information, see the about_Remote_Troubleshooting Help topic."
+>> TerminatingError(New-PSSession): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: [SHAREPOINT-SVR] Connecting to remote server SHAREPOINT-SVR failed with the following error message : WinRM cannot process the request. The following error with errorcode 0x80090322 occurred while using Kerberos authentication: An unknown security error occurred.  
+ Possible causes are:
+  -The user name or password specified are invalid.
+  -Kerberos is used when no authentication method and no user name are specified.
+  -Kerberos accepts domain user names, but not local user names.
+  -The Service Principal Name (SPN) for the remote computer name and port does not exist.
+  -The client and remote computers are in different domains and there is no trust between the two domains.
+ After checking for the above issues, try the following:
+  -Check the Event Viewer for events related to authentication.
+  -Change the authentication method; add the destination computer to the WinRM TrustedHosts configuration setting or use HTTPS transport.
+ Note that computers in the TrustedHosts list might not be authenticated.
+   -For more information about WinRM configuration, run the following command: winrm help config. For more information, see the about_Remote_Troubleshooting Help topic."
+**********************
+Windows PowerShell transcript end
+End time: 20211014154932
+**********************
