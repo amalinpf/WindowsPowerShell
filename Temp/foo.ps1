@@ -38,3 +38,13 @@ Import-Module Microsoft.Online.SharePoint.PowerShell
 
 uninstall-module -Name Microsoft.Online.SharePoint.PowerShell -MinimumVersion 16.0.24810.12000
 
+Install-Module Microsoft.Graph -force
+Install-Module -Name Microsoft.Online.SharePoint.PowerShell -force
+
+Connect-MgGraph
+Update-MgUser -UserPrincipalName 'amalin@postfalls.gov'
+
+Import-Module Microsoft.Online.SharePoint.PowerShell
+$creds = Get-Credential
+Connect-SPOService -Credential $creds -Url $AdminSiteURL -ModernAuth $true -AuthenticationUrl https://login.microsoftonline.com/organizations
+

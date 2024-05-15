@@ -16,6 +16,7 @@
 		"workbench.colorTheme": "PowerShell ISE",
 		"workbench.preferredDarkColorTheme": "PowerShell ISE",
 		"workbench.preferredLightColorTheme": "PowerShell ISE",
-		"window.autoDetectColorScheme": false
+		"window.autoDetectColorScheme": false,
+		"liveServer.settings.multiRootWorkspaceName": "WindowsPowerShell"
 	}
 }
