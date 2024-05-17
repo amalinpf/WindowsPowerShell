@@ -1,7 +1,0 @@
-"Object","Title","URL","HasUniquePermissions","Users","Type","Permissions","GrantedThrough"
-"Site Collection","News","https://postfallsidahoorg.sharepoint.com/sites/News","TRUE","Art Malin,News Owners,SharePoint PA","Site Collection Administrators","Site Owner","Direct Permissions"
-"Site","News","https://postfallsidahoorg.sharepoint.com/sites/News","True","IT_Employees,News Owners,System Account","SharePointGroup","Full Control","SharePoint Group: News Owners"
-"Site","News","https://postfallsidahoorg.sharepoint.com/sites/News","True","Everyone except external users,PD Users for Intranet","SharePointGroup","Read","SharePoint Group: News Visitors"
-"Site","News","https://postfallsidahoorg.sharepoint.com/sites/News","True","News Members","SharePointGroup","Design,Edit","SharePoint Group: News Members"
-"Site","News","https://postfallsidahoorg.sharepoint.com/sites/News","True","IT_Employees","SecurityGroup","Full Control","Direct Permissions"
-"Site","News","https://postfallsidahoorg.sharepoint.com/sites/News","True","Doug Melven","SharePointGroup","Web-Only Limited Access","SharePoint Group: Limited Access System Group For Web 6906bea9-c78a-40d0-8c98-b5e93bbead37"
