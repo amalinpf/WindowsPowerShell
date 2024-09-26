@@ -1,13 +1,14 @@
-<hr>
-<p>It has been @{variables('DaysToKeep')} days since your News posting
-    <strong>@{items('Apply_to_each_IT_item')?['Title']}</strong>
-    expired and it has been deleted. If you would like to
-    keep it, restore the
-    <strong style="color: rgb(208, 2, 27);">@{items('Apply_to_each_IT_item')?['Name']}</strong>
-    page from the
-    <a href="https://postfallsidahoorg.sharepoint.com/sites/CityHallITDept/_layouts/15/RecycleBin.aspx?view=5"> IT
-        Recycle Bin</a> and update the <em>Expires</em> date. To keep it permanently, leave the <em>Expires</em> date
-    empty.
-</p>
-<hr>
-<span style="font-size:xx-small;">ID | @{items('Apply_to_each_IT_item')?['ID']}</span>
+<p>It has been @{variables('DaysToKeep')} days since your News posting @{items('Apply_to_each_IT_item')?['Title']}
+    expired and it has been deleted. If you would like to keep it, restore the @{item()?['{FilenameWithExtension}']}
+    page from the <a
+        href="https://postfallsidahoorg.sharepoint.com/sites/CityHallITDept/_layouts/15/RecycleBin.aspx?view=5">IT
+        Recycle Bin</a> and update the <i>
+        <em>Expires</em>
+    </i> date. To keep it permanently, leave the <i>
+        <em>Expires</em>
+    </i> date empty.</p>
+<p>ID | @{items('Apply_to_each_IT_item')?['ID']}</p>
+
+
+<!--  RESTORE POINT
+-->

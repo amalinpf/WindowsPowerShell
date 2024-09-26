@@ -1,4 +1,6 @@
-<# 
+
+<# 			THIS PROFILE IS FOR POWERSHELL ISE
+
 $PROFILE
 $PROFILE.AllUsersCurrentHost    
 $PROFILE.CurrentUserCurrentHost
@@ -6,6 +8,7 @@ $PROFILE.CurrentUserCurrentHost
 1/10/23 ajm, put back to default, just Notepad++ shortcut
 5/2/23 ajm, shortened prompt to current path
 2/16/24 ajm, Modified for OneDrive rename to 'City of Post Falls' from 'postfallsidaho.org'
+8/5/24 ajm, Moved from .\WindowsPowerShell to .\PowerShell\Microsoft.PowerShell_profile
 #>
 
 # Add np as a shortcut to notepad++
