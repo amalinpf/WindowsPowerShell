@@ -20,8 +20,11 @@ $AdminSite = "https://postfallsidahoorg-admin.sharepoint.com"
 $Site = "CityHallITDept"
 $Root = "https://postfallsidahoorg.sharepoint.com/sites/" 
 $SiteURL = $Root+$Site
+$ClientID = 'ef961be7-5d2e-4fab-af48-7c08697b2dd2'
 
 $InFile = ".\Input\INFILE_Name.csv"
 $OutFile = ".\Output\OUTFILE_$Site.csv"
 
-Connect-PnPOnline -Url $SiteURL -Interactive
+Connect-PnPOnline -Url $SiteURL -Interactive -ClientID $ClientID
+
+*************************************************
