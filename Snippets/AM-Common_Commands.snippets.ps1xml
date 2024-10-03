@@ -38,7 +38,7 @@ $SiteURL = $Root+$Site
 $InFile = ".\Input\INFILE_Name.csv"
 $OutFile = ".\Output\OUTFILE_$Site.csv"
 
-Connect-PnPOnline -Url $SiteURL -Interactive
+Connect-PnPOnline -Url $SiteURL -Interactive -ClientID $ClientID
 #>
 ]]>
                 </Script>

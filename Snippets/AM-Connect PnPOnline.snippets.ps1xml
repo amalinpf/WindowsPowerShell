@@ -16,7 +16,7 @@
 <#
 ########### Connect to site using MFA
 $SiteURL = "https://postfallsidahoorg.sharepoint.com/sites/CityHallITDept"
-Connect-PnPOnline -Url $SiteURL -Interactive
+Connect-PnPOnline -Url $SiteURL -Interactive -ClientID $ClientID
 Disconnect-PnPOnline
 
 ########### Connect to ADMIN site using MFA

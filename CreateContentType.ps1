@@ -6,7 +6,7 @@ $ListName="Documents"
  
  
 #Connect to PnP Online
-Connect-PnPOnline -Url $SiteURL -Interactive
+Connect-PnPOnline -Url $SiteURL -Interactive -ClientID $ClientID
      
 #Get the content type
 $ContentType = Get-PnPContentType -Identity $ContentTypeName
